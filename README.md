@@ -6,7 +6,7 @@
 ![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red.svg)
 ![LangChain](https://img.shields.io/badge/langchain-0.1+-green.svg)
 ![Ollama](https://img.shields.io/badge/ollama-phi3--fast-orange.svg)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+
 
 **An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.**
 
