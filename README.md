@@ -10,8 +10,7 @@
 
 **An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.**
 
-[Features](#-features) • [Installation](#️-installation) • [Usage](#-usage) • [Architecture](#️-architecture)
-
+[Features](#-features) • [Installation](#️-installation) • [Usage](#-usage) 
 </div>
 
 ---
