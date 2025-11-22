@@ -1,0 +1,2244 @@
+Science 100Control and
+Coordination6 CHAPTER
+In the pr evious chapter , we looked at life processes involved in the
+maintenance functions in living organisms. There, we had started with
+a notion we all have, that if we see something moving, it is alive. Some of
+these movements are in fact the result of growth, as in plants. A seed
+germinates and grows, and we can see that the seedling moves over the
+course of a few days, it pushes soil aside and comes out. But if its growth
+were to be stopped, these movements would not happen. Some
+movements, as in many animals and some plants, are not connected
+with growth. A cat running, children playing on swings, buffaloes
+chewing cud – these are not movements caused by growth.
+Why do we associate such visible movements with life? A possible
+answer is that we think of movement as a response to a change in the
+environment of the organism. The cat may be running because it has
+seen a mouse.  Not only that, we also think of movement as an attempt
+by living organisms to use changes in their environment to their
+advantage. Plants grow out into the sunshine. Children try to get pleasure
+and fun out of swinging. Buffaloes chew cud to help break up tough
+food so as to be able to digest it better . When bright light is focussed on
+our eyes or when we touch a hot object, we detect the change and respond
+to it with movement in order to protect ourselves.
+If we think a bit more about this, it becomes apparent that all this
+movement, in response to the environment, is carefully controlled. Each
+kind of a change in the environment evokes an appropriate movement
+in response. When we want to talk to our friends in class, we whisper ,
+rather than shouting loudly. Clearly, the movement to be made depends
+on the event that is triggering it. Therefore, such controlled movement
+must be connected to the recognition of various events in the
+environment, followed by only the correct movement in response. In other
+words, living organisms must use systems providing control and
+coordination. In keeping with the general principles of body organisation
+in multicellular organisms, specialised tissues are used to provide these
+control and coordination activities.
+6.16.16.16.16.1ANIMALS – NERVOUS SYSTEMANIMALS – NERVOUS SYSTEMANIMALS – NERVOUS SYSTEMANIMALS – NERVOUS SYSTEMANIMALS – NERVOUS SYSTEM
+In animals, such control and coordination are provided by nervous and
+muscular tissues, which we have studied  in Class IX. Touching a hot
+Reprint 2025-26
+Control and Coordination 101object is an urgent and dangerous
+situation for us. W e need to detect it,
+and respond to it. How do we detect that
+we are touching a hot object? All
+information from our environment is
+detected by the specialised tips of some
+nerve cells. These receptors are usually
+located in our sense organs, such as the
+inner ear , the nose, the tongue, and so
+on. So gustatory receptors will detect taste
+while olfactory receptors will detect smell.
+This information, acquired at the
+end of the dendritic tip of a nerve cell
+[Fig. 6.1 (a)],  sets off a chemical reaction
+that creates an electrical impulse. This
+impulse travels from the dendrite to the
+cell body, and then along the axon to its
+end. At the end of the axon, the electrical
+impulse sets off the release of some
+chemicals. These chemicals cross the
+gap, or synapse, and start a similar
+electrical impulse in a dendrite of the next
+neuron. This is a general scheme of how
+nervous impulses travel in the body. A
+similar synapse finally allows delivery of such impulses from neurons to
+other cells, such as muscles cells or gland  [Fig. 6.1 (b)].
+It is thus no surprise that nervous tissue is made up of an organised
+network of nerve cells or neurons, and is specialised for conducting
+information via electrical impulses fr om one part of the body to another .
+Look at Fig. 6.1 (a) and identify the parts of a neuron (i) where
+information is acquired, (ii) through which information travels as an
+electrical impulse, and (iii) where this impulse must be converted into a
+chemical signal for onward transmi ssion.
+Activity 6.1Activity 6.1Activity 6.1Activity 6.1Activity 6.1
+Put some sugar in your mouth. How does it taste?
+Block your nose by pressing it between your thumb and index
+finger . Now eat sugar again. Is ther e any dif ference in its taste?
+While eating lunch, block your nose in the same way and notice if
+you can fully appreciate the taste of the food you are eating.
+Is there a difference in how sugar and food taste if your nose is
+blocked? If so, why might this be happening? Read and talk about
+possible explanations for these kinds of differences. Do you come across
+a similar situation when you have a cold?
+Figure 6.1 Figure 6.1 Figure 6.1 Figure 6.1 Figure 6.1 (a) Structure of neuron, (b)      Neuromuscular
+junction(a)
+(b)
+Reprint 2025-26
+Science 1026.1.1 What happens in Reflex Actions?
+‘Reflex’ is a word we use very commonly when we talk about some sudden
+action in r esponse to something in the envir onment. W e say ‘I jumped
+out of the way of the bus reflexly’, or ‘I pulled my hand back from the
+flame reflexly’, or ‘I was so hungry my mouth started watering reflexly’.
+What exactly do we mean? A common idea in all such examples is that
+we do something without thinking about it, or without feeling in control
+of our r eactions. Y et these ar e situations wher e we ar e responding with
+some action to changes in our environment. How is control and
+coordination achieved in such situations?
+Let us consider this further . Take one of our examples. T ouching a
+flame is an urgent and dangerous situation for us, or in fact, for any
+animal! How would we respond to this? One seemingly simple way is to
+think consciously about the pain and the possibility of getting burnt,
+and therefore move our hand. An important question then is, how long
+will it take us to think all this? The answer depends on how we think.  If
+nerve impulses ar e sent ar ound the way we have talked about earlier ,
+then thinking is also likely to involve the creation of such impulses.
+Thinking is a complex activity, so it is bound to involve a complicated
+interaction of many nerve impulses from many neurons.
+If this is the case, it is no surprise that the thinking tissue in our
+body consists of dense networks of intricately arranged neurons. It sits
+in the forward end of the skull, and receives signals from all over the
+body which it thinks about before responding to them. Obviously, in
+order to receive these signals, this thinking part of the brain in the skull
+must be connected to nerves coming from various parts of the body.
+Similarly, if this part of the brain is to instruct muscles to move, nerves
+must carry this signal back to different parts of the body. If all of this is
+to be done when we touch a hot object, it may take enough time for us to
+get burnt!
+How does the design of the body solve this problem? Rather than
+having to think about the sensation of heat, if the nerves that detect heat
+were to be connected to the nerves that move muscles in a simpler way,
+the process of detecting the signal or the input and responding to it by
+an output action might be completed quickly. Such a connection is
+commonly called a reflex arc (Fig. 6.2). Where should such reflex arc
+connections be made between the input nerve and the output nerve?
+The best place, of course, would be at the point where they first meet
+each other . Nerves fr om all over the body meet in a bundle in the spinal
+cord on their way to the brain. Reflex arcs are formed in this spinal cord
+itself, although the information input also goes on to reach the brain.
+Of course, reflex arcs have evolved in animals because the thinking
+process of the brain is not fast enough.  In fact many animals have very
+little or none of the complex neuron network needed for thinking. So it is
+quite likely that reflex arcs have evolved as efficient ways of functioning
+in the absence of true thought pr ocesses.  However , even after complex
+neuron networks have come into existence, reflex arcs continue to be
+more efficient for quick responses.
+Reprint 2025-26
+Control and Coordination 103Can you now trace the sequence of events which occur when a bright
+light is focussed on your eyes?
+6.1.2 Human Brain
+Is reflex action the only function of the spinal cord? Obviously not, since
+we know that we are thinking beings. Spinal cord is made up of nerves
+which supply information to think about. Thinking involves more
+complex mechanisms and neural connections. These are concentrated
+in the brain, which is the main coordinating centre of the body.  The
+brain and spinal cord constitute the central nervous system (Fig. 6.3).
+They receive information from all parts of the body and integrate it.
+We also think about our actions. W riting, talking, moving a chair,
+clapping at the end of a programme are examples of voluntary actions
+which are based on deciding what to do next.  So, the brain also has to
+send messages to muscles.  This is the second way in which the nervous
+system communicates with the muscles.  The communication between
+the central nervous system and the other parts of the body is facilitated
+by the peripheral nervous system consisting of cranial nerves arising
+from the brain and spinal nerves arising from the spinal cord. The brain
+thus allows us to think and take actions based on that thinking.  As you
+will expect, this is accomplished through a complex design, with different
+parts of the brain responsible for integrating different inputs and outputs.
+The brain has three such major parts or regions, namely the fore-brain,
+mid-brain and hind-brain.
+The fore-brain is the main thinking part of the brain. It has regions
+which receive sensory impulses from various receptors. Separate areas
+of the fore-brain are specialised for hearing, smell, sight and so on.  There
+are separate areas of association where this sensory information is
+interpreted by putting it together with information from other receptors
+as well as with information that is already stored in the brain.  Based onFigure 6.2 Figure 6.2 Figure 6.2 Figure 6.2 Figure 6.2 Reflex arc
+Reprint 2025-26
+Science 104all this, a decision is made about how to respond and the information is
+passed on to the motor areas which control the movement of voluntary
+muscles, for example, our leg muscles.  However , certain sensations ar e
+distinct from seeing or hearing, for example, how do we know that we
+have eaten enough? The sensation of feeling full is because of a centre
+associated with  hunger , which is in a separate part of the for e-brain.
+Study the labelled diagram of the human brain. W e have seen that
+the different parts have specific functions. Can we find out the function
+of each part?
+Let us look at the other use of the word ‘reflex’ that we have talked
+about in the introduction. Our mouth waters when we see food we like
+without our meaning to. Our hearts beat without our thinking about it.
+In fact, we cannot control these actions easily by thinking about them
+even if we wanted to. Do we have to think about or remember to breathe
+or digest food? So, in between the simple reflex actions like change in
+the size of the pupil, and the thought out actions such as moving a
+chair , ther e is another set of muscle movements over which we do not
+have any thinking control. Many of these involuntary actions are
+controlled by the mid-brain and hind-brain. All these involuntary actions
+including blood pressure, salivation and vomiting are controlled by the
+medulla in the hind-brain.
+Think about activities like walking in a straight line, riding a bicycle,
+picking up a pencil. These are possible due to a part of the hind-brain
+called the cerebellum. It is responsible for precision of voluntary actions
+and maintaining the posture and balance of the body. Imagine what
+would happen if each of these events failed to take place if we were not
+thinking about it.Figure 6.3Figure 6.3Figure 6.3Figure 6.3Figure 6.3  H u m a n  b r a i n
+Reprint 2025-26
+Control and Coordination 1056.1.3 How are these Tissues protected?
+A delicate organ like the brain, which is so important for a variety of
+activities, needs to be carefully protected. For this, the body is designed
+so that the brain sits inside a bony box. Inside the box, the brain is
+contained in a fluid-filled balloon which provides further shock
+absorption. If you run your hand down the middle of your back, you
+will feel a hard, bumpy structure. This is the vertebral column or
+backbone which protects the spinal cord.
+6.1.4 How does the Nervous Tissue cause Action?
+So far , we have been talking about nervous tissue, and how it collects
+information, sends it around the body, processes information, makes
+decisions based on information, and conveys decisions to muscles for
+action. In other words, when the action or movement is to be performed,
+muscle tissue will do the final job. How do animal muscles move? When
+a nerve impulse reaches the muscle, the muscle fibre must move. How
+does a muscle cell move? The simplest notion of movement at the cellular
+level is that muscle cells will move by changing their shape so that they
+shorten. So the next question is, how do muscle cells change their shape?
+The answer must lie in the chemistry of cellular components. Muscle
+cells have special proteins that change both their shape and their
+arrangement in the cell in response to nervous electrical impulses. When
+this happens, new arrangements of these proteins give the muscle cells
+a shorter form. Remember when we talked about muscle tissue in
+Class IX, there were different kinds of muscles, such as voluntary muscles
+and involuntary muscles. Based on what we have discussed so far , what
+do you think the differences between these would be?
+QUESTIONS
+?1. What is the difference between a reflex action and walking?
+2. What happens at the synapse between two neurons?
+3. Which part of the brain maintains posture and equilibrium of the body?
+4. How do we detect the smell of an agarbatti (incense stick)?
+5. What is the role of the brain in reflex action?
+6.2 COORDINA6.2 COORDINA6.2 COORDINA6.2 COORDINA6.2 COORDINA TION IN PLTION IN PLTION IN PLTION IN PLTION IN PL ANTS ANTSANTSANTSANTS
+Animals have a nervous system for controlling and coordinating the
+activities of the body. But plants have neither a nervous system nor
+muscles. So, how do they respond to stimuli? When we touch the leaves
+of a chhui-mui  (the ‘sensitive’ or ‘touch-me-not’ plant of the Mimosa
+family), they begin to fold up and droop. When a seed germinates, the
+root goes down, the stem comes up into the air . What happens? Firstly,
+the leaves of the sensitive plant move very quickly in response to touch.
+Reprint 2025-26
+Science 106There is no growth involved in this movement. On the other hand, the
+directional movement of a seedling is caused by growth. If it is prevented
+from growing, it will not show any movement. So plants show two different
+types of movement – one dependent on growth and the other independent
+of growth.
+6.2.1 Immediate Response to Stimulus
+Let us think about the first kind of movement, such as that of the sensitive
+plant. Since no growth is involved, the plant must actually move its leaves
+in response to touch. But there is no nervous tissue, nor any muscle
+tissue. How does the plant detect the touch, and how do the leaves move
+in response?
+Figure 6.4Figure 6.4Figure 6.4Figure 6.4Figure 6.4  T h e  s e n s i t i v e  p l a n t
+If we think about where exactly the plant is touched, and what part
+of the plant actually moves, it is apparent that movement happens at a
+point different from the point of touch. So, information that a touch has
+occurred must be communicated. The plants also use electrical-chemical
+means to convey this information from cell to cell, but unlike in animals,
+there is no specialised tissue in plants for the conduction of information.
+Finally, again as in animals, some cells must change shape in order for
+movement to happen. Instead of the specialised proteins found in animal
+muscle cells, plant cells change shape by changing the amount of water
+in them, resulting in swelling or shrinking, and therefore in changing
+shapes (Fig. 6.4).
+6.2.2 Movement Due to Growth
+Some plants like the pea plant climb up other plants or fences by means
+of tendrils. These tendrils are sensitive to touch. When they come in
+contact with any support, the part of the tendril in contact with the object
+does not grow as rapidly as the part of the tendril away from the object.
+This causes the tendril to circle around the object and thus cling to it.
+More commonly, plants respond to stimuli slowly by growing in a
+particular direction. Because this growth is directional, it appears as if
+the plant is moving. Let us understand this type of movement with the
+help of an example.
+Reprint 2025-26
+Control and Coordination 107Environmental triggers such as light, or gravity
+will change the directions that plant parts grow in.
+These directional, or tropic, movements can be either
+towards the stimulus, or away from it. So, in two
+different kinds of phototropic movement, shoots
+respond by bending towards light while roots
+respond by bending away from it. How does this help
+the plant?
+Plants show tropism in response to other stimuli as well. The roots
+of a plant always grow downwards while the shoots usually grow
+upwards and away from the earth. This upward and downward growth
+of shoots and roots, respectively, in response to the pull of earth or gravity
+is, obviously, geotropism (Fig. 6.6). If ‘hydro’ means water and ‘chemo’
+refers to chemicals, what would ‘hydrotropism’ and ‘chemotropism’
+mean? Can we think of examples of these kinds of directional growth
+movements? One example of chemotropism is the growth of pollen tubes
+towards ovules, about which we will learn more when we examine the
+reproductive processes of living organisms.
+Let us now once again think about how information is communicated
+in the bodies of multicellular organisms. The movement of the
+sensitive plant in response to touch is very quick. The movement of
+sunflowers in response to day or night, on the other hand, is quite slow.
+Growth-r elated movement of plants will be even slower .
+Even in animal bodies, there are carefully controlled directions to
+growth. Our arms and fingers grow in certain directions, not haphazardly.
+So controlled movements can be either slow or fast. If fast responses to
+stimuli are to be made, information transfer must happen very quickly.
+For this, the medium of transmission must be able to move rapidly.Activity 6.2Activity 6.2Activity 6.2Activity 6.2Activity 6.2
+Fill a conical flask with water .
+Cover the neck of the flask with a wire mesh.
+Keep two or three freshly germinated bean
+seeds on the wire mesh.
+Take a cardboard box which is open from one
+side.
+Keep the flask in the box in such a manner
+that the open side of the box faces light coming
+from a window (Fig. 6.5).
+After two or three days, you will notice that
+the shoots bend towards light and roots away
+from light.
+Now turn the flask so that the shoots are away
+from light and the roots towards light. Leave it
+undisturbed in this condition for a few days.
+Have the old parts of the shoot and root
+changed direction?
+Are there differences in the direction of the new
+growth?
+What can we conclude from this activity?
+Figure 6.5Figure 6.5Figure 6.5Figure 6.5Figure 6.5
+Response of the plant to the direction of light
+Figure 6.6 Figure 6.6 Figure 6.6 Figure 6.6 Figure 6.6 Plant showing geotropism
+Reprint 2025-26
+Science 108Electrical impulses are an excellent means for this. But there are
+limitations to the use of electrical impulses. Firstly, they will reach only
+those cells that are connected by nervous tissue, not each and every cell
+in the animal body. Secondly, once an electrical impulse is generated in
+a cell and transmitted, the cell will take some time to reset its mechanisms
+before it can generate and transmit a new impulse. In other words, cells
+cannot continually create and transmit electrical impulses. It is thus no
+wonder that most multicellular organisms use another means of
+communication between cells, namely, chemical communication.
+If, instead of generating an electrical impulse, stimulated cells release
+a chemical compound, this compound would diffuse all around the
+original cell. If other cells around have the means to detect this compound
+using special molecules on their surfaces, then they would be able to
+recognise infor mation, and even transmit it. This will be slower , of course,
+but it can potentially reach all cells of the body, regardless of nervous
+connections, and it can be done steadily and persistently. These
+compounds, or hormones used by multicellular organisms for control
+and coordination show a great deal of diversity, as we would expect.
+Different plant hormones help to coordinate growth, development and
+responses to the environment. They are synthesised at places away from
+where they act and simply diffuse to the area of action.
+Let us take an example that we have worked with earlier [Activity 6.2].
+When growing plants detect light, a hormone called auxin, synthesised
+at the shoot tip, helps the cells to gr ow longer . When light is coming fr om
+one side of the plant, auxin diffuses towards the shady side of the shoot.
+This concentration of auxin stimulates the cells to grow longer on the
+side of the shoot which is away from light. Thus, the plant appears to
+bend towards light.
+Another example of plant hormones are gibberellins which, like
+auxins, help in the growth of the stem. Cytokinins promote cell division,
+and it is natural then that they are present in greater concentration in
+areas of rapid cell division, such as in fruits and seeds. These are examples
+of plant hormones that help in promoting growth. But plants also need
+signals to stop growing. Abscisic acid is one example of a hormone which
+inhibits growth. Its effects include wilting of leaves.
+QUESTIONS
+?1. What are plant hormones?
+2. How is the movement of leaves of the sensitive plant different from the
+movement of a shoot towards light?
+3. Give an example of a plant hormone that promotes growth.
+4. How do auxins promote the growth of a tendril around a support?
+5. Design an experiment to demonstrate hydrotropism.
+Reprint 2025-26
+Control and Coordination 1096.3 HORMONES IN ANIMALS6.3 HORMONES IN ANIMALS6.3 HORMONES IN ANIMALS6.3 HORMONES IN ANIMALS6.3 HORMONES IN ANIMALS
+How are such chemical, or hormonal, means of information transmission
+used in animals? What do some animals, for instance squirrels,
+experience when they are in a scary situation? Their bodies have to
+prepare for either fighting or running away. Both are very complicated
+activities that will use a great deal of energy in controlled ways. Many
+different tissue types will be used and their activities integrated together
+in these actions. However , the two alter nate activities, fighting or running,
+are also quite different! So here is a situation in which some common
+preparations can be usefully made in the body. These preparations
+should ideally make it easier to do either activity in the near future. How
+would this be achieved?
+If the body design in the squirrel relied only on electrical impulses
+via nerve cells, the range of tissues instructed to prepare for the coming
+activity would be limited. On the other hand, if a chemical signal were to
+be sent as well, it would reach all cells of the body and provide the wide-
+ranging changes needed. This is done in many animals, including human
+beings, using a hormone called adrenaline that is secreted from the
+adrenal glands. Look at Fig. 6.7 to locate these glands.
+Adrenaline is secreted directly into the blood and carried to different
+parts of the body. The target organs or the specific tissues on which it
+acts include the heart. As a r esult, the heart beats faster , resulting in
+supply of more oxygen to our muscles. The blood to the digestive system
+and skin is reduced due to contraction of muscles around small arteries
+in these organs. This diverts the blood to our skeletal muscles. The
+breathing rate also increases because of the contractions of the
+diaphragm and the rib muscles. All these responses together enable the
+animal body to be ready to deal with the situation. Such animal hormones
+are part of the endocrine system which constitutes a second way of control
+and coordination in our body.
+Activity 6.3Activity 6.3Activity 6.3Activity 6.3Activity 6.3
+Look at Fig. 6.7.
+Identify the endocrine glands mentioned in the figure.
+Some of these glands have been listed in Table 6.1 and discussed
+in the text. Consult books in the library and discuss with your
+teachers to find out about other glands.
+Remember that plants have hormones that control their directional
+growth. What functions do animal hormones perform? On the face of it,
+we cannot imagine their r ole in dir ectional gr owth. W e have never seen
+an animal gr owing mor e in one dir ection or the other , depending on
+light or gravity! But if we think about it a bit more, it will become evident
+that, even in animal bodies, growth happens in carefully controlled places.
+Plants will grow leaves in many places on the plant body, for example.
+But we do not grow fingers on our faces. The design of the body is carefully
+maintained even during the growth of children.
+Reprint 2025-26
+Science 110Let us examine some examples to understand how hormones help
+in coordinated growth. We have all seen salt packets which say ‘iodised
+salt’ or ‘enriched with iodine’. Why is it important for us to have iodised
+salt in our diet? Iodine is necessary for the thyroid gland to make
+thyroxin hormone. Thyroxin regulates carbohydrate, protein and fat
+metabolism in the body so as to provide the best balance for growth.
+Iodine is essential for the synthesis of thyroxin. In case iodine is deficient
+in our diet, there is a possibility that we might suffer from goitre. One
+of the symptoms in this disease is a swollen neck. Can you correlate
+this with the position of the thyroid gland in Fig. 6.7?
+Sometimes we come across people who are either very short (dwarfs)
+or extremely tall (giants). Have you ever wondered how this happens?
+Growth hormone is one of the hormones secreted by the pituitary. As
+its name indicates, growth hormone regulates growth and development
+of the body. If there is a deficiency of this hormone in childhood, it
+leads to dwarfism.
+You must have noticed many dramatic changes in your appearance
+as well as that of your friends as you approached 10–12 years of age.
+These changes associated with puberty are because of the secretion of
+testosterone in males and oestrogen in females.
+Do you know anyone in your family or friends who has been advised
+by the doctor to take less sugar in their diet because they are suffering
+from diabetes? As a treatment, they might be taking injections of insulin.
+This is a hormone which is produced by the pancreas and helps in
+regulating blood sugar levels. If it is not secreted in proper amounts,
+the sugar level in the blood rises causing many harmful effects.Figure 6.7 Endocrine glands in human beings (a) male, (b) female(a) (b)Do You Know?
+Hypothalamus plays
+an important role in
+the release of many
+hormones. For
+example, when the
+level of growth
+hormone is low, the
+hypothalamus
+releases growth
+hormone releasing
+factor which
+stimulates the
+pituitary gland to
+release growth
+hormone.
+Reprint 2025-26
+Control and Coordination 111If it is so important that hormones should be secreted in precise
+quantities, we need a mechanism through which this is done. The timing
+and amount of hormone released are regulated by feedback mechanisms.
+For example, if the sugar levels in blood rise, they are detected by the
+cells of the pancreas which respond by producing more insulin. As the
+blood sugar level falls, insulin secretion is reduced.
+Table 6.1 : Some important hormones and their functionsActivity 6.4Activity 6.4Activity 6.4Activity 6.4Activity 6.4
+  Hormones are secreted by endocrine glands and have specific functions. Complete
+Table 6.1 based on the hormone, the endocrine gland or the functions provided.
+QUESTIONS
+1. How does chemical coordination take place in animals?
+2. Why is the use of iodised salt advisable?
+3. How does our body respond when adrenaline is secreted into the blood?
+4. Why are some patients of diabetes treated by giving injections of insulin?
+What y ou hav e learnt?
+Control and coordination are the functions of the nervous system and hormones
+in our bodies.
+The responses of the nervous system can be classified as reflex action, voluntary
+action or involuntary action.
+The nervous system uses electrical impulses to transmit messages.
+The nervous system gets information from our sense organs and acts through our
+muscles.
+Chemical coordination is seen in both plants and animals.
+Hormones produced in one part of an organism move to another part to achieve
+the desired effect.
+A feedback mechanism regulates the action of the hormones.S.No. Hormone Endocrine Gland Functions
+1. Growth hormone Pituitary gland Stimulates growth in all organs
+2. Thyroid gland Regulates metabolism for body growth
+3. Insulin Regulates blood sugar level
+4. Testosterone Testes
+5. Ovaries Development of female sex organs,
+regulates menstrual cycle, etc.
+6. Adrenaline Adrenal gland
+7. Releasing Stimulates pituitary gland to release
+hormones hormones
+Reprint 2025-26
+Science 112EXERCISES
+1.Which of the following is a plant hormone?
+(a) Insulin
+(b) Thyroxin
+(c)Oestrogen
+(d) Cytokinin.
+2.The gap between two neurons is called a
+(a)dendrite.
+(b) synapse.
+(c)axon.
+(d) impulse.
+3.The brain is responsible for
+(a) thinking.
+(b) regulating the heart beat.
+(c)balancing the body.
+(d) all of the above.
+4.What is the function of receptors in our body? Think of situations where receptors
+do not work properly. What problems are likely to arise?
+5.Draw the structure of a neuron and explain its function.
+6.How does phototropism occur in plants?
+7.Which signals will get disrupted in case of a spinal cord injury?
+8.How does chemical coordination occur in plants?
+9.What is the need for a system of control and coordination in an organism?
+10.How are involuntary actions and reflex actions different from each other?
+11.Compare and contrast nervous and hormonal mechanisms for control and
+coordination in animals.
+12.What is the difference between the manner in which movement takes place in a
+sensitive plant and the movement in our legs?
+Reprint 2025-26
+Science 208Activity 13.1Activity 13.1Activity 13.1Activity 13.1Activity 13.1Our Environment13 CHAPTER
+We have hear d the wor d ‘envir onment’ often being used on the
+television, in newspapers and by people around us. Our elders tell
+us that the ‘environment’ is not what it used to be earlier; others say that
+we should work in a healthy ‘environment’; and global summits involving
+the developed and developing countries are regularly held to discuss
+‘envir onmental’ issues. In this chapter , we shall be studying how various
+components in the environment interact with each other and how we
+impact the environment.
+13.1 ECO 13.1 ECO13.1 ECO13.1 ECO13.1 ECO -SYSTEM — WHA-SYSTEM — WHA-SYSTEM — WHA-SYSTEM — WHA-SYSTEM — WHA T ARE ITS COMPONENTS?T ARE ITS COMPONENTS?T ARE ITS COMPONENTS?T ARE ITS COMPONENTS?T ARE ITS COMPONENTS?
+All organisms such as plants, animals, microorganisms and human
+beings as well as the physical surroundings interact with each other
+and maintain a balance in nature. All the interacting organisms in an
+area together with the non-living constituents of the environment form
+an ecosystem. Thus, an ecosystem consists of biotic components
+comprising living organisms and abiotic components comprising
+physical factors like temperature, rainfall, wind, soil and minerals.
+For example, if you visit a garden you will find different plants, such
+as grasses, trees; flower bearing plants like rose, jasmine, sunflower;
+and animals like frogs, insects and birds. All these living organisms
+interact with each other and their growth, reproduction and other
+activities are affected by the abiotic components of ecosystem. So a garden
+is an ecosystem. Other types of ecosystems are forests, ponds and lakes.
+These are natural ecosystems while gardens and crop-fields are human-
+made (artificial) ecosystems.
+You might have seen an aquarium. Let us try to design one.
+What are the things that we need to keep in mind when we create
+an aquarium? The fish would need a free space for swimming (it
+could be a lar ge jar), water , oxygen and food.
+We can pr ovide oxygen thr ough an oxygen pump (aerator) and
+fish food which is available in the market.
+Reprint 2025-26
+Our Environment 209If we add a few aquatic plants and animals it can become a self-
+sustaining system. Can you think how this happens? An aquarium
+is an example of a human-made ecosystem.
+Can we leave the aquarium as such after we set it up? Why does
+it have to be cleaned once in a while? Do we have to clean ponds
+or lakes in the same manner? Why or why not?
+We have seen in earlier classes that or ganisms can be gr ouped as
+producers, consumers and decomposers according to the manner in
+which they obtain their sustenance from the environment. Let us recall
+what we have learnt through the self sustaining ecosystem created by
+us above. Which organisms can make organic compounds like sugar
+and starch from inorganic substances using the radiant energy of the
+Sun in the presence of chlorophyll? All green plants and certain bacteria
+which can produce food by photosynthesis come under this category
+and are called the producers.
+Organisms depend on the producers either directly or indirectly for
+their sustenance? These organisms which consume the food produced,
+either directly from producers or indirectly by feeding on other consumers
+are the consumers. Consumers can be classed variously as herbivores,
+carnivores, omnivores and parasites. Can you give examples for each of
+these categories of consumers?
+Imagine the situation where you do not clean the  aquarium and
+some fish and plants have died. Have you ever thought what
+happens when an organism dies? The microorganisms, comprising
+bacteria and fungi, break-down the dead remains and waste
+products of organisms. These microorganisms are the decomposers
+as they break-down the complex organic substances into simple
+inorganic substances that go into the soil and are used up once
+more by the plants. What will happen to the garbage, and dead
+animals and plants in their absence? Will the natural replenishment
+of the soil take place, even if decomposers are not there?
+Activity 13.2Activity 13.2Activity 13.2Activity 13.2Activity 13.2
+While creating an aquarium did you take care not to put an aquatic
+animal which would eat others? What would have happened
+otherwise?
+Make groups and discuss how each of the above groups of
+organisms ar e dependent on each other .
+Write the aquatic or ganisms in or der of who eats whom and for m
+a chain of at least three steps.  →  → Would you consider any one gr oup of or ganisms to be of primary
+importance? Why or why not?
+Reprint 2025-26
+Science 210Figure 13.2Figure 13.2Figure 13.2Figure 13.2Figure 13.2
+Trophic levels13.1.1 F ood Chains and W ebs
+In Activity 13.4 we have formed a series of organisms feeding
+on one another . This series or or ganisms taking part at
+various biotic levels form a food chain (Fig. 13.1).
+Each step or level of the food chain forms a trophic level.
+The autotrophs or the producers are at the first trophic level.
+They fix up the solar energy and make it available for
+heterotrophs or the consumers. The herbivores or the primary
+consumers come at the second, small carnivores or the
+secondary consumers at the third and larger carnivores or
+the tertiary consumers form the fourth trophic level (Fig. 13.2).
+We know that the food we eat acts as a fuel to pr ovide us
+energy to do work. Thus the interactions among various
+components of the environment involves flow of energy from
+one component of the system to another . As we have studied,
+the autotrophs capture the energy present in sunlight and
+convert it into chemical energy. This energy supports all the
+activities of the living world. From autotrophs, the energy goes
+to the heter otrophs and decomposers. However , as we saw in
+the previous Chapter on ‘Sources of Energy’, when one form
+of ener gy is changed to another , some ener gy is lost to the
+environment in forms which cannot be used again. The flow
+of energy between various components of the environment
+has been extensively studied and it has been found that –
+The green plants in a terrestrial ecosystem capture about
+1% of the energy of sunlight that falls on their leaves and convert it
+into food energy.
+When green plants are eaten by primary consumers, a great deal
+of energy is lost as heat to the environment, some amount goes
+into digestion and in doing work and the rest goes towards growth
+and reproduction. An average of 10% of the food eaten is turned
+into its own body and made available for the next level of
+consumers.
+Therefore, 10% can be taken as the average value for the amount
+of organic matter that is present at each step and reaches the next
+level of consumers.
+Since so little energy is available for the next level of consumers,
+food chains generally consist of only three or four steps. The loss
+of energy at each step is so great that very little usable energy
+remains after four trophic levels.
+There are generally a greater number of individuals at the lower
+trophic levels of an ecosystem, the greatest number is of the
+producers.
+The length and complexity of food chains vary greatly. Each organism
+is generally eaten by two or more other kinds of organisms which in
+turn are eaten by several other organisms. So instead of a straight
+line food chain, the relationship can be shown as a series of branching
+lines called a food web (Fig. 13.3).Figure 13.1Figure 13.1Figure 13.1Figure 13.1Figure 13.1
+Food chain in nature
+(a) in forest, (b) in
+grassland and (c) in a
+pond
+Reprint 2025-26
+Our Environment 211From the energy flow diagram (Fig. 13.4),
+two things become clear . Firstly, the flow of
+energy is unidirectional. The energy that is
+captured by the autotrophs does not revert
+back to the solar input and the energy which
+passes to the herbivores does not come back
+to autotrophs. As it moves progressively
+through the various trophic levels it is no
+longer available to the previous level.
+Secondly, the energy available at each trophic
+level gets diminished progressively due to loss
+of energy at each level.
+Another interesting aspect of food chain
+is how unknowingly some harmful
+chemicals enter our bodies through the food
+chain. Y ou have r ead in Class IX how water
+gets polluted. One of the reasons is the use of
+several pesticides and other chemicals to
+protect our crops from diseases and pests.
+These chemicals are either washed down into
+the soil or into the water bodies. From the
+soil, these are absorbed by the plants along
+with water and minerals, and from the water
+bodies these are taken up by aquatic plants
+Figure 13.4  Figure 13.4  Figure 13.4  Figure 13.4  Figure 13.4  Diagram showing flow of energy in an ecosystemFigure 13.3Figure 13.3Figure 13.3Figure 13.3Figure 13.3
+Food web, consisting of
+many food chains
+Reprint 2025-26
+Science 212Activity 13.3Activity 13.3Activity 13.3Activity 13.3Activity 13.3and animals. This is one of the ways in which they enter the food chain.
+As these chemicals are not degradable, these get accumulated
+progressively at each trophic level. As human beings occupy the top
+level in any food chain, the maximum concentration of these chemicals
+get accumulated in our bodies. This phenomenon is known as biological
+magnification. This is the reason why our food grains such as wheat
+and rice, vegetables and fruits, and even meat, contain varying amounts
+of pesticide residues. They cannot always be removed by washing or
+other means.
+QUESTIONS
+?1. What are trophic levels? Give an example of a food chain and state the
+different trophic levels in it.
+2. What is the role of decomposers in the ecosystem?
+13.2 13.213.213.213.2 HOW DO OUR ACTIVITIES AFFECT THEHOW DO OUR ACTIVITIES AFFECT THEHOW DO OUR ACTIVITIES AFFECT THEHOW DO OUR ACTIVITIES AFFECT THEHOW DO OUR ACTIVITIES AFFECT THE
+ENVIRONMENT?ENVIRONMENT?ENVIRONMENT?ENVIRONMENT?ENVIRONMENT?
+We are an integral part of the envir onment. Changes in the envir onment
+affect us and our activities change the envir onment ar ound us. W e have
+already seen in Class IX how our activities pollute the environment. In
+this chapter , we shall be looking at two of the envir onmental pr oblems
+in detail, that is, depletion of the ozone layer and waste disposal.
+13.2.1 Ozone Layer and How it is Getting Depleted
+Ozone (O3) is a molecule formed by three atoms of oxygen. While O2,
+which we normally refer to as oxygen, is essential for all aerobic forms of
+life. Ozone, is a deadly poison. However , at the higher levels of the
+atmosphere, ozone performs an essential function. It shields the surface
+of the earth from ultraviolet (UV) radiation from the Sun. This radiationNewspaper reports about pesticide levels in ready-made food items
+are often seen these days and some states have banned these
+products. Debate in groups the need for such bans.
+What do you think would be the source of pesticides in these food
+items? Could pesticides get into our bodies from this source through
+other food products too?
+Discuss what methods could be applied to reduce our intake of
+pesticides.
+Reprint 2025-26
+Our Environment 213Activity 13.5Activity 13.5Activity 13.5Activity 13.5Activity 13.5Activity 13.4Activity 13.4Activity 13.4Activity 13.4Activity 13.4is highly damaging to organisms, for example, it is known to cause skin
+cancer in human beings.
+Ozone at the higher levels of the atmosphere is a product of UV
+radiation acting on oxygen (O2) molecule. The higher energy UV
+radiations split apart some moleculer oxygen (O2) into free oxygen (O)
+atoms. These atoms then combine with the molecular oxygen to form
+ozone as shown—OO + O2UV⎯→ ⎯⎯OO O23Ozone)+→(The amount of ozone in the atmosphere began to drop sharply in
+the 1980s. This decrease has been linked to synthetic chemicals like
+chlorofluorocarbons (CFCs) which are used as refrigerants and in fire
+extinguishers. In 1987, the United Nations Environment Programme
+(UNEP) succeeded in forging an agreement to freeze CFC production at
+1986 levels. It is now mandatory for all the manufacturing companies
+to make CFC-free refrigerators throughout the world.
+Collect waste material from your homes. This could include all
+the waste generated during a day, like kitchen waste (spoilt food,
+vegetable peels, used tea leaves, milk packets and empty cartons),
+waste paper , empty medicine bottles/strips/bubble packs, old and
+torn clothes and br oken footwear .
+Bury this material in a pit in the school garden or if there is no
+space available, you can collect the material in an old bucket/
+flower pot and cover with at least 15 cm of soil.
+Keep this material moist and observe at 15-day intervals.
+What are the materials that remain unchanged over long periods
+of time?
+What are the materials which change their form and structure
+over time?
+Of these materials that are changed, which ones change the fastest?Find out from the library, internet or newspaper reports, which
+chemicals ar e responsible for the depletion of the ozone layer .
+Find out if the regulations put in place to control the emission of
+these chemicals have succeeded in reducing the damage to the
+ozone layer . Has the size of the hole in the ozone layer changed in
+recent years?
+13.2.2 Managing the Garbage we Produce
+In our daily activities, we generate a lot of material that are thrown
+away. What are some of these waste materials? What happens after we
+throw them away? Let us perform an activity to find answers to these
+questions.
+Reprint 2025-26
+Science 214We have seen in the chapter on ‘Life Pr ocesses’ that the food we eat is
+digested by various enzymes in our body. Have you ever wondered why
+the same enzyme does not break-down everything we eat? Enzymes are
+specific in their action, specific enzymes are needed for the break-down
+of a particular substance. That is why we will not get any energy if we
+try to eat coal! Because of this, many human-made materials like plastics
+will not be broken down by the action of bacteria or other saprophytes.
+These materials will be acted upon by physical processes like heat and
+pressure, but under the ambient conditions found in our environment,
+these persist for a long time.
+Substances that are broken down by biological processes are said
+to be biodegradable. How many of the substances you buried were
+biodegradable? Substances that are not broken down in this manner
+are said to be non-biodegradable. These substances may be inert and
+simply persist in the environment for a long time or may harm the various
+members of the eco-system.
+Activity 13.6Activity 13.6Activity 13.6Activity 13.6Activity 13.6
+Use the library or internet to find out more about biodegradable
+and non-biodegradable substances.
+How long are various non-biodegradable substances expected to
+last in our environment?
+These days, new types of plastics which are said to be biodegradable
+are available. Find out more about such materials and whether
+they do or do not harm the environment.
+1. Why are some substances biodegradable and some non-biodegradable?
+2. Give any two ways in which biodegradable substances would affect the
+environment.
+3. Give any two ways in which non-biodegradable substances would affect
+the environment.QUESTIONS
+?
+Visit any town or city, and we are sure to find heaps of garbage all over
+the place. Visit any place of tourist interest and we are sure to find the
+place littered with empty food wrappers. In the earlier classes we have
+talked about this problem of dealing with the garbage that we generate. Let
+us now look at the problem a bit more deeply.
+Reprint 2025-26
+Our Environment 215Activity 13.7Activity 13.7Activity 13.7Activity 13.7Activity 13.7
+Find out what happens to the waste generated at home. Is there a
+system in place to collect this waste?
+Find out how the local body ( panchayat , municipal corporation,
+resident welfare association) deals with the waste. Are there
+mechanisms in place to treat the biodegradable and non-
+biodegradable wastes separately?
+Calculate how much waste is generated at home in a day.
+How much of this waste is biodegradable?
+Calculate how much waste is generated in the classroom
+in a day.
+How much of this waste is biodegradable?
+Suggest ways of dealing with this waste.
+Improvements in our life-style have resulted in greater amounts of
+waste material generation. Changes in attitude also have a role to play,
+with more and more things we use becoming disposable. Changes in
+packaging have resulted in much of our waste becoming non-
+biodegradable. What do you think will be the impact of these on our
+environment?Activity 13.8Activity 13.8Activity 13.8Activity 13.8Activity 13.8
+Find out how the sewage in your locality is treated. Are there
+mechanisms in place to ensure that local water bodies are not
+polluted by untreated sewage.
+Find out how the local industries in your locality treat their wastes.
+Are there mechanisms in place to ensure that the soil and water
+are not polluted by this waste?
+Disposable cups in trains
+If you ask your parents, they will probably remember a time when tea in trains was
+served in plastic glasses which had to be r eturned to the vendor . The intr oduction of
+disposable cups was hailed as a step forward for reasons of hygiene. No one at that time
+perhaps thought about the impact caused by the disposal of millions of these cups on a
+daily basis. Some time back, kulhads , that is, disposable cups made of clay, were
+suggested as an alternative. But a little thought showed that making these kulhads  on
+a large scale would r esult in the loss of the fertile top-soil. Now disposable paper -cups
+are being used. What do you think ar e the advantages of disposable paper -cups over
+disposable plastic cups?Think it over
+Reprint 2025-26
+Science 216Activity 13.9Activity 13.9Activity 13.9Activity 13.9Activity 13.9
+Search the internet or library to find out what hazardous materials
+have to be dealt with while disposing of electronic items. How would
+these materials affect the environment?
+Find out how plastics are recycled. Does the recycling process
+have any impact on the environment?
+QUESTIONS
+?1. What is ozone and how does it affect any ecosystem?
+2. How can you help in reducing the problem of waste disposal? Give
+any two methods.
+What y ou hav e learnt
+The various components of an ecosystem are interdependent.
+The producers make the energy from sunlight available to the rest of the ecosystem.
+There is a loss of energy as we go from one trophic level to the next, this limits the
+number of trophic levels in a food-chain.
+Human activities have an impact on the environment.
+The use of chemicals like CFCs has endanger ed the ozone layer . Since the ozone
+layer protects against the ultraviolet radiation from the Sun, this could damage
+the environment.
+The waste we generate may be biodegradable or non-biodegradable.
+The disposal of the waste we generate is causing serious environmental problems.
+EXERCISES
+1.Which of the following groups contain only biodegradable items?
+(a) Grass, flowers and leather
+(b) Grass, wood and plastic
+(c)Fruit-peels, cake and lime-juice
+(d) Cake, wood and grass
+2.Which of the following constitute a food-chain?
+(a) Grass, wheat and mango
+(b) Grass, goat and human
+Reprint 2025-26
+Our Environment 217(c)Goat, cow and elephant
+(d) Grass, fish and goat
+3.Which of the following are environment-friendly practices?
+(a) Carrying cloth-bags to put purchases in while shopping
+(b) Switching off unnecessary lights and fans
+(c) Walking to school instead of getting your mother to dr op you on her scooter
+(d) All of the above
+4.What will happen if we kill all the organisms in one trophic level?
+5.Will the impact of removing all the organisms in a trophic level be different for
+different trophic levels? Can the organisms of any trophic level be removed without
+causing any damage to the ecosystem?
+6.What is biological magnification? Will the levels of this magnification be different at
+different levels of the ecosystem?
+7.What are the problems caused by the non-biodegradable wastes that we generate?
+8.If all the waste we generate is biodegradable, will this have no impact on the
+environment?
+9.Why is damage to the ozone layer a cause for concern? What steps are being taken
+to limit this damage?
+Reprint 2025-26
+The Human Eye and
+the Colourful World10 CHAPTER
+You have studied in the pr evious chapter about r efraction of light by
+lenses. Y ou also studied the natur e, position and r elative size of
+images formed by lenses. How can these ideas help us in the study of
+the human eye? The human eye uses light and enables us to see objects
+around us. It has a lens in its structure.  What is the function of the lens
+in a human eye? How do the lenses used in spectacles correct defects of
+vision? Let us consider these questions in this chapter .
+We have lear nt in the pr evious chapter about light and some of its
+properties. In this chapter , we shall use these ideas to study some of the
+optical phenomena in natur e. We shall also discuss about rainbow
+formation, splitting of white light and blue colour of the sky.
+10.1 THE HUMAN EYE
+The human eye is one of the most valuable and sensitive sense organs.
+It enables us to see the wonderful world and the colours around us. On
+closing the eyes, we can identify objects to some extent by their smell,
+taste, sound they make or by touch. It is, however , impossible to identify
+colours while closing the eyes. Thus, of all the sense organs, the human
+eye is the most significant one as it enables us to see the beautiful,
+colourful world around us.
+The h uman eye is like a camera.  Its lens
+system forms an image on a light-sensitive
+screen called the retina. Light enters the eye
+through a thin membrane called the cornea.
+It forms the transparent bulge on the front
+surface of the eyeball as shown in Fig. 10.1.
+The eyeball is approximately spherical in shape
+with a diameter of about 2.3 cm. Most of the
+refraction for the light rays entering the eye
+occurs at the outer surface of the cornea. The
+crystalline lens merely provides the finer
+adjustment of focal length required to focus
+objects at dif ferent distances on the r etina. W e find a structur e called iris
+behind the cornea. Iris is a dark muscular diaphragm that controls the
+size of the pupil.  The pupil regulates and controls the amount of light
+Figure 10.1Figure 10.1Figure 10.1Figure 10.1Figure 10.1
+The human eye
+Reprint 2025-26
+Science 162entering the eye. The eye lens forms an inverted real image of the object
+on the retina. The retina is a delicate membrane having enormous
+number of light-sensitive cells.  The light-sensitive cells get activated
+upon illumination and generate electrical signals.  These signals are
+sent to the brain via the optic nerves.  The brain interprets these signals,
+and finally, processes the information so that we perceive objects as
+they are.
+10.1.1 Power of Accommodation
+The eye lens is composed of a fibrous, jelly-like material. Its curvature
+can be modified to some extent by the ciliary muscles. The change in the
+curvature of the eye lens can thus change its focal length. When the
+muscles are relaxed, the lens becomes thin. Thus, its focal length
+increases.  This enables us to see distant objects clearly. When you are
+looking at objects closer to the eye, the ciliary muscles contract. This
+increases the curvatur e of the eye lens. The eye lens then becomes thicker .
+Consequently, the focal length of the eye lens decreases.  This enables
+us to see nearby objects clearly.
+The ability of the eye lens to adjust its focal length is called
+accommodation.  However , the focal length of the eye lens cannot be
+decreased below a certain minimum limit.  T ry to r ead a printed page by
+holding it very close to your eyes. Y ou may see the image being blurr ed
+or feel strain in the eye. To see an object comfortably and distinctly, you
+must hold it at about 25 cm from the eyes.  The minimum distance, at
+which objects can be seen most distinctly without strain, is called the
+least distance of distinct vision. It is also called the near point of the eye.
+For a young adult with normal vision, the near point is about
+25 cm. The farthest point upto which the eye can see objects clearly is
+called the far point of the eye. It is infinity for a nor mal eye. Y ou may note
+here a normal eye can see objects clearly that are between 25 cm and
+infinity.
+Sometimes, the crystalline lens of people at old age becomes milky and
+cloudy. This condition is called cataract. This causes partial or complete
+loss of vision. It is possible to restore vision through a cataract surgery.
+10.2 DEFECTS OF VISION AND THEIR CORRECTION10.2 DEFECTS OF VISION AND THEIR CORRECTION10.2 DEFECTS OF VISION AND THEIR CORRECTION10.2 DEFECTS OF VISION AND THEIR CORRECTION10.2 DEFECTS OF VISION AND THEIR CORRECTION
+Sometimes, the eye may gradually lose its power of accommodation.
+In such conditions, the person cannot see the objects distinctly and
+comfortably. The vision becomes blurred due to the refractive defects
+of the eye.
+There are mainly three common refractive defects of vision. These
+are (i) myopia or near -sightedness, (ii) Hyper metr opia or far -
+sightedness, and (iii) Presbyopia.  These defects can be corrected by
+the use of suitable spherical lenses. W e discuss below these defects
+and their correction.
+Reprint 2025-26
+The Human Eye and the Colour ful W orld 163(a)Myopia
+Myopia is also known as near -
+sightedness. A person with myopia
+can see nearby objects clearly but
+cannot see distant objects distinctly.
+A person with this defect has the far
+point nearer than infinity. Such a
+person may see clearly upto a
+distance of a few metres. In a myopic
+eye, the image of a distant object is
+formed in front of the retina [Fig.
+10.2 (b)] and not at the retina itself.
+This defect may arise due to (i)
+excessive curvature of the eye lens,
+or (ii) elongation of the eyeball. This
+defect can be corrected by using a
+concave lens of suitable power . This
+is illustrated in Fig. 10.2 (c). A
+concave lens of suitable power will
+bring the image back on to the
+retina and thus the defect is corrected.
+(b)Hypermetropia
+Hyper metropia is also known as far -sightedness.
+A person with hypermetropia can see distant
+objects clearly but cannot see nearby objects
+distinctly. The near point, for the person, is farther
+away from the normal near point (25 cm). Such a
+person has to keep a reading material much
+beyond 25 cm from the eye for comfortable
+reading. This is because the light rays from a
+closeby object are focussed at a point behind the
+retina as shown in Fig. 10.3 (b). This defect arises
+either because (i) the focal length of the eye lens is
+too long, or (ii) the eyeball has become too small.
+This defect can be corrected by using a convex
+lens of appr opriate power . This is illustrated in
+Fig. 10.3 (c). Eye-glasses with converging lenses
+provide the additional focussing power required
+for forming the image on the retina.
+(c)   Presbyopia
+The power of accommodation of the eye usually
+decreases with ageing. For most people, the near
+point gradually recedes away. They find it difficult
+to see nearby objects comfortably and distinctly
+without corrective eye-glasses.  This defect is
+called Presbyopia.  It arises due to the gradualFigure 10.2Figure 10.2Figure 10.2Figure 10.2Figure 10.2
+(a), (b) The myopic eye, and (c) correction for myopia with a
+concave lens
+Figure 10.3Figure 10.3Figure 10.3Figure 10.3Figure 10.3
+(a), (b) The hypermetropic eye, and (c)
+correction for hypermetropia
+N = Near point of a
+      hypermetropic eye.
+N’ = Near point of a
+      normal eye.
+Reprint 2025-26
+Science 164Think it over
+You talk of wondr ous things you see,
+You say the sun shines bright;
+I feel him warm, but how can he
+Or make it day or night ?
+ – C. CIBBER
+Do you know that our eyes can live even after our death? By donating our eyes after we
+die, we can light the life of a blind person.
+About 35 million people in the developing world are blind and most of them can be
+cured. About 4.5 million people with corneal blindness can be cured through corneal
+transplantation of donated eyes. Out of these 4.5 million, 60% are children below the
+age of 12. So, if we have got the gift of vision, why not pass it on to somebody who does
+not have it? What do we have to keep in mind when eyes have to be donated?
+Eye donors can belong to any age group or sex. People who use spectacles, or those
+operated for cataract, can still donate the eyes. People who are diabetic, have
+hypertension, asthma patients and those without communicable diseases can also
+donate eyes.weakening of the ciliary muscles and diminishing flexibility of the
+eye lens.  Sometimes, a person may suffer from both myopia and
+hypermetropia.  Such people often require bi-focal lenses. A common
+type of bi-focal lenses consists of both concave and convex lenses.
+The upper portion consists of a concave lens. It facilitates distant
+vision. The lower part is a convex lens.  It facilitates near vision.
+  These days, it is possible to correct the refractive defects with
+contact lenses or through surgical interventions.
+QUESTIONS
+?1. What is meant by power of accommodation of the eye?
+2. A person with a myopic eye cannot see objects beyond 1.2 m distinctly.
+What should be the type of the corrective lens used to restore proper
+vision?
+3. What is the far point and near point of the human eye with normal
+vision?
+4. A student has difficulty reading the blackboard while sitting in the last
+row. What could be the defect the child is suffering from? How can it be
+corrected?
+Reprint 2025-26
+The Human Eye and the Colour ful W orld 16510.3 REFRACTION OF LIGHT THROUGH A PRISM10.3 REFRACTION OF LIGHT THROUGH A PRISM10.3 REFRACTION OF LIGHT THROUGH A PRISM10.3 REFRACTION OF LIGHT THROUGH A PRISM10.3 REFRACTION OF LIGHT THROUGH A PRISM
+You have lear nt how light gets r efracted thr ough a r ectangular glass
+slab. For parallel refracting surfaces, as in a glass slab, the emergent ray
+is parallel to the incident ray.  However , it is slightly displaced laterally.
+How would light get refracted through a transparent prism? Consider a
+triangular glass prism. It has two triangular bases and three rectangular
+lateral sur faces. These sur faces ar e inclined to each other . The angle
+between its two lateral faces is called the angle of the prism. Let us now
+do an activity to study the refraction of light through a triangular glass
+prism.Eyes must be removed within 4-6 hours after death. Inform the nearest eye bank
+immediately.
+The eye bank team will remove the eyes at the home of the deceased or at a hospital.
+Eye removal takes only 10-15 minutes. It is a simple process and does not lead to
+any disfigurement.
+Persons who were infected with or died because of AIDS, Hepatitis B or C, rabies,
+acute leukaemia, tetanus, cholera, meningitis or encephalitis cannot donate eyes.
+An eye bank collects, evaluates and distributes the donated eyes. All eyes donated are
+evaluated using strict medical standards. Those donated eyes found unsuitable for
+transplantation are used for valuable research and medical education. The identities
+of both the donor and the recipient remain confidential.
+One pair of eyes gives vision to up to FOUR CORNEAL BLIND PEOPLE.
+Activity 10.1Activity 10.1Activity 10.1Activity 10.1Activity 10.1
+Fix a sheet of white paper on a drawing board using drawing pins.
+Place a glass prism on it in such a way that it rests on its triangular
+base. Trace the outline of the prism using a pencil.
+Draw a straight line PE inclined to one of the refracting surfaces,
+say AB, of the prism.
+Fix two pins, say at points P and Q, on the line PE as shown in
+Fig. 10.4.
+Look for the images of the pins, fixed at P and Q, through the
+other face AC.
+Fix two more pins, at points R and S, such that the pins at R and
+S and the images of the pins at P and Q lie on the same straight
+line.
+Remove the pins and the glass prism.
+The line PE meets the boundary of the prism at point E
+(see Fig. 10.4). Similarly, join and produce the points R and S.  Let
+these lines meet the boundary of the prism at E and F , respectively.
+Join E and F .
+Draw perpendiculars to the refracting surfaces AB and AC of the
+prism at points E and F , respectively.
+Mark the angle of incidence ( ∠i), the angle of refraction ( ∠r) and
+the angle of emergence ( ∠e) as shown in Fig. 10.4.
+Reprint 2025-26
+Science 166Activity 10.2Activity 10.2Activity 10.2Activity 10.2Activity 10.2
+Take a thick sheet of cardboard and make a small hole or narrow
+slit in its middle.
+Allow sunlight to fall on the narrow slit. This gives a narrow beam
+of white light.
+Now, take a glass prism and allow the light from the slit to fall on
+one of its faces as shown in Fig. 10.5.
+Turn the prism slowly until the light that comes out of it appears
+on a nearby screen.
+What do you observe? Y ou will find a beautiful band of colours.
+Why does this happen?Here PE is the incident ray, EF is the refracted ray and FS is the
+emergent ray. Y ou may note that a ray of light is entering fr om air to
+glass at the first surface AB. The light ray on refraction has bent towards
+the normal. At the second surface AC, the light ray has entered from
+glass to air . Hence it has bent away fr om nor mal. Compar e the angle of
+incidence and the angle of refraction at each refracting surface of the
+prism. Is this similar to the kind of bending that occurs in a glass slab?
+The peculiar shape of the prism makes the emergent ray bend at an
+angle to the direction of the incident ray. This angle is called the angle of
+deviation. In this case ∠D is the angle of deviation. Mark the angle of
+deviation in the above activity and measure it.
+10.4 DISPERSION OF WHITE LIGHT BY A GL10.4 DISPERSION OF WHITE LIGHT BY A GL10.4 DISPERSION OF WHITE LIGHT BY A GL10.4 DISPERSION OF WHITE LIGHT BY A GL10.4 DISPERSION OF WHITE LIGHT BY A GL ASS PRISMASS PRISMASS PRISM ASS PRISMASS PRISM
+You must have seen and appr eciated the spectacular colours in a rainbow.
+How could the white light of the Sun give us various colours of the
+rainbow? Before we take up this question, we shall first go back to the
+refraction of light through a prism. The inclined refracting surfaces of a
+glass prism show exciting phenomenon.  Let us find it out through an
+activity.PE – Incident ray ∠i – Angle of incidence
+EF – Refracted ray ∠r – Angle of refraction
+FS – Emergent ray ∠e – Angle of emergence
+∠A – Angle of the prism ∠D – Angle of deviation
+Figure 10.4Figure 10.4Figure 10.4Figure 10.4Figure 10.4  Refraction of light through a triangular glass prism
+Reprint 2025-26
+The Human Eye and the Colour ful W orld 167The prism has probably split the incident
+white light into a band of colours.  Note the
+colours that appear at the two ends of the
+colour band. What is the sequence of colours
+that you see on the screen? The various
+colours seen are Violet, Indigo, Blue, Green,
+Yellow, Orange and Red, as shown in
+Fig. 10.5. The acronym VIBGYOR will help
+you to remember the sequence of colours.
+The band of the coloured components of a
+light beam is called its spectrum. Y ou might
+not be able to see all the colours separately.
+Yet something makes each colour distinct fr om the other . The splitting
+of light into its component colours is called dispersion.
+You have seen that white light is dispersed
+into its seven-colour components by a prism.
+Why do we get these colours? Different colours
+of light bend through different angles with
+respect to the incident ray, as they pass
+through a prism. The red light bends the least
+while the violet the most. Thus the rays of each
+colour emerge along different paths and thus
+become distinct. It is the band of distinct
+colours that we see in a spectrum.
+Isaac Newton was the first to use a glass prism to obtain
+the spectrum of sunlight. He tried to split the colours of
+the spectrum of white light further by using another similar
+prism. However , he could not get any mor e colours. He
+then placed a second identical prism in an inverted position
+with respect to the first prism, as shown in Fig. 10.6. This
+allowed all the colours of the spectrum to pass through
+the second prism. He found a beam of white light emerging
+from the other side of the second prism. This observation
+gave Newton the idea that the sunlight is made up of seven
+colours.
+Any light that gives a spectrum similar to that of
+sunlight is often referred to as white light.
+A rainbow is a natural spectrum appearing in the sky
+after a rain shower (Fig. 10.7). It is caused by dispersion
+of sunlight by tiny water droplets, present in the
+atmosphere. A rainbow is always formed in a direction
+opposite to that of the Sun. The water droplets act like
+small prisms. They refract and disperse the incident
+sunlight, then reflect it internally, and finally refract it
+again when it comes out of the raindrop (Fig. 10.8). Due
+to the dispersion of light and internal reflection, different
+colours reach the observer’s eye.
+You can also see a rainbow on a sunny day when
+you look at the sky through a waterfall or through a water
+fountain, with the Sun behind you.Figure 10.5 Figure 10.5 Figure 10.5 Figure 10.5 Figure 10.5 Dispersion of white light by the glass prism
+Figure 10.6 Figure 10.6 Figure 10.6 Figure 10.6 Figure 10.6 Recombination of the spectrum of
+white light
+Figure 10.7 Figure 10.7 Figure 10.7 Figure 10.7 Figure 10.7 Rainbow in the sky
+Figure 10.8 Figure 10.8 Figure 10.8 Figure 10.8 Figure 10.8 Rainbow formationSunlightRaindrop
+Reprint 2025-26
+Science 168Figure 10.10Figure 10.10Figure 10.10Figure 10.10Figure 10.10
+Atmospheric refraction
+effects at sunrise and
+sunset10.5     ATMOSPHERIC REFRACTION
+You might have observed the appar ent random wavering or
+flickering of objects seen through a turbulent stream of hot air
+rising above a fir e or a radiator . The air just above the fir e becomes
+hotter than the air further up. The hotter air is lighter (less dense)
+than the cooler air above it, and has a refractive index slightly
+less than that of the cooler air . Since the physical conditions of
+the refracting medium (air) are not stationary, the apparent
+position of the object, as seen thr ough the hot air , fluctuates.
+This wavering is thus an effect of atmospheric refraction (refraction
+of light by the earth’s atmosphere) on a small scale in our local
+environment. The twinkling of stars is a similar phenomenon on
+a much larger scale. Let us see how we can explain it.
+Twinkling of stars
+The twinkling of a star is due to atmospheric refraction of starlight. The
+starlight, on entering the earth’s atmosphere, undergoes refraction
+continuously before it reaches the earth. The atmospheric refraction
+occurs in a medium of gradually changing refractive index. Since the
+atmosphere bends starlight towards the normal, the apparent position
+of the star is slightly different from its actual position. The star appears
+slightly higher (above) than its actual position when viewed near the
+horizon (Fig. 10.9). Further , this appar ent position of the star is not
+stationary, but keeps on changing slightly, since the physical conditions
+of the earth’s atmosphere are not stationary, as was the case in the
+previous paragraph. Since the stars are very distant, they approximate
+point-sized sources of light. As the path of rays of light coming from
+the star goes on varying slightly, the apparent position of the star
+fluctuates and the amount of starlight entering the eye flickers – the
+star sometimes appears brighter , and at some other time, fainter , which
+is the twinkling effect.
+Why don’t the planets twinkle? The p lanets are much
+closer to the earth, and are thus seen as extended sources.
+If we consider a planet as a collection of a large number
+of point-sized sources of light, the total variation in the
+amount of light entering our eye from all the individual
+point-sized sources will average out to zero, thereby
+nullifying the twinkling effect.
+Advance sunrise and delayed sunset
+The Sun is visible to us about 2 minutes before the actual
+sunrise, and about 2 minutes after the actual sunset
+because of atmospheric refraction. By actual sunrise, we
+mean the actual crossing of the horizon by the Sun. Fig.
+10.10 shows the actual and apparent positions of the
+Sun with respect to the horizon. The time difference
+between actual sunset and the apparent sunset is about
+2 minutes. The apparent flattening of the Sun’s disc at
+sunrise and sunset is also due to the same phenomenon .Figure 10.9Figure 10.9Figure 10.9Figure 10.9Figure 10.9
+Apparent star position
+due to atmospheric
+refraction
+Reprint 2025-26
+The Human Eye and the Colour ful W orld 16910.6  SC ATTERING OF LIGHT
+The interplay of light with objects around us gives rise to several
+spectacular phenomena in nature. The blue colour of the sky, colour of
+water in deep sea, the reddening of the sun at sunrise and the sunset
+are some of the wonderful phenomena we are familiar with. In the previous
+class, you have learnt about the scattering of light by colloidal particles.
+The path of a beam of light passing through a true solution is not visible.
+However , its path becomes visible thr ough a colloidal solution wher e the
+size of the particles is r elatively lar ger.
+10.6.1 T yndall Effect
+The earth’s atmosphere is a heterogeneous mixture of minute particles.
+These particles include smoke, tiny water droplets, suspended particles
+of dust and molecules of air . When a beam of light strikes such fine
+particles, the path of the beam becomes visible. The light reaches us,
+after being reflected diffusely by these particles. The phenomenon of
+scattering of light by the colloidal particles gives rise to Tyndall effect
+which you have studied in Class IX. This phenomenon is seen when a
+fine beam of sunlight enters a smoke-filled room through a small hole.
+Thus, scattering of light makes the particles visible. Tyndall effect can
+also be observed when sunlight passes through a canopy of a dense
+forest.  Here, tiny water droplets in the mist scatter light.
+The colour of the scattered light depends on the size of the scattering
+particles. V ery fine particles scatter mainly blue light while particles of
+larger size scatter light of longer wavelengths.  If the size of the scattering
+particles is large enough, then, the scattered light may even appear
+white.
+10.6.2 Why is the colour of the clear Sky Blue?
+The molecules of air and other fine particles in the atmosphere have size
+smaller than the wavelength of visible light. These are more effective in
+scattering light of shorter wavelengths at the blue end than light of longer
+wavelengths at the red end. The red light has a wavelength about 1.8
+times greater than blue light. Thus, when sunlight passes through the
+atmosphere, the fine particles in air scatter the blue colour (shorter
+wavelengths) more strongly than red. The scattered blue light enters
+our eyes. If the earth had no atmosphere, there would not have been
+any scattering. Then, the sky would have looked dark.  The sky appears
+dark to passengers flying at very high altitudes, as scattering is not
+prominent at such heights.
+You might have observed that ‘danger’ signal lights ar e red in colour .
+Do you know why? The red is least scattered by fog or smoke.  Therefore,
+it can be seen in the same colour at a distance.
+Reprint 2025-26
+Science 170What y ou hav e learnt
+The ability of the eye to focus on both near and distant objects, by adjusting its
+focal length, is called the accommodation of the eye.
+The smallest distance, at which the eye can see objects clearly without strain, is
+called the near point of the eye or the least distance of distinct vision.  For a young
+adult with normal vision, it is about 25 cm.
+The common refractive defects of vision include myopia, hypermetropia and
+presbyopia. Myopia (short-sightedness – the image of distant objects is focussed
+befor e the r etina) is corr ected by using a concave lens of suitable power .
+Hyper metropia (far -sightedness – the image of nearby objects is focussed beyond
+the retina) is corr ected by using a convex lens of suitable power . The eye loses its
+power of accommodation at old age.
+The splitting of white light into its component colours is called dispersion.
+Scattering of light causes the blue colour of sky.
+EXERCISES
+1.The human eye can focus on objects at different distances by adjusting the focal
+length of the eye lens. This is due to
+ (a) presbyopia. (b) accommodation.
+(c) near-sightedness. (d) far-sightedness.
+2.The human eye forms the image of an object at  its
+ (a)cornea. (b)  iris. (c)  pupil. (d)  retina.
+3.The least distance of distinct vision for a young adult with normal vision is about
+ (a)25 m. (b)  2.5 cm. (c)  25 cm. (d)  2.5 m.
+4.The change in focal length of an eye lens is caused by the action of the
+ (a)pupil. (b)  retina. (c)ciliary muscles. (d)  iris.
+5.A person needs a lens of power –5.5 dioptres for correcting his distant vision. For
+correcting his near vision he needs a lens of power +1.5 dioptre. What is the focal
+length of the lens required for correcting (i) distant vision, and (ii) near vision?
+6.The far point of a myopic person is 80 cm in front of the eye. What is the nature and
+power of the lens required to correct the problem?
+7.Make a diagram to show how hypermetropia is corrected. The near point of a
+hypermetropic eye is 1 m. What is the power of the lens required to correct this
+defect? Assume that the near point of the normal eye is 25 cm.
+8.Why is a normal eye not able to see clearly the objects placed closer than 25 cm?
+9.What happens to the image distance in the eye when we increase the distance of an
+object from the eye?
+10.Why do stars twinkle?
+11.Explain why the planets do not twinkle.
+12.Why does the sky appear dark instead of blue to an astronaut?
+Reprint 2025-26
+Science 128
+Figure 8.1Figure 8.1Figure 8.1Figure 8.1Figure 8.1
+Creation of diversity over succeeding
+generations. The original organism at the top
+will give rise to, say, two individuals, similar
+in body design, but with subtle differences.
+Each of them, in turn, will give rise to two
+individuals in the next generation. Each of
+the four individuals in the bottom row will
+be dif ferent fr om each other . While some of
+these differences will be unique, others will
+be inherited from their respective parents,
+who wer e different fr om each other .Heredity8 CHAPTER
+We have seen that r eproductive pr ocesses give rise to new individuals
+that ar e similar , but subtly dif ferent. W e have discussed how some
+amount of variation is produced even during asexual reproduction. And
+the number of successful variations are maximised by the process of
+sexual reproduction. If we observe a field of sugarcane we find very little
+variations among the individual plants. But in a number of animals
+including human beings, which reproduce sexually, quite distinct
+variations ar e visible among dif ferent individuals. In this chapter , we
+shall be studying the mechanism by which variations are created and
+inherited.
+8.18.18.1 8.18.1AAAAACCUMUL CCUMULCCUMULCCUMULCCUMUL AAAAATION OF VTION OF VTION OF VTION OF VTION OF V ARIA ARIAARIA ARIAARIA TION TIONTION TIONTION
+DURING REPRODUCTIONDURING REPRODUCTIONDURING REPRODUCTIONDURING REPRODUCTIONDURING REPRODUCTION
+Inheritance from the previous generation provides
+both a common basic body design, and subtle
+changes in it, for the next generation. Now think
+about what would happen when this new generation,
+in its turn, reproduces. The second generation will
+have differences that they inherit from the first
+generation, as well as newly created differences
+(Fig. 8.1).
+Figure 8.1 would represent the situation if a
+single individual reproduces, as happens in asexual
+reproduction. If one bacterium divides, and then the
+resultant two bacteria divide again, the four
+individual bacteria generated would be very similar .
+There would be only very minor differences between
+them, generated due to small inaccuracies in DNA
+copying. However , if sexual r eproduction is involved,
+even greater diversity will be generated, as we will
+see when we discuss the rules of inheritance.
+Do all these variations in a species have equal
+chances of surviving in the environment in which they
+find themselves? Obviously not. Depending on the
+nature of variations, different individuals would have
+Reprint 2025-26
+Heredity 1298.2 HEREDITY8.2 HEREDITY8.2 HEREDITY8.2 HEREDITY8.2 HEREDITY
+The most obvious outcome of the reproductive process still remains the
+generation of individuals of similar design. The rules of heredity determine
+the process by which traits and characteristics are reliably inherited. Let
+us take a closer look at these rules.
+8.2.1 Inherited T raits
+What exactly do we mean by similarities and dif ferences? W e know that
+a child bears all the basic featur es of a human being. However , it does
+not look exactly like its parents, and human populations show a great
+deal of variation.QUESTIONS
+?1. If a trait A exists in 10% of a population of an asexually reproducing
+species and a trait B exists in 60% of the same population, which trait
+is likely to have arisen earlier?
+2. How does the creation of variations in a species promote survival?
+Activity 8.1Activity 8.1Activity 8.1Activity 8.1Activity 8.1
+Observe the ears of all the students in the class. Prepare a list of
+students having free or attached earlobes and calculate the
+percentage of students having each (Fig. 8.2). Find out about the
+earlobes of the parents of each student in the class. Correlate the
+earlobe type of each student with that of their parents. Based on
+this evidence, suggest a possible rule for the inheritance of earlobe
+types.
+8.2.2 Rules for the Inheritance of T raits –––––
+Mendel’s Contributions
+The rules for inheritance of such traits in human beings are related to
+the fact that both the father and the mother contribute practically equal
+amounts of genetic material to the child. This means that each trait can
+be influenced by both paternal and maternal DNA. Thus, for each trait
+there will be two versions in each child. What will, then, the trait seen in
+the child be? Mendel (see box) worked out the main rules of such
+inheritance, and it is interesting to look at some of his experiments from
+more than a century ago.Figure 8.2Figure 8.2Figure 8.2Figure 8.2Figure 8.2
+(a) Free and (b) attached
+earlobes. The lowest part
+of the ear , called the
+earlobe, is closely attached
+to the side of the head in
+some of us, and not
+in others. Free and
+attached earlobes are two
+variants found in human
+populations.different kinds of advantages. Bacteria that can withstand heat will survive
+better in a heat wave, as we have discussed earlier . Selection of variants
+by environmental factors forms the basis for evolutionary processes, as
+we will discuss in later sections.
+(a)
+(b)
+Reprint 2025-26
+Science 130Mendel used a number of contrasting visible characters of garden
+peas – round/wrinkled seeds, tall/short plants, white/violet flowers and
+so on.  He took pea plants with different characteristics – a tall plant and
+a short plant, produced progeny by crossing them, and calculated the
+percentages of tall or short progeny.
+In the first place, there were no halfway characteristics in this first-
+generation, or F1 progeny – no ‘medium-height’ plants. All plants were
+tall. This meant that only one of the parental traits
+was seen, not some mixture of the two. So the next
+question was, were the tall plants in the F1
+generation exactly the same as the tall plants of the
+parent generation? Mendelian experiments test this
+by getting both the parental plants and these F1 tall
+plants to reproduce by self-pollination. The progeny
+of the par ental plants ar e, of course, all tall. However ,
+the second-generation, or F2, progeny of the F1 tall
+plants are not all tall. Instead, one quarter of them
+are short. This indicates that both the tallness and
+shortness traits were inherited in the F1 plants, but
+only the tallness trait was expressed. This led Mendel
+to propose that two copies of factor (now called genes)
+controlling traits are present in sexually reproducing
+organism. These two may be identical, or may be
+different, depending on the parentage. A pattern of
+inheritance can be worked out with this assumption,
+as shown in Fig. 8.3.Gregor Johann Mendel (1822–1884)
+Mendel was educated in a monastery and went on to study science and
+mathematics at the University of Vienna. Failure in the examinations for a
+teaching certificate did not suppress his zeal for scientific quest. He went
+back to his monastery and started growing peas. Many others had studied
+the inheritance of traits in peas and other or ganisms earlier , but Mendel
+blended his knowledge of science and mathematics and was the first one
+to keep count of individuals exhibiting a particular trait in each generation.
+This helped him to arrive at the laws of inheritance.
+Figure 8.3Figure 8.3Figure 8.3Figure 8.3Figure 8.3
+Inheritance of traits
+over two generations Activity 8.2Activity 8.2Activity 8.2Activity 8.2Activity 8.2
+In Fig. 8.3, what experiment would we do to confirm that the F2
+generation did in fact have a 1:2:1 ratio of TT, Tt and tt trait
+combinations?
+In this explanation, both TT and Tt are tall plants, while only tt is a
+short plant. In other words, a single copy of ‘T’ is enough to make the
+plant tall, while both copies have to be ‘t’ for the plant to be short. T raits
+like ‘T’ are called dominant traits, while those that behave like ‘t’ are
+called r ecessive traits. W ork out which trait would be consider ed
+dominant and which one recessive in Fig. 8.4.
+Reprint 2025-26
+Heredity 131
+xRR yy(round, green)rr YY(wrinkled, yellow)
+Ry
+rY
+Rr Yy(round, yellow)F1x
+Rr YyF1Rr YyF1
+315 round, yellow108 round, green101 wrinkled, yellow32 wrinkled, green
+9331556 seeds16Figure 9.5 Independent inheritance of twoseparate traits, shape and colour of seeds
+RYRyrYry
+RYRyrYryRRYY RRYy RrYY RrYyRRYy RRyy RrYy RryyRrYY RrYy rrYY rrYyRrYy Rryy rrYy rryyF2
+Figure 8.5Figure 8.5Figure 8.5Figure 8.5Figure 8.5
+Independent inheritance
+of two separate traits,
+shape and colour of seedsWhat happens when pea plants showing two different
+characteristics, rather than just one, are bred with each other?
+What do the progeny of a tall plant with round seeds and a short
+plant with wrinkled-seeds look like? They are all tall and have
+round seeds. Tallness and round seeds are thus dominant traits.
+But what happens when these F1 progeny are used to generate
+F2 progeny by self-pollination? A Mendelian experiment will find
+that some F2 progeny are tall plants with round seeds, and some
+were short plants with wrinkled seeds.  However , ther e would also
+be some F2 progeny that showed new combinations. Some of them
+would be tall, but have wrinkled seeds, while others would be short,
+but have r ound seeds. Y ou can see as to how new combinations of
+traits are formed in F2 offspring when factors controlling for seed
+shape and seed colour recombine to form zygote leading to form
+F2 offspring (Fig. 8.5). Thus, the tall/short trait and the round
+seed/wrinkled seed trait are independently inherited.
+8.2.3 How do these T raits get Expressed?
+How does the mechanism of heredity work? Cellular DNA is
+the information source for making proteins in the cell. A section
+of DNA that provides information for one protein is called the
+gene for that protein. How do proteins control the
+characteristics that we are discussing here? Let us take the
+example of tallness as a characteristic. W e know that plants
+have hormones that can trigger growth. Plant height can thus
+depend on the amount of a particular plant hormone. The
+amount of the plant hormone made will depend on the
+efficiency of the process for making it. Consider now an enzyme
+that is important for this process. If this enzyme works
+efficiently, a lot of hormone will be made, and the plant will be
+tall. If the gene for that enzyme has an alteration that makes
+the enzyme less efficient, the amount of hormone will be less,
+and the plant will be short. Thus, genes control characteristics,
+or traits.
+If the interpretations of Mendelian experiments we have been
+discussing are correct, then both parents must be contributing
+equally to the DNA of the progeny during sexual reproduction.
+We have disscussed this issue in the pr evious Chapter . If both
+parents can help determine the trait in the progeny, both parents
+must be contributing a copy of the same gene. This means that
+each pea plant must have two sets of all genes, one inherited from
+each parent. For this mechanism to work, each germ cell must
+have only one gene set.
+How do germ-cells make a single set of genes from the normal two
+copies that all other cells in the body have? If progeny plants inherited a
+single whole gene set from each parent, then the experiment explained
+in Fig. 8.5 cannot work. This is because the two characteristics ‘R’ and
+‘y’ would then be linked to each other and cannot be independentlyFigure 8.4Figure 8.4Figure 8.4Figure 8.4Figure 8.4
+Reprint 2025-26
+Science 132inherited. This is explained by the fact that each gene set is present, not
+as a single long thread of DNA, but as separate independent pieces,
+each called a chromosome. Thus, each cell will have two copies of each
+chromosome, one each from the male and female parents. Every germ-
+cell will take one chromosome from each pair and these may be of either
+maternal or paternal origin. When two germ cells combine, they will
+restore the normal number of chromosomes in the progeny, ensuring
+the stability of the DNA of the species. Such a mechanism of inheritance
+explains the results of the Mendel experiments, and is used by all
+sexually reproducing organisms. But asexually reproducing organisms
+also follow similar rules of inheritance. Can we work out how their
+inheritance might work?
+8.2.4 Se x Deter mination
+We have discussed the idea that the two sexes participating in sexual
+reproduction must be somewhat different from each other for a number
+of reasons. How is the sex of a newborn individual
+determined? Different species use very different strategies
+for this. Some rely entirely on environmental cues. Thus,
+in some animals like a few reptiles, the temperature at
+which fertilised eggs are kept determines whether the
+animals developing in the eggs will be male or female. In
+other animals, such as snails, individuals can change sex,
+indicating that sex is not genetically deter mined. However ,
+in human beings, the sex of the individual is largely
+genetically determined. In other words, the genes inherited
+from our parents decide whether we will be boys or girls.
+But so far , we have assumed that similar gene sets ar e
+inherited from both parents. If that is the case, how can
+genetic inheritance determine sex?
+The explanation lies in the fact that all human
+chromosomes are not paired. Most human chromosomes
+have a maternal and a paternal copy, and we have 22
+such pairs. But one pair , called the sex chr omosomes, is
+odd in not always being a per fect pair . Women have a
+perfect pair of sex chromosomes, both called X. But men
+have a mismatched pair in which one is a normal-sized X
+while the other is a short one called Y . So women ar e XX,
+while men ar e XY. Now, can we work out what the
+inheritance pattern of X and Y will be?
+As Fig. 8.6 shows, half the children will be boys and
+half will be girls. All children will inherit an X chromosome
+from their mother regardless of whether they are boys or
+girls. Thus, the sex of the children will be determined by
+what they inherit fr om their father . A child who inherits
+an X chromosome from her father will be a girl, and one
+who inherits a Y chromosome from him will be a boy.Figure 8.6Figure 8.6Figure 8.6Figure 8.6Figure 8.6
+Sex determination in
+human beings
+Reprint 2025-26
+Heredity 133QUESTIONS
+?1. How do Mendel’s experiments show that traits may be dominant or
+recessive?
+2. How do Mendel’s experiments show that traits are inherited
+independently?
+3. A man with blood group A marries a woman with blood group O and
+their daughter has blood group O. Is this information enough to tell you
+which of the traits – blood group A or O – is dominant? Why or why not?
+4. How is the sex of the child determined in human beings?
+What y ou hav e learnt
+Variations arising during the pr ocess of r eproduction can be inherited.
+These variations may lead to increased survival of the individuals.
+Sexually reproducing individuals have two copies of genes for the same trait. If the
+copies are not identical, the trait that gets expressed is called the dominant trait
+and the other is called the recessive trait.
+Traits in one individual may be inherited separately, giving rise to new combinations
+of traits in the offspring of sexual reproduction.
+Sex is determined by different factors in various species. In human beings, the
+sex of the child depends on whether the paternal chromosome is X (for girls) or Y
+(for boys).
+EXERCISES
+1.A Mendelian experiment consisted of breeding tall pea plants bearing violet flowers
+with short pea plants bearing white flowers. The progeny all bore violet flowers,
+but almost half of them were short. This suggests that the genetic make-up of the
+tall parent can be depicted as
+(a) TTWW
+(b) TTww
+(c) TtWW
+(d) TtWw
+2.A study found that children with light-coloured eyes are likely to have parents
+with light-coloured eyes. On this basis, can we say anything about whether the
+light eye colour trait is dominant or recessive? Why or why not?
+3.Outline a project which aims to find the dominant coat colour in dogs.
+4.How is the equal genetic contribution of male and female parents ensured in
+the progeny?
+Reprint 2025-26
+How do Organisms
+Reproduce ?7 CHAPTER
+Before we discuss the mechanisms by which organisms reproduce,
+let us ask a more basic question – why do organisms reproduce?
+After all, reproduction is not necessary to maintain the life of an individual
+organism, unlike the essential life processes such as nutrition,
+respiration, or excretion. On the other hand, if an individual organism is
+going to create more individuals, a lot of its energy will be spent in the
+process. So why should an individual organism waste energy on a process
+it does not need to stay alive? It would be interesting to discuss the
+possible answers in the classroom!
+Whatever the answer to this question, it is obvious that we notice
+organisms because they reproduce. If there were to be only one, non-
+reproducing member of a particular kind, it is doubtful that we would
+have noticed its existence. It is the large numbers of organisms belonging
+to a single species that bring them to our notice. How do we know that
+two different individual organisms belong to the same species? Usually,
+we say this because they look similar to each other . Thus, r eproducing
+organisms create new individuals that look very much like themselves.
+7.1 DO ORG7.1 DO ORG7.1 DO ORG7.1 DO ORG7.1 DO ORG ANISMS CREAANISMS CREAANISMS CREAANISMS CREAANISMS CREA TE EXATE EXATE EXATE EXATE EXA CT COPIES OFCT COPIES OFCT COPIES OFCT COPIES OFCT COPIES OF
+THEMSELTHEMSELTHEMSEL THEMSELTHEMSEL VES? VES?VES? VES?VES?
+Organisms look similar because their body designs ar e similar . If body
+designs ar e to be similar , the blueprints for these designs should be
+similar . Thus, r eproduction at its most basic level will involve making
+copies of the blueprints of body design. In Class IX, we learnt that the
+chromosomes in the nucleus of a cell contain information for inheritance
+of features from parents to next generation in the form of DNA (Deoxyribo
+Nucleic Acid) molecules. The DNA in the cell nucleus is the information
+source for making proteins. If the information is changed, different
+proteins will be made. Different proteins will eventually lead to altered
+body designs.
+Therefore, a basic event in reproduction is the creation of a DNA
+copy. Cells use chemical reactions to build copies of their DNA. This
+creates two copies of the DNA in a reproducing cell, and they will need to
+be separated fr om each other . However , keeping one copy of DNA in the
+original cell and simply pushing the other one out would not work,
+Reprint 2025-26
+Science 114?because the copy pushed out would not have any organised cellular
+structure for maintaining life processes. Therefore, DNA copying is
+accompanied by the creation of an additional cellular apparatus, and
+then the DNA copies separate, each with its own cellular apparatus.
+Effectively, a cell divides to give rise to two cells.
+These two cells ar e of course similar , but ar e they likely to be
+absolutely identical? The answer to this question will depend on how
+accurately the copying r eactions involved occur . No bio-chemical r eaction
+is absolutely reliable. Therefore, it is only to be expected that the process
+of copying the DNA will have some variations each time. As a result, the
+DNA copies generated will be similar , but may not be identical to the
+original. Some of these variations might be so drastic that the new DNA
+copy cannot work with the cellular apparatus it inherits. Such a newborn
+cell will simply die. On the other hand, there could still be many other
+variations in the DNA copies that would not lead to such a drastic
+outcome. Thus, the surviving cells are similar to, but subtly different
+from each other . This inbuilt tendency for variation during r eproduction
+is the basis for evolution, as we will discuss in the next chapter .
+7.1.1 The Impor tance of V ariation
+Populations of organisms fill well-defined places, or niches, in the
+ecosystem, using their ability to reproduce. The consistency of DNA
+copying during reproduction is important for the maintenance of body
+design features that allow the organism to use that particular niche.
+Reproduction is therefore linked to the stability of populations of species.
+However , niches can change because of r easons beyond the contr ol
+of the organisms. Temperatures on earth can go up or down, water levels
+can vary, or there could be meteorite hits, to think of a few examples. If
+a population of reproducing organisms were suited to a particular niche
+and if the niche were drastically altered, the population could be wiped
+out. However , if some variations wer e to be pr esent in a few individuals
+in these populations, there would be some chance for them to survive.
+Thus, if there were a population of bacteria living in temperate waters,
+and if the water temperature were to be increased by global warming,
+most of these bacteria would die, but the few variants resistant to heat
+would survive and gr ow further . Variation is thus useful for the survival
+of species over time.
+QUESTIONS
+1. What is the importance of DNA copying in reproduction?
+2. Why is variation beneficial to the species but not necessarily
+for the individual?
+Reprint 2025-26
+How do Organisms Reproduce? 115
+Figure 7.1(a)Figure 7.1(a)Figure 7.1(a)Figure 7.1(a)Figure 7.1(a)  B i n a r y  f i s s i o n  i n  A m o e b aActivity 7.2Activity 7.2Activity 7.2Activity 7.2Activity 7.27.2 MODES OF REPRODUCTION USED BY SINGLE7.2 MODES OF REPRODUCTION USED BY SINGLE7.2 MODES OF REPRODUCTION USED BY SINGLE7.2 MODES OF REPRODUCTION USED BY SINGLE7.2 MODES OF REPRODUCTION USED BY SINGLE
+ORGANISMSORGANISMSORGANISMSORGANISMSORGANISMS
+Activity 7.1Activity 7.1Activity 7.1Activity 7.1Activity 7.1
+Dissolve about 10 gm of sugar in 100 mL of water .
+Take 20 mL of this solution in a test tube and add a pinch of yeast
+granules to it.
+Put a cotton plug on the mouth of the test tube and keep it in a
+warm place.
+After 1 or 2 hours, put a small drop of yeast culture from the test
+tube on a slide and cover it with a coverslip.
+Observe the slide under a microscope.
+Wet a slice of br ead, and keep it in a cool, moist and dark place.
+Observe the surface of the slice with a magnifying glass.
+Record your observations for a week.
+Compare and contrast the ways in which yeast grows in the first
+case, and how mould grows in the second.
+Having discussed the context in which reproductive processes work,
+let us now examine how different organisms actually reproduce. The
+modes by which various organisms reproduce depend on the body
+design of the organisms.
+7.2.1 Fission
+For unicellular organisms, cell division, or fission, leads to the creation
+of new individuals. Many different patterns of fission have been observed.
+Many bacteria and protozoa simply split into two equal halves during
+cell division. In organisms such as Amoeba , the splitting of the two cells
+during division can take place in any plane.
+Activity 7.3Activity 7.3Activity 7.3Activity 7.3Activity 7.3
+Observe a permanent slide of
+Amoeba  under a microscope.
+Similarly observe another
+permanent slide of Amoeba
+showing binary fission.
+Now, compare the observations of
+both the slides.
+However , some unicellular or ganisms
+show somewhat more organisation of their
+bodies, such as is seen in Leishmania  (which
+cause kala-azar ), which have a whip-like
+structure at one end of the cell. In such
+organisms, binary fission occurs in a definite orientation in relation to
+Figure 7.1(b)Figure 7.1(b)Figure 7.1(b)Figure 7.1(b)Figure 7.1(b)  B i n a r y  f i s s i o n  i n  L e i s h m a n i a  (a)         (b)          (c)          (d)            (e)                        (f)
+Reprint 2025-26
+Science 116these structures. Other single-celled organisms, such as the malarial
+parasite, Plasmodium , divide into many daughter cells simultaneously
+by multiple fission.
+Yeast, on the other hand, can put out small buds that separate and
+grow further , as we saw in Activity 7.1.
+7.2.2 FragmentationFigure 7.2Figure 7.2Figure 7.2Figure 7.2Figure 7.2
+Multiple fission in
+Plasmodium Activity 7.4Activity 7.4Activity 7.4Activity 7.4Activity 7.4
+Collect water from a lake or pond that appears dark green and
+contains filamentous structures.
+Put one or two filaments on a slide.
+Put a drop of glycerine on these filaments and cover it with a coverslip.
+Observe the slide under a microscope.
+Can you identify different tissues in the Spirogyra  filaments?
+In multi-cellular organisms with relatively simple body organisation,
+simple reproductive methods can still work. Spirogyra , for example,
+simply breaks up into smaller pieces upon maturation. These pieces or
+fragments grow into new individuals. Can we work out the reason for
+this, based on what we saw in Activity 7.4?
+This is not true for all multi-cellular organisms. They cannot simply
+divide cell-by-cell. The reason is that many multi-cellular organisms, as
+we have seen, are not simply a random collection of cells. Specialised
+cells are organised as tissues, and tissues are organised into organs,
+which then have to be placed at definite positions in the body. In such a
+carefully organised situation, cell-by-cell division would be impractical.
+Multi-cellular organisms, therefore, need to use more complex ways of
+reproduction.
+A basic strategy used in multi-cellular organisms is that different
+cell types perform different specialised functions. Following this general
+pattern, reproduction in such organisms is also the function of a specific
+cell type. How is reproduction to be achieved from a single cell type, if
+the organism itself consists of many cell types? The answer is that there
+must be a single cell type in the organism that is capable of growing,
+proliferating and making other cell types under the right circumstances.
+7.2.3 Regeneration
+Many fully differentiated organisms have the ability to give rise to new
+individual organisms from their body parts. That is, if the individual is
+somehow cut or broken up into many pieces, many of these pieces grow
+into separate individuals. For example, simple animals like Hydra  and
+Planaria  can be cut into any number of pieces and each piece grows
+into a complete organism. This is known as regeneration (see Fig. 7.3).
+Regeneration is carried out by specialised cells. These cells proliferate
+and make large numbers of cells. From this mass of cells, different cells
+undergo changes to become various cell types and tissues. These changes
+Reprint 2025-26
+How do Organisms Reproduce? 117
+Figure 7.3 Figure 7.3 Figure 7.3 Figure 7.3 Figure 7.3 Regeneration in Planariatake place in an organised
+sequence referred to as
+development. However ,
+regeneration is not the same
+as reproduction, since most
+organisms would not
+normally depend on being cut
+up to be able to reproduce.
+7.2.4 Budding
+Organisms such as Hydra
+use regenerative cells for
+reproduction in the process of
+budding. In Hydra , a bud
+develops as an outgrowth due
+to repeated cell division at one
+specific site (Fig. 7.4). These buds develop into tiny individuals and when
+fully mature, detach from the parent body and become new independent
+individuals.
+Figure 7.4Figure 7.4Figure 7.4Figure 7.4Figure 7.4  Budding in Hydra
+7.2.5 V egetative Propagation
+There are many plants in which parts like the root, stem and leaves
+develop into new plants under appropriate conditions. Unlike in most
+animals, plants can indeed use such a mode for reproduction. This
+property of vegetative propagation is used in methods such as layering
+or grafting to grow many plants like sugarcane, roses, or grapes for
+agricultural purposes. Plants raised by vegetative propagation can bear
+flowers and fruits earlier than those produced from seeds. Such methods
+also make possible the propagation of plants such as banana, orange,
+rose and jasmine that have lost the capacity to produce seeds. Another
+advantage of vegetative propagation is that all plants produced are
+genetically similar enough to the parent plant to have all its
+characteristics.
+Reprint 2025-26
+Science 118Similarly buds produced in the notches along the leaf
+margin of Bryophyllum  fall on the soil and develop into
+new plants (Fig. 7.5).
+Activity 7.6Activity 7.6Activity 7.6Activity 7.6Activity 7.6
+Select a money-plant.
+Cut some pieces such that they contain at least
+one leaf.
+Cut out some other portions between two leaves.
+Dip one end of all the pieces in water and observe
+over the next few days.
+Which ones grow and give rise to fresh leaves?
+What can you conclude from your observations?
+Tissue cultur e
+In tissue culture, new plants are grown by removing tissue or separating cells from
+the growing tip of a plant. The cells are then placed in an artificial medium where they
+divide rapidly to form a small group of cells or callus. The callus is transferred to
+another medium containing hormones for growth and differentiation. The plantlets
+are then placed in the soil so that they can grow into mature plants. Using tissue
+culture, many plants can be grown from one parent in disease-free conditions. This
+technique is commonly used for ornamental plants.
+7.2.6 Spore F ormation
+Even in many simple multi-cellular organisms, specific reproductive
+parts can be identified. The thread-like structures that developed on
+the bread in Activity 7.2 above are the hyphae of the bread mould
+(Rhizopus ). They are not reproductive parts. On the other hand, the
+tiny blob-on-a-stick structures are involved in reproduction. The
+blobs are sporangia, which contain cells, or spores, that can
+eventually develop into new Rhizopus  individuals (Fig. 7.6). The spores
+are covered by thick walls that protect them until they come into
+contact with another moist surface and can begin to grow.
+Figure 7.6Figure 7.6Figure 7.6Figure 7.6Figure 7.6
+Spore formation in RhizopusActivity 7.5Activity 7.5Activity 7.5Activity 7.5Activity 7.5
+Take a potato and observe its surface. Can notches be seen?
+Cut the potato into small pieces such that some pieces contain a
+notch or bud and some do not.
+Spread some cotton on a tray and wet it. Place the potato pieces
+on this cotton. Note where the pieces with the buds are placed.
+Observe changes taking place in these potato pieces over the next
+few days. Make sure that the cotton is kept moistened.
+Which are the potato pieces that give rise to fresh green shoots
+and roots?
+Figure 7.5Figure 7.5Figure 7.5Figure 7.5Figure 7.5
+Leaf of Bryophyllum
+with buds
+More to Know?
+Reprint 2025-26
+How do Organisms Reproduce? 119All the modes of reproduction that we have discussed so far allow
+new generations to be created from a single individual. This is known as
+asexual reproduction.
+QUESTIONS
+?1. How does binary fission differ from multiple fission?
+2. How will an organism be benefited if it reproduces through spores?
+3. Can you think of reasons why more complex organisms cannot give
+rise to new individuals through regeneration?
+4. Why is vegetative propagation practised for growing some types of
+plants?
+5. Why is DNA copying an essential part of the process of reproduction?
+7.3 SEXUAL REPRODUCTION7.3 SEXUAL REPRODUCTION7.3 SEXUAL REPRODUCTION7.3 SEXUAL REPRODUCTION7.3 SEXUAL REPRODUCTION
+We are also familiar with modes of r eproduction that depend on the
+involvement of two individuals before a new generation can be created.
+Bulls alone cannot produce new calves, nor can hens alone produce
+new chicks. In such cases, both sexes, males and females, are needed to
+produce new generations. What is the significance of this sexual mode
+of reproduction? Are there any limitations of the asexual mode of
+reproduction, which we have been discussing above?
+7.3.1 Why the Sexual Mode of Reproduction?
+The creation of two new cells from one involves copying of the DNA as
+well as of the cellular apparatus. The DNA copying mechanism, as we
+have noted, cannot be absolutely accurate, and the resultant errors are
+a source of variations in populations of organisms. Every individual
+organism cannot be protected by variations, but in a population,
+variations are useful for ensuring the survival of the species. It would
+therefore make sense if organisms came up with reproductive modes
+that allowed more and more variation to be generated.
+While DNA-copying mechanisms are not absolutely accurate, they
+are precise enough to make the generation of variation a fairly slow
+process. If the DNA copying mechanisms were to be less accurate, many
+of the resultant DNA copies would not be able to work with the cellular
+apparatus, and would die. So how can the process of making variants
+be speeded up? Each new variation is made in a DNA copy that already
+has variations accumulated from previous generations. Thus, two
+different individuals in a population would have quite different patterns
+of accumulated variations. Since all of these variations are in living
+individuals, it is assured that they do not have any really bad effects.
+Combining variations from two or more individuals would thus create
+new combinations of variants. Each combination would be novel, since
+it would involve two different individuals. The sexual mode of
+Reprint 2025-26
+Science 120reproduction incorporates such a process of combining DNA from two
+different individuals during reproduction.
+But this creates a major difficulty. If each new generation is to be the
+combination of the DNA copies from two pre-existing individuals, then
+each new generation will end up having twice the amount of DNA that
+the previous generation had. This is likely to mess up the control of the
+cellular apparatus by the DNA. How many ways can we think of for
+solving this difficulty?
+We have seen earlier that as or ganisms become mor e complex, the
+specialisation of tissue increases. One solution that many multi-cellular
+organisms have found for the problem mentioned above is to have special
+lineages of cells in specialised organs in which only half the number of
+chromosomes and half the amount of DNA as compared to the non-
+reproductive body cells. This is achieved by a process of cell division
+called meiosis. Thus, when these germ-cells from two individuals combine
+during sexual reproduction to form a new individual, it results in re-
+establishment of the number of chromosomes and the DNA content in
+the new generation.
+If the zygote is to grow and develop into an organism which has
+highly specialised tissues and organs, then it has to have sufficient stores
+of energy for doing this. In very simple organisms, it is seen that the two
+germ-cells ar e not very dif ferent fr om one another , or may even be similar .
+But as the body designs become more complex, the germ-cells also
+specialise. One germ-cell is large and contains the food-stores while the
+other is smaller and likely to be motile. Conventionally, the motile germ-
+cell is called the male gamete and the germ-cell containing the stored
+food is called the female gamete. W e shall see in the next few sections
+how the need to create these two different types of gametes give rise to
+differences in the male and female reproductive organs and, in some
+cases, differences in the bodies of the male and female organisms.
+7.3.2 Sexual Reproduction in Flowering Plants
+The r eproductive parts of angiosper ms ar e located in the flower . You
+have already studied the different parts of a flower – sepals, petals,
+stamens and pistil. Stamens and pistil are
+the reproductive parts of a flower which
+contain the germ-cells.  W h a t  p o s s i b l e
+functions could the petals and sepals serve?
+The flower may be unisexual (papaya,
+watermelon) when it contains either stamens
+or pistil or bisexual ( Hibiscus , mustard)
+when it contains both stamens and pistil.
+Stamen is the male reproductive part and it
+produces pollen grains that are yellowish
+in colour . You must have seen this yellowish
+powder that often sticks to our hands if we
+touch the stamen of a flower . Pistil is pr esent
+in the centre of a flower and is the female
+reproductive part. It is made of three parts.
+Figure 7.7Figure 7.7Figure 7.7Figure 7.7Figure 7.7
+Longitudinal section of
+flower
+Reprint 2025-26
+How do Organisms Reproduce? 121
+Figure 7.8Figure 7.8Figure 7.8Figure 7.8Figure 7.8
+Germination of pollen on
+stigmaThe swollen bottom part is the ovary, middle elongated part is the style
+and the terminal part which may be sticky is the stigma. The ovary
+contains ovules and each ovule has an egg cell. The male germ-cell
+produced by pollen grain fuses with the female gamete present in
+the ovule. This fusion of the germ-cells or fertilisation gives us the
+zygote which is capable of growing into a new plant.
+Thus the pollen needs to be transferred from the stamen to the
+stigma. If this transfer of pollen occurs in the same flower , it is
+referred to as self-pollination. On the other hand, if the pollen is
+transferr ed fr om one flower to another , it is known as cr oss-
+pollination. This transfer of pollen from one flower to another is
+achieved by agents like wind, water or animals.
+After the pollen lands on a suitable stigma, it has to reach the
+female germ-cells which are in the ovary. For this, a tube grows
+out of the pollen grain and travels through the style to reach the
+ovary.
+After fertilisation, the zygote divides several times to form an
+embryo within the ovule. The ovule develops a tough coat and is
+gradually converted into a seed. The ovary grows rapidly and ripens
+to form a fruit. Meanwhile, the petals, sepals, stamens, style and
+stigma may shrivel and fall off. Have you ever observed any flower
+part still persisting in the fruit? T ry and work out the advantages
+of seed-formation for the plant. The seed contains the future plant
+or embryo which develops into a seedling under appropriate
+conditions. This process is known as germination.
+Activity 7.7Activity 7.7Activity 7.7Activity 7.7Activity 7.7
+Soak a few seeds of Bengal gram ( chana )
+and keep them overnight.
+Drain the excess water and cover the seeds
+with a wet cloth and leave them for a day.
+Make sure that the seeds do not become dry.
+Cut open the seeds carefully and observe
+the different parts.
+Compare your observations with the Fig. 7.9
+and see if you can identify all the parts.
+7.3.3 Reproduction in Human Beings
+So far , we have been discussing the variety of modes that dif ferent species
+use for reproduction. Let us now look at the species that we are most
+interested in, namely, humans. Humans use a sexual mode of
+reproduction. How does this process work?
+Let us begin at an apparently unrelated point. All of us know that
+our bodies change as we become older . You have lear nt changes that
+take place in your body earlier in Class VIII also. W e notice that our
+height has incr eased continuously fr om early age till now. W e acquir e
+teeth, we even lose the old, so-called milk teeth and acquire new ones.
+Figure 7.9Figure 7.9Figure 7.9Figure 7.9Figure 7.9
+Germination
+Reprint 2025-26
+Science 122All of these are changes that can be grouped under the general process
+of growth, in which the body becomes lar ger. But in early teenage years,
+a whole new set of changes occurs that cannot be explained simply as
+body enlargement. Instead, the appearance of the body changes.
+Proportions change, new featur es appear , and so do new sensations.
+Some of these changes ar e common to both boys and girls. W e begin
+to notice thick hair growing in new parts of the body such as armpits
+and the genital area between the thighs, which can also become darker
+in colour . Thinner hair can also appear on legs and ar ms, as well as on
+the face. The skin frequently becomes oily and we might begin to develop
+pimples. W e begin to be conscious and awar e of both our own bodies
+and those of others in new ways.
+On the other hand, there are also changes taking place that are
+different between boys and girls. In girls, breast size begins to increase,
+with darkening of the skin of the nipples at the tips of the breasts. Also,
+girls begin to menstruate at around this time. Boys begin to have new
+thick hair gr owth on the face and their voices begin to crack. Further ,
+the penis occasionally begins to become enlarged and erect, either in
+daydreams or at night.
+All of these changes take place slowly, over a period of months and
+years. They do not happen all at the same time in one person, nor do
+they happen at an exact age. In some people, they happen early and
+quickly, while in others, they can happen slowly. Also, each change does
+not become complete quickly either . So, for example, thick hair on the
+face in boys appears as a few scattered hairs first, and only slowly does
+the growth begin to become uniform. Even so, all these changes show
+differences between people. Just as we have differently shaped noses or
+fingers, so also we have different patterns of hair growth, or size and
+shape of breast or penis. All of these changes are aspects of the sexual
+maturation of the body.
+Why does the body show sexual maturation at this age? W e have
+talked about the need for specialised cell types in multi-cellular bodies
+to carry out specialised functions. The creation of germ-cells to participate
+in sexual reproduction is another specialised function, and we have seen
+that plants develop special cell and tissue types to create them. Human
+beings also develop special tissues for this purpose. However , while the
+body of the individual organism is growing to its adult size, the resources
+of the body are mainly directed at achieving this growth. While that is
+happening, the maturation of the reproductive tissue is not likely to be
+a major priority. Thus, as the rate of general body growth begins to slow
+down, reproductive tissues begin to mature. This period during
+adolescence is called puberty.
+So how do all the changes that we have talked about link to the
+reproductive pr ocess? W e must r emember that the sexual mode of
+reproduction means that germ-cells from two individuals have to join
+together . This can happen by the exter nal release of ger m-cells fr om the
+bodies of individuals, as happens in flowering plants. Or it can happen
+by two individuals joining their bodies together for internal transfer of
+germ-cells for fusion, as happens in many animals. If animals are to
+Reprint 2025-26
+How do Organisms Reproduce? 123participate in this process of mating, their state of sexual maturity must
+be identifiable by other individuals. Many changes during puberty, such
+as new hair -growth patter ns, ar e signals that sexual maturation is taking
+place.
+On the other hand, the actual transfer of germ-cells between two
+people needs special organs for the sexual act, such as the penis when it
+is capable of becoming erect. In mammals such as humans, the baby is
+carried in the mother’s body for a long period, and will be breast-fed
+later. The female r eproductive or gans and br easts will need to matur e to
+accommodate these possibilities. Let us look at the systems involved in
+the process of sexual reproduction.
+7.3.3 (a) Male Reproductive System
+The male reproductive system (Fig. 7.10)
+consists of portions which produce the
+germ-cells and other portions that deliver
+the germ-cells to the site of fertilisation.
+The formation of germ-cells or sperms
+takes place in the testes. These are located
+outside the abdominal cavity in scrotum
+because sperm formation requires a lower
+temperature than the normal body
+temperatur e. We have discussed the r ole of the
+testes in the secretion of the hormone,
+testoster one, in the pr evious chapter . In
+addition to regulating the formation of sperms,
+testosterone brings about changes in
+appearance seen in boys at the time of puberty.
+The sperms formed are delivered
+through the vas deferens which unites with
+a tube coming fr om the urinary bladder . The
+urethra thus forms a common passage for
+both the sperms and urine. Along the path
+of the vas deferens, glands like the prostate
+and the seminal vesicles add their secretions
+so that the sperms are now in a fluid which
+makes their transport easier and this fluid
+also provides nutrition. The sperms are tiny
+bodies that consist of mainly genetic
+material and a long tail that helps them to
+move towards the female germ-cell.
+7.3.3 (b) Female Reproductive System
+The female germ-cells or eggs are made in
+the ovaries. They are also responsible for the
+production of some hormones. Look at
+Fig. 7.11 and identify the various organs in
+the female reproductive system.
+Figure 7.10 Figure 7.10 Figure 7.10 Figure 7.10 Figure 7.10 Huma n–male reproductive system
+Figure 7.11 Figure 7.11 Figure 7.11 Figure 7.11 Figure 7.11 Huma n–female reproductive system
+Reprint 2025-26
+Science 124When a girl is born, the ovaries already contain thousands of
+immature eggs. On reaching puberty, some of these start maturing. One
+egg is produced every month by one of the ovaries. The egg is carried
+from the ovary to the womb through a thin oviduct or fallopian tube.
+The two oviducts unite into an elastic bag-like structure known as the
+uterus. The uterus opens into the vagina through the cervix.
+The sperms enter through the vaginal passage during sexual
+intercourse. They travel upwards and reach the oviduct where they may
+encounter the egg. The fertilised egg (zygote) starts dividing and form a
+ball of cells or embryo. The embryo i s implanted in the li ning of the uterus
+where they continue to gr ow and develop or gans to become foetus. W e
+have seen in earlier sections that the mother’s body is designed to
+undertake the development of the child. Hence the uterus prepares itself
+every month to receive and nurture the growing embryo. The lining
+thickens and is richly supplied with blood to nourish the growing embryo.
+The embryo gets nutrition from the mother’s blood with the help of a
+special tissue called placenta. This is a disc which is embedded in the
+uterine wall. It contains villi on the embryo’s side of the tissue. On the
+mother’s side are blood spaces, which surround the villi. This provides
+a large surface area for glucose and oxygen to pass from the mother to
+the embryo. The developing embryo will also generate waste substances
+which can be removed by transferring them into the mother’s blood
+through the placenta. The development of the child inside the mother’s
+body takes approximately nine months. The child is born as a result of
+rhythmic contractions of the muscles in the uterus.
+7.3.3 (c) What happens when the Egg is not F ertilised?
+If the egg is not fertilised, it lives for about one day. Since the ovary
+releases one egg every month, the uterus also prepares itself every month
+to receive a fertilised egg. Thus its lining becomes thick and spongy.
+This would be required for nourishing the embryo if fertilisation had
+taken place. Now, however , this lining is not needed any longer . So, the
+lining slowly breaks and comes out through the vagina as blood and
+mucous. This cycle takes place roughly every month and is known as
+menstruation. It usually lasts for about two to eight days.
+7.3.3 (d) Reproductive Health
+As we have seen, the process of sexual maturation is gradual, and takes
+place while general body growth is still going on. Therefore, some degree
+of sexual maturation does not necessarily mean that the body or the
+mind is ready for sexual acts or for having and bringing up children.
+How do we decide if the body or the mind is ready for this major
+responsibility? All of us are under many different kinds of pressures
+about these issues. There can be pressure from our friends for
+participating in many activities, whether we really want to or not. There
+can be pressure from families to get married and start having children.
+There can be pressure from government agencies to avoid having
+children. In this situation, making choices can become very difficult.
+Reprint 2025-26
+How do Organisms Reproduce? 125We must also consider the possible health consequences of having
+sex. W e have discussed in Class IX that diseases can be transmitted
+from person to person in a variety of ways. Since the sexual act is a
+very intimate connection of bodies, it is not surprising that many
+diseases can be sexually transmitted. These include bacterial infections
+such as gonorrhoea and syphilis, and viral infections such as warts
+and HIV-AIDS. Is it possible to prevent the transmission of such diseases
+during the sexual act? Using a covering, called a condom, for the penis
+during sex helps to prevent transmission of many of these infections to
+some extent.
+The sexual act always has the potential to lead to pregnancy.
+Pregnancy will make major demands on the body and the mind of the
+woman, and if she is not ready for it, her health will be adversely
+affected. Therefore, many ways have been devised to avoid pregnancy.
+These contraceptive methods fall in a number of categories. One
+category is the creation of a mechanical barrier so that sperm does not
+reach the egg. Condoms on the penis or similar coverings worn in the
+vagina can serve this purpose. Another category of contraceptives acts
+by changing the hormonal balance of the body so that eggs are not
+released and fertilisation cannot occur . These drugs commonly need
+to be taken orally as pills. However , since they change hor monal
+balances, they can cause side -effects too. Other contraceptive devices
+such as the loop or the copper -T are placed in the uterus to pr event
+pregnancy. Again, they can cause side effects due to irritation of the
+uterus. If the vas deferens in the male is blocked, sperm transfer will
+be prevented. If the fallopian tube in the female is blocked, the egg will
+not be able to reach the uterus. In both cases fertilisation will not take
+place. Surgical methods can be used to create such blocks. While
+surgical methods are safe in the long run, surgery itself can cause
+infections and other problems if not performed properly. Surgery can
+also be used for removal of unwanted pregnancies. These may be
+misused by people who do not want a particular child, as happens in
+illegal sex-selective abortion of female foetuses. For a healthy society,
+the female-male sex ratio must be maintained. Because of reckless
+female foeticides, child sex ratio is declining at an alarming rate in
+some sections of our society, although prenatal sex determination has
+been prohibited by law.
+We have noted earlier that r eproduction is the pr ocess by which
+organisms increase their populations. The rates of birth and death in a
+given population will determine its size. The size of the human population
+is a cause for concern for many people. This is because an expanding
+population makes it harder to improve everybody’s standard of living.
+However , if inequality in society is the main r eason for poor standar ds of
+living for many people, the size of the population is relatively unimportant.
+If we look around us, what can we identify as the most important
+reason(s) for poor living standards?
+Reprint 2025-26
+Science 126What y ou hav e learnt
+Reproduction, unlike other life processes, is not essential to maintain the life of an
+individual organism.
+Reproduction involves creation of a DNA copy and additional cellular apparatus
+by the cell involved in the process.
+Various or ganisms use dif ferent modes of r eproduction depending on their body
+design.
+In fission, many bacteria and protozoa simply divide into two or more daughter
+cells.
+Organisms such as hydra can regenerate if they are broken into pieces. They can
+also give out buds which mature into new individuals.
+Roots, stems and leaves of some plants develop into new plants through vegetative
+propagation.
+These are examples of asexual reproduction where new generations are created
+from a single individual.
+Sexual reproduction involves two individuals for the creation of a new individual.
+DNA copying mechanisms creates variations which are useful for ensuring the
+survival of the species. Modes of sexual reproduction allow for greater variation to
+be generated.
+Reproduction in flowering plants involves transfer of pollen grains from the anther
+to the stigma which is referred to as pollination. This is followed by fertilisation.
+Changes in the body at puberty, such as increase in breast size in girls and new
+facial hair growth in boys, are signs of sexual maturation.
+The male reproductive system in human beings consists of testes which produce
+sperms, vas deferens, seminal vesicles, prostate gland, urethra and penis.
+The female reproductive system in human beings consists of ovaries, fallopian
+tubes, uterus and vagina.
+Sexual reproduction in human beings involves the introduction of sperm in the
+vagina of the female. Fertilisation occurs in the fallopian tube.
+Contraception to avoid pregnancy can be achieved by the use of condoms, oral
+pills, copper -T and other methods.QUESTIONS
+?1. How is the process of pollination different from fertilisation?
+2. What is the role of the seminal vesicles and the prostate gland?
+3. What are the changes seen in girls at the time of puberty?
+4. How does the embryo get nourishment inside the mother’s body?
+5. If a woman is using a copper -T, will it help in pr otecting her fr om
+sexually transmitted diseases?
+Reprint 2025-26
+How do Organisms Reproduce? 127EXERCISES
+1.Asexual reproduction takes place through budding in
+(a)Amoeba.
+(b)Yeast.
+(c)Plasmodium.
+(d)Leishmania.
+2.Which of the following is not a part of the female reproductive system in human
+beings?
+(a) Ovary
+(b) Uterus
+(c) Vas defer ens
+(d) Fallopian tube
+3.The anther contains
+(a) sepals.
+(b) ovules.
+(c) pistil.
+(d) pollen grains.
+4.What are the advantages of sexual reproduction over asexual reproduction?
+5.What are the functions performed by the testis in human beings?
+6.Why does menstruation occur?
+7.Draw a labelled diagram of the longitudinal section of a flower .
+8.What are the different methods of contraception?
+9.How are the modes for reproduction different in unicellular and
+multicellular organisms?
+10.How does reproduction help in providing stability to populations of species?
+11.What could be the reasons for adopting contraceptive methods?
+Reprint 2025-26
