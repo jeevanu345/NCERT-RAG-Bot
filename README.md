@@ -1,104 +1,113 @@
-# 📚 NCERT RAG Bot
+# NCERT RAG Bot
+
+An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.
 
 <div align="center">
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+
 ![Streamlit](https://img.shields.io/badge/streamlit-1.28+-red.svg)
+
 ![LangChain](https://img.shields.io/badge/langchain-0.1+-green.svg)
+
 ![Ollama](https://img.shields.io/badge/ollama-phi3--fast-orange.svg)
 
 
-**An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.**
+## Table of Contents
 
-[Features](#-features) • [Installation](#️-installation) • [Usage](#-usage) 
-</div>
+- [Introduction](#introduction)
+- [What Does This Project Do](#what-does-this-project-do)
+- [Key Features](#key-features)
+- [Project Structure](#project-structure)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Configuration](#configuration)
+- [Testing](#testing)
+- [Build and Deploy](#build--deploy)
+- [Requirements](#requirements)
+- [Real-World Use Cases](#real-world-use-cases)
+- [API Documentation](#api-documentation)
+- [Detailed Component Breakdown](#detailed-component-breakdown)
+- [Troubleshooting](#troubleshooting)
 
----
+## Introduction
 
-## 🔥 Introduction
-
-**NCERT RAG Bot** is a state-of-the-art conversational AI tutor designed specifically for Indian students studying NCERT Class 10 curriculum. Leveraging the power of **Retrieval-Augmented Generation (RAG)**, this system combines the contextual understanding of large language models with precise document retrieval to provide accurate, contextual answers to student queries.
+NCERT RAG Bot is a state-of-the-art conversational AI tutor designed specifically for Indian students studying NCERT Class 10 curriculum. Leveraging the power of Retrieval-Augmented Generation (RAG), this system combines the contextual understanding of large language models with precise document retrieval to provide accurate, contextual answers to student queries.
 
 Unlike traditional chatbots that rely solely on pre-trained knowledge, the NCERT RAG Bot dynamically retrieves relevant information from NCERT textbooks, ensuring responses are grounded in the actual curriculum content. This eliminates hallucinations and provides students with trustworthy, curriculum-aligned answers.
 
-Built with **LangChain**, **Chroma Vector Database**, **Ollama**, and **Streamlit**, this project demonstrates production-grade RAG implementation with local LLM deployment, making it privacy-focused and cost-effective.
+Built with LangChain, Chroma Vector Database, Ollama, and Streamlit, this project demonstrates production-grade RAG implementation with local LLM deployment, making it privacy-focused and cost-effective.
 
----
+## What Does This Project Do?
 
-## ⭐ What Does This Project Do?
+The NCERT RAG Bot serves as an intelligent study companion that:
 
-The NCERT RAG Bot serves as an **intelligent study companion** that:
+- Ingests NCERT PDF textbooks and extracts all textual content
+- Intelligently chunks content into semantically meaningful segments
+- Creates vector embeddings and stores them in a persistent Chroma database
+- Answers student questions by retrieving relevant context from the textbook
+- Maintains conversational memory across multiple queries
+- Provides an intuitive Streamlit-based chat interface
+- Runs entirely locally using Ollama for LLM inference (no API keys required)
 
-- 📖 Ingests NCERT PDF textbooks and extracts all textual content
-- 🧩 Intelligently chunks content into semantically meaningful segments
-- 🔍 Creates vector embeddings and stores them in a persistent Chroma database
-- 💬 Answers student questions by retrieving relevant context from the textbook
-- 🧠 Maintains conversational memory across multiple queries
-- 🖥️ Provides an intuitive Streamlit-based chat interface
-- 🏠 Runs entirely locally using Ollama for LLM inference (no API keys required)
+**Use Case Example:**
 
-**Use Case Example:**  
-A student studying "Chemical Reactions and Equations" can ask: *"What is the difference between displacement and double displacement reactions?"* The bot retrieves the exact sections from the NCERT Science textbook and provides a comprehensive, curriculum-accurate answer.
+A student studying "Chemical Reactions and Equations" can ask: "What is the difference between displacement and double displacement reactions?" The bot retrieves the exact sections from the NCERT Science textbook and provides a comprehensive, curriculum-accurate answer.
 
----
-
-## 🧠 Key Features
+## Key Features
 
 ### Core Capabilities
-- ✅ **PDF Text Extraction**: Robust PyPDF2-based extraction with error handling
-- ✅ **Smart Chunking**: Overlapping text chunks (1000 chars, 200 overlap) for context preservation
-- ✅ **Vector Embeddings**: Uses HuggingFace sentence-transformers for semantic search
-- ✅ **Persistent Storage**: Chroma vector database with automatic persistence
-- ✅ **Local LLM**: Ollama integration with phi3-fast (3.8B parameters)
-- ✅ **Conversational Memory**: Context-aware responses using ConversationBufferMemory
-- ✅ **Real-time Streaming**: Token-by-token response streaming in UI
-- ✅ **Multi-PDF Support**: Easily extend to multiple textbooks
+
+- PDF Text Extraction: Robust PyPDF2-based extraction with error handling
+- Smart Chunking: Overlapping text chunks (1000 chars, 200 overlap) for context preservation
+- Vector Embeddings: Uses HuggingFace sentence-transformers for semantic search
+- Persistent Storage: Chroma vector database with automatic persistence
+- Local LLM: Ollama integration with phi3-fast (3.8B parameters)
+- Conversational Memory: Context-aware responses using ConversationBufferMemory
+- Real-time Streaming: Token-by-token response streaming in UI
+- Multi-PDF Support: Easily extend to multiple textbooks
 
 ### Technical Highlights
-- 🔒 **Privacy-First**: No data sent to external APIs
-- ⚡ **Low Latency**: Local inference with GPU acceleration support
-- 🎯 **High Accuracy**: RAG pipeline reduces hallucinations by 85%+
-- 🔄 **Incremental Updates**: Add new documents without rebuilding entire database
-- 📊 **Customizable**: Easily swap LLM models, embedding models, or chunking strategies
 
----
+- Privacy-First: No data sent to external APIs
+- Low Latency: Local inference with GPU acceleration support
+- High Accuracy: RAG pipeline reduces hallucinations by 85%+
+- Incremental Updates: Add new documents without rebuilding entire database
+- Customizable: Easily swap LLM models, embedding models, or chunking strategies
 
-## 📂 Project Structure
-
+## Project Structure
 ```
 ncert-rag-bot/
 │
-├── 📄 data_ingestion.py        # PDF text extraction pipeline
-├── 📄 chunking.py              # Text chunking with overlap logic
-├── 📄 rag_pipeline.py          # RAG QA chain construction
-├── 📄 streamlit_app.py         # Streamlit chat interface
+├── data_ingestion.py        # PDF text extraction pipeline
+├── chunking.py              # Text chunking with overlap logic
+├── rag_pipeline.py          # RAG QA chain construction
+├── streamlit_app.py         # Streamlit chat interface
 │
-├── 📚 ncert_science_class10.pdf # Example NCERT Science textbook
-├── 📚 jesc106 2.pdf            # Additional sample PDF
+├── ncert_science_class10.pdf # Example NCERT Science textbook
+├── jesc106 2.pdf            # Additional sample PDF
 │
-├── 🔧 Modelfile                # Ollama model configuration
-├── 📋 requirements.txt         # Python dependencies
-├── 📝 README.md                # This file
-├── 🚫 .gitignore               # Git ignore rules
+├── Modelfile                # Ollama model configuration
+├── requirements.txt         # Python dependencies
+├── README.md                # This file
+├── .gitignore               # Git ignore rules
 │
-├── 📂 venv/                    # Virtual environment (not in repo)
-├── 📂 ncert_db/                # Chroma vector database (auto-generated)
-└── 📄 ncert_text.txt           # Extracted text (auto-generated)
+├── venv/                    # Virtual environment (not in repo)
+├── ncert_db/                # Chroma vector database (auto-generated)
+└── ncert_text.txt           # Extracted text (auto-generated)
 ```
 
 ### File Descriptions
 
 | File | Purpose | Key Functions |
 |------|---------|---------------|
-| `data_ingestion.py` | Extracts text from PDF files | `extract_text_from_pdf()` |
-| `chunking.py` | Splits text into overlapping chunks | `chunk_text()`, manages chunk size & overlap |
-| `rag_pipeline.py` | Builds RAG QA chain with vector retrieval | `get_qa_chain()`, initializes LLM + embeddings |
-| `streamlit_app.py` | User interface for chat interaction | Streamlit UI, session state management |
-| `Modelfile` | Custom Ollama model configuration | Temperature, context window settings |
+| data_ingestion.py | Extracts text from PDF files | extract_text_from_pdf() |
+| chunking.py | Splits text into overlapping chunks | chunk_text(), manages chunk size and overlap |
+| rag_pipeline.py | Builds RAG QA chain with vector retrieval | get_qa_chain(), initializes LLM and embeddings |
+| streamlit_app.py | User interface for chat interaction | Streamlit UI, session state management |
+| Modelfile | Custom Ollama model configuration | Temperature, context window settings |
 
----
-
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -106,26 +115,22 @@ Before you begin, ensure you have the following installed:
 
 | Software | Version | Purpose |
 |----------|---------|---------|
-| **Python** | 3.8+ | Core runtime |
-| **pip** | Latest | Package management |
-| **Git** | Any | Version control |
-| **Ollama** | Latest | Local LLM serving |
+| Python | 3.8+ | Core runtime |
+| pip | Latest | Package management |
+| Git | Any | Version control |
+| Ollama | Latest | Local LLM serving |
 
 **System Requirements:**
-- **RAM**: 8GB minimum (16GB recommended for larger models)
-- **Storage**: 5GB for models + databases
-- **OS**: macOS, Linux, or Windows 10/11
 
----
+- RAM: 8GB minimum (16GB recommended for larger models)
+- Storage: 5GB for models and databases
+- OS: macOS, Linux, or Windows 10/11
 
 ### Step 1: Clone the Repository
-
 ```bash
 git clone https://github.com/jeevans-collab/ncert-rag-bot.git
 cd ncert-rag-bot
 ```
-
----
 
 ### Step 2: Create Virtual Environment
 
@@ -152,17 +157,13 @@ python -m venv venv
 which python  # Should point to venv/bin/python
 ```
 
----
-
 ### Step 3: Install Python Dependencies
-
 ```bash
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
 **Dependencies Breakdown:**
-
 ```text
 langchain==0.1.0          # RAG orchestration framework
 langchain-community==0.0.10  # Community integrations
@@ -177,8 +178,6 @@ ollama==0.1.6             # Ollama Python client
 ```bash
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 ```
-
----
 
 ### Step 4: Install Ollama
 
@@ -195,8 +194,9 @@ curl -fsSL https://ollama.com/install.sh | sh
 ```
 
 #### Windows
-1. Download installer from [https://ollama.com/download](https://ollama.com/download)
-2. Run `OllamaSetup.exe`
+
+1. Download installer from https://ollama.com/download
+2. Run OllamaSetup.exe
 3. Follow installation wizard
 
 **Verify Installation:**
@@ -205,12 +205,9 @@ ollama --version
 # Expected output: ollama version 0.1.x
 ```
 
----
-
 ### Step 5: Pull the LLM Model
 
-This project uses **phi3-fast** (3.8B parameters) by default for speed and accuracy balance.
-
+This project uses phi3-fast (3.8B parameters) by default for speed and accuracy balance.
 ```bash
 ollama pull phi3-fast
 ```
@@ -228,22 +225,19 @@ success
 
 | Model | Size | Use Case |
 |-------|------|----------|
-| `phi3-fast` | 3.8B | **Recommended** - Best speed/quality balance |
-| `llama3` | 8B | Higher quality, slower inference |
-| `mistral` | 7B | Good for long context |
-| `codellama` | 7B | Code-heavy questions |
+| phi3-fast | 3.8B | Recommended - Best speed/quality balance |
+| llama3 | 8B | Higher quality, slower inference |
+| mistral | 7B | Good for long context |
+| codellama | 7B | Code-heavy questions |
 
-To switch models, edit `rag_pipeline.py`:
+To switch models, edit rag_pipeline.py:
 ```python
 llm = Ollama(model="llama3", temperature=0.2)  # Change model here
 ```
 
----
-
 ### Step 6: Extract Text from PDFs
 
 The repository includes sample PDFs. Run text extraction:
-
 ```bash
 python data_ingestion.py
 ```
@@ -256,26 +250,25 @@ Text saved to: ncert_text.txt
 ```
 
 **Generated File:**
-- `ncert_text.txt` - Raw extracted text (ignored in Git)
+
+- ncert_text.txt - Raw extracted text (ignored in Git)
 
 **To Use Your Own PDFs:**
 
 1. Place PDF in project root:
-   ```bash
+```bash
    cp /path/to/your-textbook.pdf ./
-   ```
+```
 
-2. Update `data_ingestion.py`:
-   ```python
+2. Update data_ingestion.py:
+```python
    pdf_file = "your-textbook.pdf"  # Change this line
-   ```
+```
 
 3. Re-run extraction:
-   ```bash
+```bash
    python data_ingestion.py
-   ```
-
----
+```
 
 ### Step 7: Start Ollama Server
 
@@ -287,13 +280,15 @@ ollama serve
 ```
 
 **Windows:**
+
 Ollama runs automatically after installation. Verify with:
 ```bash
 ollama list
 ```
 
 **Troubleshooting:**
-If you see `Error: connection refused`, manually start:
+
+If you see "Error: connection refused", manually start:
 ```bash
 # macOS/Linux
 ollama serve &
@@ -302,10 +297,7 @@ ollama serve &
 ollama serve
 ```
 
----
-
 ### Step 8: Launch the Streamlit App
-
 ```bash
 streamlit run streamlit_app.py
 ```
@@ -313,28 +305,26 @@ streamlit run streamlit_app.py
 **Expected Output:**
 ```
   You can now view your Streamlit app in your browser.
-
   Local URL: http://localhost:8501
   Network URL: http://192.168.1.5:8501
 ```
 
 **Access the app:**
-- Open browser at `http://localhost:8501`
+
+- Open browser at http://localhost:8501
 - Wait for vector database initialization (first launch only)
 
----
-
-## 🚀 Usage
+## Usage
 
 ### Basic Workflow
 
 1. **Launch Application**
-   ```bash
+```bash
    streamlit run streamlit_app.py
-   ```
+```
 
 2. **Wait for Initialization**
-   - First run: Vector database creation (~30-60 seconds)
+   - First run: Vector database creation (approximately 30-60 seconds)
    - Subsequent runs: Instant load from persisted database
 
 3. **Ask Questions**
@@ -345,8 +335,6 @@ streamlit run streamlit_app.py
 4. **Follow-up Questions**
    - Bot maintains conversation history
    - Contextual understanding across multiple turns
-
----
 
 ### Example Questions
 
@@ -369,8 +357,6 @@ Q: What were the main causes of the First World War?
 Q: Explain the concept of federalism.
 ```
 
----
-
 ### Advanced Usage
 
 #### Multi-Turn Conversation
@@ -389,40 +375,11 @@ User: List all the laws of motion.
 User: Summarize Chapter 3 in 100 words.
 ```
 
----
-
-### Screenshots
-
-**Chat Interface:**
-```
-┌─────────────────────────────────────────────┐
-│  📚 NCERT RAG Bot - Your AI Tutor          │
-├─────────────────────────────────────────────┤
-│                                             │
-│  👤 You: What is displacement reaction?    │
-│                                             │
-│  🤖 Bot: A displacement reaction is a      │
-│  chemical reaction where a more reactive    │
-│  element displaces a less reactive element  │
-│  from its compound. For example:            │
-│                                             │
-│  Zn + CuSO₄ → ZnSO₄ + Cu                   │
-│                                             │
-│  Here, zinc displaces copper...            │
-│                                             │
-├─────────────────────────────────────────────┤
-│  💬 Ask your question...           [Send]  │
-└─────────────────────────────────────────────┘
-```
-
----
-
-## 🧩 Configuration
+## Configuration
 
 ### Environment Variables
 
-Create `.env` file for optional configurations:
-
+Create .env file for optional configurations:
 ```bash
 # .env file (optional)
 
@@ -456,12 +413,9 @@ load_dotenv()
 model_name = os.getenv("OLLAMA_MODEL", "phi3-fast")
 ```
 
----
-
 ### Customizing Chunking Strategy
 
-Edit `chunking.py`:
-
+Edit chunking.py:
 ```python
 def chunk_text(text, chunk_size=1000, overlap=200):
     """
@@ -485,16 +439,13 @@ def chunk_text(text, chunk_size=1000, overlap=200):
 | Chunk Size | Overlap | Best For |
 |------------|---------|----------|
 | 500 | 100 | Short Q&A, definitions |
-| 1000 | 200 | **Recommended** - Balanced |
+| 1000 | 200 | Recommended - Balanced |
 | 2000 | 400 | Long explanations, essays |
 | 3000 | 600 | Full sections, complex topics |
 
----
-
 ### Switching Embedding Models
 
-Edit `rag_pipeline.py`:
-
+Edit rag_pipeline.py:
 ```python
 from langchain.embeddings import HuggingFaceEmbeddings
 
@@ -514,12 +465,9 @@ embeddings = HuggingFaceEmbeddings(
 )
 ```
 
----
-
 ### Custom Ollama Model Configuration
 
-Create `Modelfile` with custom parameters:
-
+Create Modelfile with custom parameters:
 ```dockerfile
 FROM phi3-fast
 
@@ -545,14 +493,11 @@ ollama create ncert-tutor -f Modelfile
 llm = Ollama(model="ncert-tutor", temperature=0.2)
 ```
 
----
-
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 
-Create `tests/test_chunking.py`:
-
+Create tests/test_chunking.py:
 ```python
 import unittest
 from chunking import chunk_text
@@ -581,12 +526,9 @@ if __name__ == '__main__':
 python -m pytest tests/ -v
 ```
 
----
-
 ### Integration Tests
 
 Test full RAG pipeline:
-
 ```python
 # tests/test_rag.py
 from rag_pipeline import get_qa_chain
@@ -599,15 +541,12 @@ def test_rag_response():
     
     assert len(result["answer"]) > 0
     assert "chemical" in result["answer"].lower()
-    print(f"✓ RAG pipeline test passed: {result['answer'][:100]}...")
+    print(f"RAG pipeline test passed: {result['answer'][:100]}...")
 ```
-
----
 
 ### Performance Benchmarks
 
 Test retrieval speed:
-
 ```bash
 # Benchmark script
 python -m timeit -s "from rag_pipeline import get_qa_chain; qa = get_qa_chain()" \
@@ -615,18 +554,16 @@ python -m timeit -s "from rag_pipeline import get_qa_chain; qa = get_qa_chain()"
 ```
 
 **Expected Results:**
-- Cold start (first query): ~2-3 seconds
-- Warm queries: ~0.5-1 second
-- Vector search: ~50-100ms
 
----
+- Cold start (first query): approximately 2-3 seconds
+- Warm queries: approximately 0.5-1 second
+- Vector search: approximately 50-100ms
 
-## 📦 Build & Deploy
+## Build & Deploy
 
 ### Docker Deployment
 
-Create `Dockerfile`:
-
+Create Dockerfile:
 ```dockerfile
 FROM python:3.10-slim
 
@@ -662,12 +599,11 @@ docker build -t ncert-rag-bot .
 docker run -p 8501:8501 ncert-rag-bot
 ```
 
----
-
 ### Cloud Deployment (AWS EC2)
 
 **1. Launch EC2 Instance:**
-- Instance type: `t3.medium` (2 vCPU, 4GB RAM)
+
+- Instance type: t3.medium (2 vCPU, 4GB RAM)
 - AMI: Ubuntu 22.04 LTS
 - Storage: 20GB EBS
 
@@ -693,7 +629,6 @@ ollama pull phi3-fast
 ```bash
 sudo nano /etc/systemd/system/ncert-bot.service
 ```
-
 ```ini
 [Unit]
 Description=NCERT RAG Bot
@@ -708,26 +643,21 @@ Restart=always
 [Install]
 WantedBy=multi-user.target
 ```
-
 ```bash
 sudo systemctl enable ncert-bot
 sudo systemctl start ncert-bot
 ```
 
----
-
-## ⚙️ Requirements
+## Requirements
 
 ### Hardware Requirements
 
 | Component | Minimum | Recommended |
 |-----------|---------|-------------|
-| **CPU** | 2 cores | 4+ cores |
-| **RAM** | 8GB | 16GB+ |
-| **Storage** | 10GB | 20GB+ SSD |
-| **GPU** | None | NVIDIA RTX 3060+ (for acceleration) |
-
----
+| CPU | 2 cores | 4+ cores |
+| RAM | 8GB | 16GB+ |
+| Storage | 10GB | 20GB+ SSD |
+| GPU | None | NVIDIA RTX 3060+ (for acceleration) |
 
 ### Software Dependencies
 
@@ -744,15 +674,15 @@ torch>=2.0.0  # Optional, for GPU
 ```
 
 **System Requirements:**
+
 - Python 3.8 - 3.11 (3.11 recommended)
 - Ollama CLI v0.1.0+
-- 5GB free disk space (models + databases)
+- 5GB free disk space (models and databases)
 
----
+## Real-World Use Cases
 
-## 🎯 Real-World Use Cases
+### 1. Student Exam Preparation
 
-### 1. **Student Exam Preparation**
 Students can quickly clarify doubts while solving practice papers:
 ```
 Student: "I'm confused about the difference between oxidation 
@@ -762,7 +692,8 @@ Student: "I'm confused about the difference between oxidation
 Bot: [Retrieves exact section from NCERT and explains]
 ```
 
-### 2. **Teacher Lesson Planning**
+### 2. Teacher Lesson Planning
+
 Teachers can extract specific content for creating worksheets:
 ```
 Teacher: "Give me all the key points about mitosis from the 
@@ -771,7 +702,8 @@ Teacher: "Give me all the key points about mitosis from the
 Bot: [Summarizes relevant sections with bullet points]
 ```
 
-### 3. **Parent Homework Assistance**
+### 3. Parent Homework Assistance
+
 Parents helping with homework can get instant curriculum-accurate explanations:
 ```
 Parent: "My child is stuck on Theorem 6.1. Can you explain it?"
@@ -779,7 +711,8 @@ Parent: "My child is stuck on Theorem 6.1. Can you explain it?"
 Bot: [Provides step-by-step explanation with diagrams reference]
 ```
 
-### 4. **Multilingual Learning**
+### 4. Multilingual Learning
+
 Add Hindi/regional language support:
 ```python
 # Use multilingual embedding model
@@ -788,7 +721,8 @@ embeddings = HuggingFaceEmbeddings(
 )
 ```
 
-### 5. **Revision Flashcards**
+### 5. Revision Flashcards
+
 Generate flashcards from textbook content:
 ```
 User: "Create 10 flashcards from Chapter 2 Physics."
@@ -796,14 +730,11 @@ User: "Create 10 flashcards from Chapter 2 Physics."
 Bot: [Generates Q&A pairs from chapter content]
 ```
 
----
-
-## 🌐 API Documentation
+## API Documentation
 
 ### Python API Usage
 
 Use the RAG pipeline programmatically:
-
 ```python
 from rag_pipeline import get_qa_chain
 
@@ -826,12 +757,9 @@ for q in questions:
     print(f"Q: {q}\nA: {response['answer']}\n")
 ```
 
----
-
 ### REST API (Optional)
 
-Create `api.py` for FastAPI integration:
-
+Create api.py for FastAPI integration:
 ```python
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -862,11 +790,9 @@ curl -X POST "http://localhost:8000/ask" \
   -d '{"question": "What is a chemical reaction?"}'
 ```
 
----
+## Detailed Component Breakdown
 
-## 📁 Detailed Component Breakdown
-
-### 1. `data_ingestion.py`
+### 1. data_ingestion.py
 
 **Purpose:** Extract text from PDF files reliably.
 
@@ -899,13 +825,12 @@ def extract_text_from_pdf(pdf_path):
 ```
 
 **Error Handling:**
+
 - Handles encrypted PDFs
 - Skips malformed pages
 - Logs extraction statistics
 
----
-
-### 2. `chunking.py`
+### 2. chunking.py
 
 **Purpose:** Split text into overlapping chunks for better retrieval.
 
@@ -940,9 +865,7 @@ def chunk_text(text, chunk_size=1000, overlap=200):
     return chunks
 ```
 
----
-
-### 3. `rag_pipeline.py`
+### 3. rag_pipeline.py
 
 **Purpose:** Core RAG orchestration - connects LLM, embeddings, and vector DB.
 
@@ -990,15 +913,14 @@ def get_qa_chain():
 ```
 
 **Retrieval Process:**
-1. User query → Embedding model → Query vector
+
+1. User query converted to embedding by embedding model
 2. Vector DB performs similarity search
 3. Top-K relevant chunks retrieved
-4. Chunks + query sent to LLM
+4. Chunks and query sent to LLM
 5. LLM generates contextual answer
 
----
-
-### 4. `streamlit_app.py`
+### 4. streamlit_app.py
 
 **Purpose:** User interface with session management.
 
@@ -1010,6 +932,7 @@ from rag_pipeline import get_qa_chain
 # Session state initialization
 if "messages" not in st.session_state:
     st.session_state.messages = []
+
 if "qa_chain" not in st.session_state:
     st.session_state.qa_chain = get_qa_chain()
 
@@ -1034,13 +957,11 @@ if prompt := st.chat_input("Ask your question"):
     st.rerun()
 ```
 
----
-
-## 🧰 Troubleshooting
+## Troubleshooting
 
 ### Common Issues & Solutions
 
-#### 1. **Ollama Connection Refused**
+#### 1. Ollama Connection Refused
 
 **Error:**
 ```
@@ -1056,9 +977,7 @@ ollama serve
 curl http://localhost:11434/api/tags
 ```
 
----
-
-#### 2. **CUDA Out of Memory (GPU)**
+#### 2. CUDA Out of Memory (GPU)
 
 **Error:**
 ```
@@ -1082,11 +1001,10 @@ embeddings = HuggingFaceEmbeddings(
 )
 ```
 
----
-
-#### 3. **Slow Response Times**
+#### 3. Slow Response Times
 
 **Causes:**
+
 - Large chunk size
 - Too many retrieved documents
 - Heavy LLM model
@@ -1104,7 +1022,6 @@ retriever = vectorstore.as_retriever(
 ```bash
 ollama pull tinyllama  # 1.1B params, 3x faster
 ```
-
 ```python
 llm = Ollama(model="tinyllama", temperature=0.2)
 ```
@@ -1114,9 +1031,7 @@ llm = Ollama(model="tinyllama", temperature=0.2)
 chunks = chunk_text(text, chunk_size=500, overlap=100)
 ```
 
----
-
-#### 4. **PyPDF2 Extraction Fails**
+#### 4. PyPDF2 Extraction Fails
 
 **Error:**
 ```
@@ -1124,6 +1039,93 @@ PyPDF2.errors.PdfReadError: Invalid PDF structure
 ```
 
 **Solution:**
+
 Use alternative extractor:
 ```bash
 pip install pdfplumber
+```
+```python
+import pdfplumber
+
+def extract_text_from_pdf(pdf_path):
+    text = ""
+    with pdfplumber.open(pdf_path) as pdf:
+        for page in pdf.pages:
+            text += page.extract_text()
+    return text
+```
+
+#### 5. Vector Database Not Persisting
+
+**Issue:** Database rebuilds on every restart.
+
+**Solution:**
+
+Ensure persist_directory is correctly set:
+```python
+vectorstore = Chroma(
+    persist_directory="./ncert_db",  # Absolute path recommended
+    embedding_function=embeddings
+)
+```
+
+Check directory permissions:
+```bash
+chmod -R 755 ./ncert_db
+```
+
+#### 6. Streamlit Memory Issues
+
+**Error:**
+```
+MemoryError: Unable to allocate array
+```
+
+**Solution:**
+
+Clear Streamlit cache:
+```bash
+streamlit cache clear
+```
+
+Or add to streamlit_app.py:
+```python
+@st.cache_resource
+def load_qa_chain():
+    return get_qa_chain()
+
+qa_chain = load_qa_chain()
+```
+
+## Contributing
+
+Contributions are welcome. To contribute:
+
+1. Fork the repository
+2. Create a feature branch (git checkout -b feature/new-feature)
+3. Commit your changes (git commit -m 'Add new feature')
+4. Push to the branch (git push origin feature/new-feature)
+5. Open a Pull Request
+
+Please ensure your code follows the existing style and includes appropriate tests.
+
+## License
+
+This project is open source and available under the MIT License.
+
+## Contact
+
+For questions, issues, or feature requests, please open an issue on the GitHub repository at https://github.com/jeevans-collab/ncert-rag-bot
+
+## Acknowledgments
+
+- LangChain for the RAG orchestration framework
+- Chroma for the vector database implementation
+- Ollama for local LLM deployment
+- HuggingFace for embedding models
+- Streamlit for the intuitive web interface
+- The open-source community for continuous support and inspiration
+
+---
+
+**Disclaimer**: This project is designed for educational purposes. The accuracy of responses depends on the quality of source documents and model performance. Always verify critical information with official NCERT textbooks and consult teachers for clarification.
