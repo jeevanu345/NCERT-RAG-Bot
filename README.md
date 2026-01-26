@@ -1,7 +1,3 @@
-# NCERT RAG Bot
-
-An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.
-
 <div align="center">
 
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
@@ -11,6 +7,12 @@ An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Clas
 ![LangChain](https://img.shields.io/badge/langchain-0.1+-green.svg)
 
 ![Ollama](https://img.shields.io/badge/ollama-phi3--fast-orange.svg)
+
+
+
+# NCERT RAG Bot
+
+An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.
 
 
 ## Table of Contents
