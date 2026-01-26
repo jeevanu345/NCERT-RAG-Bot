@@ -1109,13 +1109,11 @@ Contributions are welcome. To contribute:
 
 Please ensure your code follows the existing style and includes appropriate tests.
 
-## License
 
-This project is open source and available under the MIT License.
 
 ## Contact
 
-For questions, issues, or feature requests, please open an issue on the GitHub repository at https://github.com/jeevans-collab/ncert-rag-bot
+For questions, issues, or feature requests, please open an issue on the GitHub repository at https://github.com/jeevanu345/ncert-rag-bot
 
 ## Acknowledgments
 
