@@ -1,0 +1,8 @@
+#!/bin/sh
+'''exec' "/Users/jeevanu/Documents/My Git Projects/jeevanu345-projects/NCERT-RAG-Bot/.venv311/bin/python3.11" "$0" "$@"
+' '''
+import sys
+from huggingface_hub.inference._mcp.cli import app
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(app())

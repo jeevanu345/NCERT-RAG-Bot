@@ -1,6 +1,21 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 import os
 
+
+def chunk_text(text):
+    """
+    Splits raw text into smaller, overlapping chunks.
+    """
+    text_splitter = RecursiveCharacterTextSplitter(
+        chunk_size=1000,
+        chunk_overlap=200,
+        length_function=len,
+    )
+    chunks = text_splitter.split_text(text)
+    print(f"Created {len(chunks)} text chunks.")
+    return chunks
+
+
 def create_chunks_from_text(text_path):
     """
     Reads a text file and splits it into smaller, overlapping chunks.
@@ -8,17 +23,7 @@ def create_chunks_from_text(text_path):
     with open(text_path, "r", encoding="utf-8") as f:
         text = f.read()
 
-    # The RecursiveCharacterTextSplitter is smart; it tries to split on
-    # different characters to keep sentences and paragraphs together.
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
-        length_function=len,
-    )
-    
-    chunks = text_splitter.split_text(text)
-    print(f"Created {len(chunks)} text chunks.")
-    return chunks
+    return chunk_text(text)
 
 if __name__ == "__main__":
     text_file = "ncert_text.txt"

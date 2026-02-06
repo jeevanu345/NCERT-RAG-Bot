@@ -1,4 +1,4 @@
-# 📚 NCERT RAG Bot
+# NCERT RAG Bot
 
 <div align="center">
 
@@ -10,12 +10,12 @@
 
 **An intelligent AI tutor powered by Retrieval-Augmented Generation (RAG) for Class 10 NCERT textbooks.**
 
-[Features](#-features) • [Installation](#️-installation) • [Usage](#-usage) 
+[Features](#key-features) • [Installation](#installation) • [Usage](#usage)
 </div>
 
 ---
 
-## 🔥 Introduction
+## Introduction
 
 **NCERT RAG Bot** is a state-of-the-art conversational AI tutor designed specifically for Indian students studying NCERT Class 10 curriculum. Leveraging the power of **Retrieval-Augmented Generation (RAG)**, this system combines the contextual understanding of large language models with precise document retrieval to provide accurate, contextual answers to student queries.
 
@@ -25,65 +25,65 @@ Built with **LangChain**, **Chroma Vector Database**, **Ollama**, and **Streamli
 
 ---
 
-## ⭐ What Does This Project Do?
+## What Does This Project Do?
 
 The NCERT RAG Bot serves as an **intelligent study companion** that:
 
-- 📖 Ingests NCERT PDF textbooks and extracts all textual content
-- 🧩 Intelligently chunks content into semantically meaningful segments
-- 🔍 Creates vector embeddings and stores them in a persistent Chroma database
-- 💬 Answers student questions by retrieving relevant context from the textbook
-- 🧠 Maintains conversational memory across multiple queries
-- 🖥️ Provides an intuitive Streamlit-based chat interface
-- 🏠 Runs entirely locally using Ollama for LLM inference (no API keys required)
+- Ingests NCERT PDF textbooks and extracts all textual content
+- Intelligently chunks content into semantically meaningful segments
+- Creates vector embeddings and stores them in a persistent Chroma database
+- Answers student questions by retrieving relevant context from the textbook
+- Maintains conversational memory across multiple queries
+- Provides an intuitive Streamlit-based chat interface
+- Runs entirely locally using Ollama for LLM inference (no API keys required)
 
 **Use Case Example:**  
 A student studying "Chemical Reactions and Equations" can ask: *"What is the difference between displacement and double displacement reactions?"* The bot retrieves the exact sections from the NCERT Science textbook and provides a comprehensive, curriculum-accurate answer.
 
 ---
 
-## 🧠 Key Features
+## Key Features
 
 ### Core Capabilities
-- ✅ **PDF Text Extraction**: Robust PyPDF2-based extraction with error handling
-- ✅ **Smart Chunking**: Overlapping text chunks (1000 chars, 200 overlap) for context preservation
-- ✅ **Vector Embeddings**: Uses HuggingFace sentence-transformers for semantic search
-- ✅ **Persistent Storage**: Chroma vector database with automatic persistence
-- ✅ **Local LLM**: Ollama integration with phi3-fast (3.8B parameters)
-- ✅ **Conversational Memory**: Context-aware responses using ConversationBufferMemory
-- ✅ **Real-time Streaming**: Token-by-token response streaming in UI
-- ✅ **Multi-PDF Support**: Easily extend to multiple textbooks
+- **PDF Text Extraction**: Robust PyPDF2-based extraction with error handling
+- **Smart Chunking**: Overlapping text chunks (1000 chars, 200 overlap) for context preservation
+- **Vector Embeddings**: Uses HuggingFace sentence-transformers for semantic search
+- **Persistent Storage**: Chroma vector database with automatic persistence
+- **Local LLM**: Ollama integration with phi3-fast (3.8B parameters)
+- **Conversational Memory**: Context-aware responses using ConversationBufferMemory
+- **Real-time Streaming**: Token-by-token response streaming in UI
+- **Multi-PDF Support**: Easily extend to multiple textbooks
 
 ### Technical Highlights
-- 🔒 **Privacy-First**: No data sent to external APIs
-- ⚡ **Low Latency**: Local inference with GPU acceleration support
-- 🎯 **High Accuracy**: RAG pipeline reduces hallucinations by 85%+
-- 🔄 **Incremental Updates**: Add new documents without rebuilding entire database
-- 📊 **Customizable**: Easily swap LLM models, embedding models, or chunking strategies
+- **Privacy-First**: No data sent to external APIs
+- **Low Latency**: Local inference with GPU acceleration support
+- **High Accuracy**: RAG pipeline reduces hallucinations by 85%+
+- **Incremental Updates**: Add new documents without rebuilding entire database
+- **Customizable**: Easily swap LLM models, embedding models, or chunking strategies
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 ncert-rag-bot/
 │
-├── 📄 data_ingestion.py        # PDF text extraction pipeline
-├── 📄 chunking.py              # Text chunking with overlap logic
-├── 📄 rag_pipeline.py          # RAG QA chain construction
-├── 📄 streamlit_app.py         # Streamlit chat interface
+├──  data_ingestion.py        # PDF text extraction pipeline
+├──  chunking.py              # Text chunking with overlap logic
+├──  rag_pipeline.py          # RAG QA chain construction
+├──  streamlit_app.py         # Streamlit chat interface
 │
-├── 📚 ncert_science_class10.pdf # Example NCERT Science textbook
-├── 📚 jesc106 2.pdf            # Additional sample PDF
+├──  ncert_science_class10.pdf # Example NCERT Science textbook
+├──  jesc106 2.pdf            # Additional sample PDF
 │
-├── 🔧 Modelfile                # Ollama model configuration
-├── 📋 requirements.txt         # Python dependencies
-├── 📝 README.md                # This file
-├── 🚫 .gitignore               # Git ignore rules
+├──  Modelfile                # Ollama model configuration
+├──  requirements.txt         # Python dependencies
+├──  README.md                # This file
+├──  .gitignore               # Git ignore rules
 │
-├── 📂 venv/                    # Virtual environment (not in repo)
-├── 📂 ncert_db/                # Chroma vector database (auto-generated)
-└── 📄 ncert_text.txt           # Extracted text (auto-generated)
+├──  venv/                    # Virtual environment (not in repo)
+├──  ncert_db/                # Chroma vector database (auto-generated)
+└──  ncert_text.txt           # Extracted text (auto-generated)
 ```
 
 ### File Descriptions
@@ -98,7 +98,7 @@ ncert-rag-bot/
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### Prerequisites
 
@@ -324,7 +324,7 @@ streamlit run streamlit_app.py
 
 ---
 
-## 🚀 Usage
+## Usage
 
 ### Basic Workflow
 
@@ -337,12 +337,16 @@ streamlit run streamlit_app.py
    - First run: Vector database creation (~30-60 seconds)
    - Subsequent runs: Instant load from persisted database
 
-3. **Ask Questions**
+3. **Select Textbook PDF**
+   - Choose the NCERT PDF from the sidebar dropdown
+   - The chat context and vector database switch to the selected file
+
+4. **Ask Questions**
    - Type your query in the chat input
    - Press Enter or click Send
    - Watch real-time streaming response
 
-4. **Follow-up Questions**
+5. **Follow-up Questions**
    - Bot maintains conversation history
    - Contextual understanding across multiple turns
 
@@ -396,12 +400,12 @@ User: Summarize Chapter 3 in 100 words.
 **Chat Interface:**
 ```
 ┌─────────────────────────────────────────────┐
-│  📚 NCERT RAG Bot - Your AI Tutor          │
+│   NCERT RAG Bot - Your AI Tutor          │
 ├─────────────────────────────────────────────┤
 │                                             │
-│  👤 You: What is displacement reaction?    │
+│   You: What is displacement reaction?    │
 │                                             │
-│  🤖 Bot: A displacement reaction is a      │
+│   Bot: A displacement reaction is a      │
 │  chemical reaction where a more reactive    │
 │  element displaces a less reactive element  │
 │  from its compound. For example:            │
@@ -411,13 +415,13 @@ User: Summarize Chapter 3 in 100 words.
 │  Here, zinc displaces copper...            │
 │                                             │
 ├─────────────────────────────────────────────┤
-│  💬 Ask your question...           [Send]  │
+│   Ask your question...           [Send]  │
 └─────────────────────────────────────────────┘
 ```
 
 ---
 
-## 🧩 Configuration
+## Configuration
 
 ### Environment Variables
 
@@ -547,7 +551,7 @@ llm = Ollama(model="ncert-tutor", temperature=0.2)
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Unit Tests
 
@@ -621,7 +625,7 @@ python -m timeit -s "from rag_pipeline import get_qa_chain; qa = get_qa_chain()"
 
 ---
 
-## 📦 Build & Deploy
+## Build & Deploy
 
 ### Docker Deployment
 
@@ -716,7 +720,7 @@ sudo systemctl start ncert-bot
 
 ---
 
-## ⚙️ Requirements
+## Requirements
 
 ### Hardware Requirements
 
@@ -750,7 +754,7 @@ torch>=2.0.0  # Optional, for GPU
 
 ---
 
-## 🎯 Real-World Use Cases
+## Real-World Use Cases
 
 ### 1. **Student Exam Preparation**
 Students can quickly clarify doubts while solving practice papers:
@@ -798,7 +802,7 @@ Bot: [Generates Q&A pairs from chapter content]
 
 ---
 
-## 🌐 API Documentation
+## API Documentation
 
 ### Python API Usage
 
@@ -864,7 +868,7 @@ curl -X POST "http://localhost:8000/ask" \
 
 ---
 
-## 📁 Detailed Component Breakdown
+## Detailed Component Breakdown
 
 ### 1. `data_ingestion.py`
 
@@ -1036,7 +1040,7 @@ if prompt := st.chat_input("Ask your question"):
 
 ---
 
-## 🧰 Troubleshooting
+## Troubleshooting
 
 ### Common Issues & Solutions
 
