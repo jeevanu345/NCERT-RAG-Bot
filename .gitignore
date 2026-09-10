@@ -48,3 +48,7 @@ config.toml
 ncert_db/
 uploaded_pdfs/
 ncert_text.txt
+
+# Environment files in nested experiments
+*.env
+!*.env.example
