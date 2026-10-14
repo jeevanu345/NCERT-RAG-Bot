@@ -1,93 +1,103 @@
-# NCERT RAG Bot
+# NCERT Tutor
 
-NCERT RAG Bot is an experimental local question-answering application for studying Class 10 NCERT material with retrieval-augmented generation (RAG).
+A simple study workspace for Class 10 NCERT textbooks. Bring your **NVIDIA NIM API key**, upload a PDF, and ask questions with textbook page references.
 
-## Status
+The main application is **Next.js + FastAPI** in `Full stack Project/`. All model generation uses NVIDIA’s hosted API. No local model installation, GPU, OpenAI account, Pinecone account, or embedding download is required.
 
-The repository contains a Streamlit implementation plus additional frontend/backend experiments. The root Python workflow is the clearest starting point. Generated vector databases, uploaded PDFs, extracted textbook text, virtual environments, and Python caches are intentionally excluded from version control.
+## Run locally
 
-This is an educational prototype. Answers may be incomplete or incorrect and should be checked against the official textbook.
-
-## How it works
-
-```text
-NCERT PDF or extracted text
-          |
-          v
-      text chunks
-          |
-          v
- Chroma vector index
-          |
-          v
- relevant passages + question
-          |
-          v
-    local Ollama model
-          |
-          v
- answer grounded in retrieved context
-```
-
-## Root application
-
-- `data_ingestion.py` — prepares source text for indexing.
-- `chunking.py` — splits source material into retrieval chunks.
-- `rag_pipeline.py` — builds the retrieval and answer pipeline.
-- `streamlit_app.py` — provides the interactive chat interface.
-- `Modelfile` — local Ollama model configuration.
-- `requirements.txt` — pinned Python dependencies for the root prototype.
-
-Other directories contain separate full-stack experiments and are not required to run the root Streamlit application.
-
-## Requirements
-
-- Python 3.11 or another version compatible with the pinned dependencies
-- Ollama
-- An NCERT source document obtained through an authorized source
-
-## Setup
+Requirements: Node.js 20.9+ and Python 3.11–3.14 with SQLite FTS5 (included in standard Python installations).
 
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
+npm run setup
+npm run dev
 ```
 
-Install Ollama using its official instructions, then make the model referenced by the local configuration available.
+Open **http://127.0.0.1:3000**. The development command starts both the UI and Python service, and stops both with Ctrl+C.
 
-Do not commit textbook PDFs, extracted textbook content, uploaded documents, or generated vector indexes. Place local source material in the path expected by the application and run the ingestion workflow before launching the UI.
+1. Open **Settings** or **Connect NVIDIA**.
+2. Get a developer key from the [NVIDIA API Catalog](https://build.nvidia.com/meta/llama-3_3-70b-instruct), paste it, and select **Test & save connection**.
+3. Add a PDF in **Textbook library**, or try the included original sample science notes.
+4. Select a textbook and study mode, then ask a question.
+
+NVIDIA describes free developer API access for prototyping in its [FAQ](https://docs.api.nvidia.com/nim/docs/product). Model access, rate limits, and allowances depend on your account. The app surfaces authentication, quota, model-access, and timeout errors; it does not silently switch providers.
+
+## Study features
+
+- **Explain:** simple explanations and worked examples.
+- **Revise:** concise revision notes and key definitions.
+- **Practice:** exam-style questions with answers.
+- **Flashcards:** reveal answers, move between cards, mark remembered cards, and restart a review.
+- Expandable source passages with **PDF page numbers** and citation markers.
+- A searchable textbook library, multiple PDF uploads, duplicate detection, and document removal.
+- Questions scoped to one textbook or the whole library.
+- Browser-saved study sessions, session search, saved answers, copy, and Markdown export.
+- Retry failed questions and stop waiting for an answer.
+- Keyboard shortcuts, accessible dialogs, mobile navigation, and reduced-motion support.
+
+Press **⌘/Ctrl K** for a new session; **Enter** sends, and **Shift + Enter** adds a line. Chat requests include up to the last 12 messages. The browser retains up to 20 sessions and the latest 40 messages per session. Export longer sessions to keep a copy. Saved answers belong to their sessions.
+
+## API key and privacy
+
+Keys are held in page memory by default. **Remember my key for this tab** opts into `sessionStorage`; the key must be tested again after reloading. Disconnect removes it. Keys are never stored in the library database or chat history.
+
+Alternatively, copy the example configuration:
 
 ```bash
-python data_ingestion.py
-streamlit run streamlit_app.py
+cp "Full stack Project/.env.example" "Full stack Project/.env.local"
 ```
 
-## Evaluation status
+Set `NVIDIA_API_KEY` there and restart the Python API. This is optional; browser BYOK needs no environment file. An explicitly supplied browser key takes precedence over a server key.
 
-The repository does not currently provide a versioned labeled evaluation set or verified benchmark results. Before presenting accuracy claims, add:
+The default model is `meta/llama-3.3-70b-instruct`. Settings also provides `meta/llama-3.1-8b-instruct` and accepts a custom NVIDIA catalog model ID. All requests use `https://integrate.api.nvidia.com/v1/chat/completions`.
 
-- retrieval recall at a defined value of `k`
-- citation/source accuracy
-- groundedness or faithfulness checks
-- answer-quality comparison against a documented baseline
-- exact model, dataset revision, parameters, and random seeds
+Text is extracted and indexed locally in `Full stack Project/.data/library.sqlite3`. The original uploaded PDF bytes are discarded after extraction. Questions, recent conversation context, and selected relevant excerpts are sent to NVIDIA. Document and chat deletion are available in the UI. Browser sessions identify libraries through an HTTP-only cookie lasting 30 days; clearing or expiring that cookie creates a new library. Chat history stays in that browser’s local storage.
 
-## Data and licensing
+## Commands
 
-NCERT materials must be obtained and used according to their applicable terms. This repository does not redistribute the previously local textbook PDF, extracted text, or generated index. Cite the official textbook edition and retrieval date when publishing results.
+```bash
+npm test                  # 22 backend tests; provider calls are mocked
+npm run lint
+npm run typecheck
+npm run build
+npm run start             # UI + API with the production build, bound to localhost
+npm run test:e2e           # 11 browser flows, including accessibility checks
+```
 
-## Limitations
+Install the test browser once with `cd "Full stack Project" && npx playwright install chromium`.
 
-- Generated answers are not authoritative educational guidance.
-- Retrieval quality depends on source extraction and chunking.
-- Local model behavior varies by model version and configuration.
-- The repository contains multiple experimental application structures that still need consolidation.
+To use different local ports:
 
-## Next steps
+```bash
+PORT=3001 API_PORT=8001 npm run dev
+```
 
-- Consolidate one canonical application structure.
-- Add a small redistributable labeled evaluation fixture.
-- Add tests for chunking, retrieval, and prompt construction.
-- Add CI for linting, tests, and a lightweight ingestion smoke test.
-- Document measured results only after reproducing them.
+To run services separately:
+
+```bash
+cd "Full stack Project"
+npm run dev:api            # terminal 1, localhost:8000
+npm run dev               # terminal 2, localhost:3000
+```
+
+An optional terminal client uses the same pipeline:
+
+```bash
+NVIDIA_API_KEY=your_key .venv/bin/python rag_pipeline.py --pdf /path/to/chapter.pdf
+```
+
+Prefer the browser key field or `.env.local` to putting a real key in shell history. `streamlit_app.py` now forwards to the web application; `chunking.py` re-exports the shared chunker. The unrelated ERP/CRM template under `From this /` is not part of this app or its install process.
+
+## How it works and limits
+
+PDF → page-preserving text chunks → SQLite FTS5/BM25 search → relevant excerpts and conversation → NVIDIA NIM → answer and page references.
+
+Retrieval is lexical and uses English stemming; it does not download or run a model. Questions with wording similar to the textbook work best. Broad revision prompts sample the selected material, so they are not exhaustive textbook summaries. Cross-language retrieval and mathematical notation can be weaker than semantic search.
+
+Use text-based PDFs up to **20 MB**, **700 pages**, and **20 documents per library**. Scans, handwriting, diagrams, and image-only formulas need OCR before upload. The included sample is original demonstration material, not an NCERT textbook.
+
+This setup is for local development and personal study. It intentionally binds both services to localhost. The Python service trusts the Next.js proxy’s workspace header: do not expose it directly. Public deployment needs real authentication, usage controls, and persistent storage. SQLite data will not survive an ephemeral serverless deployment without a persistent backend.
+
+Generated answers and citations can be wrong; check them against the original textbook. Automated tests verify software behavior using original fixtures and mocked provider responses, not educational accuracy. A live model check needs your key in Settings.
+
+See [the project review](docs/PROJECT_REVIEW.md) and [architecture notes](Implementation.md) for what changed and sensible next improvements.

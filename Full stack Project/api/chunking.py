@@ -1,39 +1,28 @@
-try:
-    from langchain_classic.text_splitter import RecursiveCharacterTextSplitter
-except ImportError:
-    from langchain.text_splitter import RecursiveCharacterTextSplitter
-import os
+"""Small, dependency-free, overlapping chunks that retain page boundaries."""
+import re
+from pathlib import Path
 
 
-def chunk_text(text):
-    """
-    Splits raw text into smaller, overlapping chunks.
-    """
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
-        length_function=len,
-    )
-    chunks = text_splitter.split_text(text)
-    print(f"Created {len(chunks)} text chunks.")
+def chunk_text(text: str, size: int = 1200, overlap: int = 180) -> list[str]:
+    if size <= 0 or overlap < 0 or overlap >= size:
+        raise ValueError("Chunk size must be positive and overlap smaller than size")
+    text = re.sub(r"[ \t]+", " ", text).strip()
+    chunks = []
+    start = 0
+    while start < len(text):
+        end = min(start + size, len(text))
+        if end < len(text):
+            boundary = text.rfind(" ", start + size // 2, end)
+            if boundary > start:
+                end = boundary
+        piece = text[start:end].strip()
+        if piece:
+            chunks.append(piece)
+        if end == len(text):
+            break
+        start = max(start + 1, end - overlap)
     return chunks
 
 
-def create_chunks_from_text(text_path):
-    """
-    Reads a text file and splits it into smaller, overlapping chunks.
-    """
-    with open(text_path, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    return chunk_text(text)
-
-if __name__ == "__main__":
-    text_file = "ncert_text.txt"
-    if os.path.exists(text_file):
-        chunks = create_chunks_from_text(text_file)
-        # You can inspect the first few chunks to see if the process worked
-        # for chunk in chunks[:5]:
-        #     print(f"--- Chunk Start ---\n{chunk}\n--- Chunk End ---")
-    else:
-        print(f"Error: The text file '{text_file}' was not found.")
+def create_chunks_from_text(text_path: str) -> list[str]:
+    return chunk_text(Path(text_path).read_text(encoding="utf-8"))

@@ -1,13 +1,1 @@
-fastapi
-pydantic
-
-# Explicitly including base langchain for chains
-langchain
-langchain-community
-langchain-core
-langchain-openai
-
-pinecone
-pypdf
-python-dotenv
-requests
+-r ../../requirements.txt

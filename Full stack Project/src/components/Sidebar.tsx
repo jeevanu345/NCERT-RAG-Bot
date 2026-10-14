@@ -1,107 +1,210 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import { Button } from '@/components/ui/button';
-import { PlusIcon, UploadIcon, FileTextIcon, SettingsIcon } from 'lucide-react';
+import { useState } from "react";
+import Link from "next/link";
+import {
+  BookMarked,
+  BookOpen,
+  Bookmark,
+  ChevronRight,
+  CircleHelp,
+  MessageCircle,
+  Plus,
+  Search,
+  Settings2,
+  Trash2,
+} from "lucide-react";
+import { Button } from "./ui/button";
+import type { Conversation, Textbook } from "@/lib/types";
 
-export default function Sidebar() {
-    const [sources, setSources] = useState(['ncert_text.txt']);
-    const [isUploading, setIsUploading] = useState(false);
+export type View = "study" | "library" | "saved";
+export type SidebarProps = {
+  view: View;
+  onView: (view: View) => void;
+  documents: Textbook[];
+  conversations: Conversation[];
+  activeId: string;
+  connected: boolean;
+  busy: boolean;
+  onNewChat: () => void;
+  onConversation: (id: string) => void;
+  onDeleteChat: (id: string) => void;
+  onTextbook: (id: string) => void;
+  onSettings: () => void;
+  onHelp: () => void;
+};
 
-    // Call our Next.js API route
-    const handleUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-        const file = e.target.files?.[0];
-        if (!file) return;
-
-        setIsUploading(true);
-        try {
-            const response = await fetch(`/api/upload?filename=${encodeURIComponent(file.name)}`, {
-                method: 'POST',
-                body: file,
-            });
-
-            if (!response.ok) {
-                throw new Error('Upload failed');
-            }
-
-            const data = await response.json();
-            console.log('Upload success:', data);
-
-            // Add the file to the sources list if it's not already there
-            if (!sources.includes(file.name)) {
-                setSources((prev) => [file.name, ...prev]);
-            }
-        } catch (error) {
-            console.error('Error uploading file:', error);
-            alert('Failed to upload and process PDF');
-        } finally {
-            setIsUploading(false);
-        }
-    };
-
-    return (
-        <aside className="w-64 md:w-72 bg-[#171717] border-r border-[#363636] flex flex-col h-full hidden md:flex shrink-0">
-            <div className="p-4 flex flex-col gap-4">
-                {/* Brand */}
-                <div className="font-semibold text-[1.05rem] tracking-wide text-[#ececec] mb-2 px-1">
-                    NCERT Tutor
-                </div>
-
-                {/* New Chat Button */}
-                <Button
-                    variant="outline"
-                    className="w-full justify-start gap-2 border-[#363636] bg-transparent text-[#ececec] hover:bg-[#2b2b2b] hover:text-white"
-                    onClick={() => window.location.reload()}
+export default function Sidebar(props: SidebarProps) {
+  const [search, setSearch] = useState("");
+  const chats = props.conversations.filter(
+    (c) =>
+      c.messages.length > 0 &&
+      c.title.toLowerCase().includes(search.toLowerCase()),
+  );
+  return (
+    <div className="sidebar-content">
+      <Link href="/" className="brand" aria-label="NCERT Tutor home">
+        <span className="brand-symbol">
+          <BookOpen size={21} strokeWidth={1.7} />
+        </span>
+        <span>
+          NCERT<span className="brand-light">tutor</span>
+          <small>A little help. A lot of learning.</small>
+        </span>
+      </Link>
+      <Button
+        className="new-chat"
+        onClick={props.onNewChat}
+        disabled={props.busy}
+      >
+        <Plus size={17} />
+        New study session<span className="shortcut">⌘ K</span>
+      </Button>
+      <nav className="main-nav" aria-label="Workspace">
+        <button
+          aria-current={props.view === "study" ? "page" : undefined}
+          onClick={() => props.onView("study")}
+        >
+          <MessageCircle size={17} />
+          Study space
+        </button>
+        <button
+          aria-current={props.view === "library" ? "page" : undefined}
+          onClick={() => props.onView("library")}
+        >
+          <BookMarked size={17} />
+          Textbook library
+          <span className="nav-count">{props.documents.length}</span>
+        </button>
+        <button
+          aria-current={props.view === "saved" ? "page" : undefined}
+          onClick={() => props.onView("saved")}
+        >
+          <Bookmark size={17} />
+          Saved answers
+        </button>
+      </nav>
+      <div className="sidebar-section">
+        <div className="section-heading">
+          <h2>Your textbooks</h2>
+          <button
+            aria-label="Manage textbooks"
+            onClick={() => props.onView("library")}
+          >
+            <Plus size={15} />
+          </button>
+        </div>
+        {props.documents.length ? (
+          props.documents.slice(0, 4).map((doc) => (
+            <button
+              className="textbook-shortcut"
+              key={doc.id}
+              onClick={() => props.onTextbook(doc.id)}
+            >
+              <span className="small-book">
+                <BookOpen size={15} />
+              </span>
+              <span>
+                {doc.name.replace(/\.pdf$/i, "")}
+                <small>
+                  {doc.pages} {doc.pages === 1 ? "page" : "pages"}
+                </small>
+              </span>
+            </button>
+          ))
+        ) : (
+          <button
+            className="sidebar-empty"
+            onClick={() => props.onView("library")}
+          >
+            <BookOpen size={19} />
+            <span>
+              Your next chapter starts here.
+              <small>
+                Add your first textbook <ChevronRight size={12} />
+              </small>
+            </span>
+          </button>
+        )}
+      </div>
+      <div className="sidebar-section recent-section">
+        <div className="section-heading">
+          <h2>Recent sessions</h2>
+          <span>
+            {props.conversations.filter((c) => c.messages.length).length || ""}
+          </span>
+        </div>
+        {props.conversations.some((c) => c.messages.length) && (
+          <div className="history-search">
+            <Search size={13} />
+            <input
+              aria-label="Search study sessions"
+              placeholder="Find a session…"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+            />
+          </div>
+        )}
+        <div className="history-list">
+          {chats.length ? (
+            chats.map((chat) => (
+              <div
+                key={chat.id}
+                className={`history-row ${chat.id === props.activeId && props.view === "study" ? "active" : ""}`}
+              >
+                <button
+                  disabled={props.busy}
+                  onClick={() => props.onConversation(chat.id)}
                 >
-                    <PlusIcon size={16} />
-                    New chat
-                </Button>
-            </div>
-
-            {/* Textbook Source Section */}
-            <div className="px-4 py-2 mt-2">
-                <h3 className="text-[0.75rem] font-semibold text-[#a8a8a8] uppercase tracking-wider mb-3 px-1">
-                    Textbook Source
-                </h3>
-
-                {/* Upload Input */}
-                <div className="mb-4">
-                    <label
-                        htmlFor="pdf-upload"
-                        className={`flex items-center gap-2 w-full p-2.5 rounded-lg border border-dashed border-[#4a4a4a] bg-[#242424] hover:bg-[#2b2b2b] text-sm text-[#ececec] cursor-pointer transition-colors ${isUploading ? 'opacity-50 pointer-events-none' : ''}`}
-                    >
-                        <UploadIcon size={16} className="text-[#a8a8a8]" />
-                        {isUploading ? 'Uploading...' : 'Upload NCERT PDF'}
-                        <input
-                            id="pdf-upload"
-                            type="file"
-                            accept="application/pdf"
-                            className="hidden"
-                            onChange={handleUpload}
-                        />
-                    </label>
-                </div>
-
-                {/* File List */}
-                <div className="flex flex-col gap-1">
-                    {sources.map((src, i) => (
-                        <button
-                            key={i}
-                            className="flex items-center gap-2 w-full p-2 rounded-lg bg-[#2b2b2b] text-sm text-[#ececec] transition-colors text-left"
-                        >
-                            <FileTextIcon size={16} className="text-[#10a37f] shrink-0" />
-                            <span className="truncate">{src}</span>
-                        </button>
-                    ))}
-                </div>
-            </div>
-
-            <div className="mt-auto p-4 border-t border-[#363636]">
-                <Button variant="ghost" className="w-full justify-start gap-2 text-[#a8a8a8] hover:text-[#ececec] hover:bg-[#2b2b2b]">
-                    <SettingsIcon size={16} />
-                    Settings
-                </Button>
-            </div>
-        </aside>
-    );
+                  <MessageCircle size={14} />
+                  <span>{chat.title}</span>
+                </button>
+                <button
+                  className="delete-chat"
+                  aria-label={`Delete session: ${chat.title}`}
+                  disabled={props.busy}
+                  onClick={() => props.onDeleteChat(chat.id)}
+                >
+                  <Trash2 size={13} />
+                </button>
+              </div>
+            ))
+          ) : (
+            <p className="empty-history">
+              {search ? "No matching sessions." : "Good questions belong here."}
+            </p>
+          )}
+        </div>
+      </div>
+      <div className="sidebar-bottom">
+        <button className="connection-card" onClick={props.onSettings}>
+          <span
+            className={`status-dot ${props.connected ? "connected" : ""}`}
+          />
+          <span>
+            <strong>
+              {props.connected ? "NVIDIA connected" : "Connect your AI"}
+            </strong>
+            <small>
+              {props.connected
+                ? "Your key. Your study space."
+                : "Bring your NVIDIA API key"}
+            </small>
+          </span>
+          <ChevronRight size={15} />
+        </button>
+        <div className="sidebar-utilities">
+          <button onClick={props.onSettings}>
+            <Settings2 size={15} />
+            Settings
+          </button>
+          <button onClick={props.onHelp}>
+            <CircleHelp size={15} />
+            Quick guide
+          </button>
+        </div>
+        <p className="sidebar-footnote">Made for your next “I get it.”</p>
+      </div>
+    </div>
+  );
 }

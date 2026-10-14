@@ -9,9 +9,10 @@ def extract_text_from_pdf(pdf_path):
     """
     text = ""
     try:
-        pdf_reader = PdfReader(pdf_path)
-        for page in pdf_reader.pages:
-            text += page.extract_text()
+        with open(pdf_path, 'rb') as source:
+            pdf_reader = PdfReader(source)
+            for page in pdf_reader.pages:
+                text += (page.extract_text() or '') + '\n\n'
     except Exception as e:
         print(f"Error extracting text from {pdf_path}: {e}")
     return text

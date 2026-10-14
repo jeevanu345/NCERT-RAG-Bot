@@ -1,145 +1,125 @@
-from fastapi import FastAPI, HTTPException
-from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import List, Dict
-import requests
-import tempfile
+"""Private local backend. Next.js owns browser sessions and forwards requests here."""
+from io import BytesIO
+from pathlib import PurePath
+from typing import Literal
+import hashlib
 import os
 import uuid
-import requests
-from pypdf import PdfReader
-from langchain_openai import OpenAIEmbeddings
 
 from dotenv import load_dotenv
-import os
-load_dotenv(".env.local")
+from fastapi import Depends, FastAPI, Header, HTTPException, Request
+from pydantic import BaseModel, Field, field_validator
+from pypdf import PdfReader
+from starlette.concurrency import run_in_threadpool
 
-# Assuming we'll have a rag_pipeline here 
-from .rag_pipeline import get_rag_chain
-from .chunking import chunk_text
+load_dotenv(os.path.join(os.path.dirname(__file__), "..", ".env.local"))
+from .rag_pipeline import DEFAULT_MODEL, answer_question, check_connection, delete_document, index_pages, list_documents, resolve_key
 
-app = FastAPI()
+app = FastAPI(title="NCERT Tutor", version="2.0.0")
+MAX_UPLOAD = 20 * 1024 * 1024
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
 
-class ChatRequest(BaseModel):
-    messages: List[Dict[str, str]]
+def workspace(x_workspace_id: str = Header()) -> str:
+    try:
+        return str(uuid.UUID(x_workspace_id))
+    except ValueError:
+        raise HTTPException(400, "Invalid workspace session") from None
 
-class ProcessPDFRequest(BaseModel):
-    file_url: str
-    filename: str
+
+class Message(BaseModel):
+    role: Literal["user", "assistant"]
+    content: str = Field(min_length=1, max_length=12000)
+
+    @field_validator("content")
+    @classmethod
+    def nonempty(cls, value):
+        if not value.strip():
+            raise ValueError("Message cannot be blank")
+        return value
+
+
+class ConnectionRequest(BaseModel):
+    model: str = Field(default=DEFAULT_MODEL, min_length=3, max_length=160, pattern=r"^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$")
+
+
+class ChatRequest(ConnectionRequest):
+    messages: list[Message] = Field(min_length=1, max_length=40)
+    mode: Literal["explain", "revise", "practice", "flashcards"] = "explain"
+    document_ids: list[uuid.UUID] = Field(default_factory=list, max_length=20)
+
 
 @app.get("/api/health")
-def health_check():
-    return {"status": "ok", "message": "NCERT AI Tutor API is running."}
+def health():
+    return {"status": "ok", "provider": "NVIDIA NIM", "server_key_configured": bool(os.environ.get("NVIDIA_API_KEY")), "default_model": os.environ.get("NVIDIA_MODEL", DEFAULT_MODEL)}
+
+
+@app.post("/api/connection")
+def connection(body: ConnectionRequest, authorization: str | None = Header(default=None)):
+    return check_connection(resolve_key(authorization), body.model)
+
+
+@app.get("/api/documents")
+def documents(session: str = Depends(workspace)):
+    return {"documents": list_documents(session)}
+
+
+@app.delete("/api/documents/{doc_id}")
+def remove(doc_id: uuid.UUID, session: str = Depends(workspace)):
+    if not delete_document(session, str(doc_id)):
+        raise HTTPException(404, "Textbook not found in this library")
+    return {"deleted": True}
+
+
+def process_pdf(data: bytes, name: str, session: str):
+    if not data.startswith(b"%PDF-"):
+        raise HTTPException(415, "The file is not a valid PDF.")
+    try:
+        reader = PdfReader(BytesIO(data))
+        if reader.is_encrypted:
+            raise HTTPException(422, "This PDF is password protected. Upload an unlocked copy.")
+        if len(reader.pages) > 700:
+            raise HTTPException(413, "Upload a PDF with no more than 700 pages.")
+        pages = []
+        total = 0
+        for page in reader.pages:
+            # Limit pathological compressed content before extraction.
+            contents = page.get_contents()
+            if contents and len(contents.get_data()) > 8 * 1024 * 1024:
+                raise HTTPException(413, "A page is too complex to process. Upload a smaller PDF.")
+            text = page.extract_text() or ""
+            total += len(text)
+            if total > 8_000_000:
+                raise HTTPException(413, "This PDF contains too much text. Upload a chapter instead.")
+            pages.append(text)
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(422, "This PDF could not be read. Try a different text-based PDF.") from None
+    return {"document": index_pages(session, name, pages, hashlib.sha256(data).hexdigest())}
+
+
+@app.post("/api/upload")
+async def upload(request: Request, filename: str, session: str = Depends(workspace)):
+    name = PurePath(filename.replace("\\", "/")).name.strip()
+    if not name or len(name) > 180 or not name.lower().endswith(".pdf") or any(ord(c) < 32 for c in name):
+        raise HTTPException(400, "Use a PDF filename with at most 180 characters.")
+    buffer = bytearray()
+    async for part in request.stream():
+        if len(buffer) + len(part) > MAX_UPLOAD:
+            raise HTTPException(413, "PDFs must be 20 MB or smaller.")
+        buffer.extend(part)
+    if not buffer:
+        raise HTTPException(400, "The PDF is empty.")
+    return await run_in_threadpool(process_pdf, bytes(buffer), name, session)
+
 
 @app.post("/api/chat")
-def chat_endpoint(request: ChatRequest):
-    try:
-        if not request.messages:
-            raise HTTPException(status_code=400, detail="Messages array cannot be empty")
-        
-        # User's latest message
-        user_input = request.messages[-1].get("content", "")
-        
-        # We can format the history if needed
-        # chat_history = format_history(request.messages[:-1])
-        
-        # Get our chain
-        qa_chain = get_rag_chain()
-        
-        # Generate response
-        response = qa_chain.invoke({
-            "question": user_input,
-            "chat_history": [(msg.get("role"), msg.get("content")) for msg in request.messages[:-1]]
-        })
-        
-        return {
-            "answer": response["answer"],
-            "sources": [] # In the future we can attach sources here
-        }
-    except Exception as e:
-        print(f"Error in chat endpoint: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.post("/api/process_pdf")
-def process_pdf(request: ProcessPDFRequest):
-    try:
-        # 1. Download PDF from Vercel Blob
-        response = requests.get(request.file_url)
-        response.raise_for_status()
-        
-        # 2. Extract text using pypdf
-        text = ""
-        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as temp_pdf:
-            temp_pdf.write(response.content)
-            temp_pdf_path = temp_pdf.name
-            
-        try:
-            reader = PdfReader(temp_pdf_path)
-            for page in reader.pages:
-                page_text = page.extract_text()
-                if page_text:
-                    text += page_text + "\n"
-        finally:
-            os.remove(temp_pdf_path)
-            
-        if not text.strip():
-            raise HTTPException(status_code=400, detail="No readable text found in PDF")
-            
-        # 3. Chunk text
-        chunks = chunk_text(text)
-        
-        # 4. Push to Pinecone via REST API
-        pinecone_api_key = os.environ.get("PINECONE_API_KEY")
-        pinecone_index_name = os.environ.get("PINECONE_INDEX_NAME", "ncert-rag")
-        
-        # Get host for index
-        host_resp = requests.get(
-            f"https://api.pinecone.io/indexes/{pinecone_index_name}",
-            headers={"Api-Key": pinecone_api_key}
-        )
-        if not host_resp.ok:
-            return {"status": "error", "message": f"Failed to find index {pinecone_index_name}: {host_resp.text}"}
-        
-        host_url = f"https://{host_resp.json().get('host')}"
-        
-        # Embed
-        embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
-        embedded_vectors = embeddings.embed_documents(chunks)
-        
-        vectors_to_upsert = []
-        for i, text_chunk in enumerate(chunks):
-            # Pinecone requires (id, values, metadata)
-            vector_id = str(uuid.uuid4())
-            vectors_to_upsert.append({
-                "id": vector_id, 
-                "values": embedded_vectors[i], 
-                "metadata": {"text": text_chunk}
-            })
-            
-        # Batch insert to pinecone via REST
-        upsert_resp = requests.post(
-            f"{host_url}/vectors/upsert",
-            headers={
-                "Api-Key": pinecone_api_key,
-                "Content-Type": "application/json"
-            },
-            json={"vectors": vectors_to_upsert}
-        )
-        
-        if not upsert_resp.ok:
-            return {"status": "error", "message": f"Pinecone upsert failed: {upsert_resp.text}"}
-        
-        return {"status": "success", "message": f"Successfully vectorized {request.filename}"}
-        
-    except Exception as e:
-        print(f"Error processing PDF: {e}")
-        raise HTTPException(status_code=500, detail=str(e))
-
+def chat(body: ChatRequest, session: str = Depends(workspace), authorization: str | None = Header(default=None)):
+    if body.messages[-1].role != "user":
+        raise HTTPException(400, "The last message must be a question from the student.")
+    if sum(len(m.content) for m in body.messages) > 60000:
+        raise HTTPException(413, "This conversation is too long. Start a new chat.")
+    ids = [str(i) for i in body.document_ids]
+    if ids and not set(ids).issubset({d["id"] for d in list_documents(session)}):
+        raise HTTPException(404, "A selected textbook is no longer in your library. Select an available textbook.")
+    return answer_question(session, [m.model_dump() for m in body.messages], resolve_key(authorization), body.model, body.mode, ids)

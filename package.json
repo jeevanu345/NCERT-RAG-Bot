@@ -1,0 +1,19 @@
+{
+  "name": "ncert-tutor",
+  "version": "2.0.0",
+  "private": true,
+  "description": "A focused NCERT study workspace powered by your NVIDIA NIM API key.",
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "build": "npm --prefix \"Full stack Project\" run build",
+    "start": "node scripts/dev.mjs --production",
+    "lint": "npm --prefix \"Full stack Project\" run lint",
+    "typecheck": "npm --prefix \"Full stack Project\" run typecheck",
+    "test": "npm --prefix \"Full stack Project\" run test:api",
+    "test:e2e": "npm --prefix \"Full stack Project\" run test:e2e --"
+  },
+  "engines": {
+    "node": ">=20.9"
+  }
+}

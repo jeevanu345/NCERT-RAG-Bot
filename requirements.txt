@@ -1,16 +1,8 @@
-# PDF processing
-pypdf==4.2.0          # modern fork of PyPDF2
-
-# LangChain ecosystem
-langchain==0.3.0
-langchain-community==0.3.0
-langchain-core==0.3.0
-
-# Vector DB
-chromadb==0.5.0
-
-# Streamlit for UI
-streamlit==1.36.0
-
-# Optional: dotenv for environment variables (if you add .env later)
-python-dotenv==1.0.1
+# Runtime and API-test dependencies for the canonical NVIDIA NIM application.
+fastapi==0.143.1
+uvicorn==0.54.0
+pydantic==2.14.1
+pypdf==6.20.1
+python-dotenv==1.2.4
+requests==2.34.2
+httpx==0.28.1

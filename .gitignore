@@ -10,8 +10,8 @@ dist/
 downloads/
 eggs/
 .eggs/
-lib/
-lib64/
+/lib/
+/lib64/
 parts/
 sdist/
 var/
@@ -52,3 +52,14 @@ ncert_text.txt
 # Environment files in nested experiments
 *.env
 !*.env.example
+
+# Canonical web app
+node_modules/
+.next/
+.data/
+.env.local
+.env.*.local
+*.tsbuildinfo
+.playwright-mcp/
+playwright-report/
+test-results/

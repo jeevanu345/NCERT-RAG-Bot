@@ -1,36 +1,8 @@
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-import os
+"""Compatibility imports for the shared, dependency-free textbook chunker."""
+from pathlib import Path
+import sys
 
+sys.path.insert(0, str(Path(__file__).resolve().parent / 'Full stack Project'))
+from api.chunking import chunk_text, create_chunks_from_text
 
-def chunk_text(text):
-    """
-    Splits raw text into smaller, overlapping chunks.
-    """
-    text_splitter = RecursiveCharacterTextSplitter(
-        chunk_size=1000,
-        chunk_overlap=200,
-        length_function=len,
-    )
-    chunks = text_splitter.split_text(text)
-    print(f"Created {len(chunks)} text chunks.")
-    return chunks
-
-
-def create_chunks_from_text(text_path):
-    """
-    Reads a text file and splits it into smaller, overlapping chunks.
-    """
-    with open(text_path, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    return chunk_text(text)
-
-if __name__ == "__main__":
-    text_file = "ncert_text.txt"
-    if os.path.exists(text_file):
-        chunks = create_chunks_from_text(text_file)
-        # You can inspect the first few chunks to see if the process worked
-        # for chunk in chunks[:5]:
-        #     print(f"--- Chunk Start ---\n{chunk}\n--- Chunk End ---")
-    else:
-        print(f"Error: The text file '{text_file}' was not found.")
+__all__ = ['chunk_text', 'create_chunks_from_text']

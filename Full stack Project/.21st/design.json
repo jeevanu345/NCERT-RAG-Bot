@@ -1,0 +1,143 @@
+{
+  "version": 1,
+  "project": {
+    "name": "ncert-tutor",
+    "productType": "education workspace",
+    "stack": ["nextjs", "react", "shadcn", "tailwind-v4"]
+  },
+  "sources": {
+    "tokens": ["src/app/globals.css"],
+    "components": ["src/components/ui"],
+    "assets": ["public/sample-study-notes.pdf"],
+    "instructions": ["AGENTS.md"]
+  },
+  "design": {
+    "colorMode": "light",
+    "colors": {
+      "--background": {
+        "value": "#fcfdfd",
+        "source": "src/app/globals.css"
+      },
+      "--foreground": {
+        "value": "#263835",
+        "source": "src/app/globals.css"
+      },
+      "--primary": {
+        "value": "#2c6657",
+        "source": "src/app/globals.css"
+      },
+      "--primary-foreground": {
+        "value": "#ffffff",
+        "source": "src/app/globals.css"
+      },
+      "--secondary": {
+        "value": "#edf3f0",
+        "source": "src/app/globals.css"
+      },
+      "--accent": {
+        "value": "#e8eeeb",
+        "source": "src/app/globals.css"
+      },
+      "--muted": {
+        "value": "#f2f5f4",
+        "source": "src/app/globals.css"
+      },
+      "--muted-foreground": {
+        "value": "#607069",
+        "source": "src/app/globals.css"
+      },
+      "--destructive": {
+        "value": "#b3423c",
+        "source": "src/app/globals.css"
+      },
+      "--border": {
+        "value": "#e1e7e4",
+        "source": "src/app/globals.css"
+      },
+      "--ring": {
+        "value": "#5c927f",
+        "source": "src/app/globals.css"
+      },
+      "--sidebar-bg": {
+        "value": "#f3f6f4",
+        "source": "src/app/globals.css"
+      },
+      "--soft-green": {
+        "value": "#e8f0eb",
+        "source": "src/app/globals.css"
+      },
+      "--text-soft": {
+        "value": "#53665f",
+        "source": "src/app/globals.css"
+      }
+    },
+    "typography": {
+      "body": {
+        "value": "Avenir Next, Segoe UI, ui-sans-serif, sans-serif",
+        "source": "src/app/globals.css"
+      },
+      "display": {
+        "value": "Iowan Old Style, Palatino Linotype, Georgia, serif",
+        "source": "src/app/globals.css"
+      }
+    },
+    "spacing": {},
+    "radius": {
+      "controls": "8px",
+      "composer": "14px",
+      "dialogs": "17px"
+    },
+    "shadows": {
+      "composer": "subtle, only to distinguish the active input"
+    },
+    "motion": {
+      "reducedMotion": true
+    },
+    "density": "comfortable"
+  },
+  "components": {
+    "installed": ["button", "input", "scroll-area"],
+    "preferredPrimitives": ["Radix Dialog", "Button", "Input"],
+    "patterns": [
+      "responsive sidebar",
+      "source disclosures",
+      "focused chat composer",
+      "textbook list",
+      "flashcard review"
+    ]
+  },
+  "constraints": {
+    "must": [
+      "Simple and intuitive study interface",
+      "NVIDIA NIM BYOK",
+      "Visible focus and mobile navigation",
+      "No local model dependency"
+    ],
+    "avoid": [
+      "Decorative gradients",
+      "External runtime fonts",
+      "Fake upload success",
+      "Persisting keys to the library database"
+    ]
+  },
+  "decisions": [
+    {
+      "decision": "White study canvas, sage navigation, forest-green actions, restrained serif headings.",
+      "source": "User-requested simple aesthetic redesign"
+    },
+    {
+      "decision": "Reuse installed controls and Radix dialogs; custom layout grounded in light sidebar and conversation-list catalog search.",
+      "source": "21st search plus existing components"
+    }
+  ],
+  "evidence": [
+    {
+      "fact": "All palette tokens come from the implemented CSS",
+      "source": "src/app/globals.css"
+    },
+    {
+      "fact": "No source-upload review was run; local browser and accessibility checks used instead after automatic review rejected the hosted review command.",
+      "source": "Local verification"
+    }
+  ]
+}
