@@ -53,6 +53,8 @@ function start(command, args, extraEnv = {}) {
     if (!closing) stop(code || 0);
   });
 }
+process.on("SIGINT", () => stop());
+process.on("SIGTERM", () => stop());
 start(python, [
   "-m",
   "uvicorn",
@@ -62,20 +64,47 @@ start(python, [
   "--port",
   apiPort,
 ]);
-start(
-  process.execPath,
-  [
-    path.join(app, "node_modules/next/dist/bin/next"),
-    production ? "start" : "dev",
-    "--hostname",
-    "127.0.0.1",
-    "--port",
-    port,
-  ],
-  { PYTHON_API_BASE_URL: `http://127.0.0.1:${apiPort}` },
-);
-process.on("SIGINT", () => stop());
-process.on("SIGTERM", () => stop());
-console.log(
-  `\nNCERT Tutor: http://127.0.0.1:${port}\nBoth services are local. Press Ctrl+C to stop.\n`,
-);
+// Open the UI only once its API is ready, including on a cold CI runner.
+const deadline = Date.now() + 15000;
+let ready = false;
+while (!closing && Date.now() < deadline) {
+  try {
+    const response = await fetch(`http://127.0.0.1:${apiPort}/api/health`, {
+      signal: AbortSignal.timeout(500),
+    });
+    const health = await response.json();
+    if (
+      response.ok &&
+      health.status === "ok" &&
+      health.provider === "NVIDIA NIM"
+    ) {
+      ready = true;
+      break;
+    }
+  } catch {
+    // The Python process is still starting; a failed child exits through stop().
+  }
+  await new Promise((resolve) => setTimeout(resolve, 100));
+}
+if (!closing && ready) {
+  start(
+    process.execPath,
+    [
+      path.join(app, "node_modules/next/dist/bin/next"),
+      production ? "start" : "dev",
+      "--hostname",
+      "127.0.0.1",
+      "--port",
+      port,
+    ],
+    { PYTHON_API_BASE_URL: `http://127.0.0.1:${apiPort}` },
+  );
+  console.log(
+    `\nNCERT Tutor: http://127.0.0.1:${port}\nBoth services are local. Press Ctrl+C to stop.\n`,
+  );
+} else if (!closing) {
+  console.error(
+    "The Python API did not become ready. Check its startup error above.",
+  );
+  stop(1);
+}

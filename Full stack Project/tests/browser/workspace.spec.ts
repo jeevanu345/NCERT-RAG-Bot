@@ -314,10 +314,15 @@ test("study, library, and settings pass automated accessibility checks", async (
   for (const screen of ["study", "library", "settings"]) {
     if (screen === "library")
       await page.getByRole("button", { name: /Textbook library 0/ }).click();
-    if (screen === "settings")
+    if (screen === "settings") {
       await page
         .getByRole("button", { name: "Connect NVIDIA", exact: true })
         .click();
+      await page
+        .getByLabel("API key", { exact: true })
+        .fill("nvapi-accessibility-placeholder");
+      await page.getByRole("button", { name: "Show API key" }).click();
+    }
     const results = await new AxeBuilder({ page })
       .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
       .analyze();
@@ -379,7 +384,9 @@ test("proxy rejects cross-origin writes and isolates browser libraries", async (
     },
   );
   expect(forbidden.status()).toBe(403);
-  const other = await browser.newContext({ baseURL: "http://127.0.0.1:3000" });
+  const other = await browser.newContext({
+    baseURL: new URL(page.url()).origin,
+  });
   try {
     const library = await other.request.get("/api/documents");
     expect(library.status()).toBe(200);

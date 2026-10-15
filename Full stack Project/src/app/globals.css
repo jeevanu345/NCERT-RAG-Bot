@@ -1370,6 +1370,11 @@ svg {
   border: 0;
   box-shadow: none;
   font-size: 12px;
+  color: var(--foreground);
+}
+.password-field input::placeholder {
+  color: var(--muted-foreground);
+  opacity: 1;
 }
 .password-field:focus-within {
   outline: 2px solid var(--ring);

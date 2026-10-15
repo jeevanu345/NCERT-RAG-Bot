@@ -20,7 +20,9 @@ export default defineConfig({
     },
   ],
   webServer: {
-    command: "node ../scripts/dev.mjs",
+    command: process.env.CI
+      ? "node ../scripts/dev.mjs --production"
+      : "node ../scripts/dev.mjs",
     url: process.env.E2E_BASE_URL || "http://127.0.0.1:3000",
     reuseExistingServer: !process.env.CI,
     timeout: 30000,
