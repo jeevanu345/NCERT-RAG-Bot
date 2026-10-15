@@ -1,6 +1,8 @@
 import { cookies } from "next/headers";
 import { NextResponse } from "next/server";
 import { randomUUID } from "node:crypto";
+import { currentAccount } from "@/auth";
+import { authenticationRequired } from "@/lib/auth-config";
 
 const BASE = (
   process.env.PYTHON_API_BASE_URL ?? "http://127.0.0.1:8000"
@@ -18,23 +20,41 @@ export async function proxy(
   // Next.js can normalize request.url to localhost even when the browser uses
   // 127.0.0.1. The Host header retains the browser-facing authority.
   const requestURL = new URL(request.url);
-  const expectedOrigin = `${requestURL.protocol}//${request.headers.get("host") ?? requestURL.host}`;
+  const expectedOrigin = process.env.AUTH_URL
+    ? new URL(process.env.AUTH_URL).origin
+    : `${requestURL.protocol}//${request.headers.get("host") ?? requestURL.host}`;
   if (method !== "GET" && origin && origin !== expectedOrigin) {
     return NextResponse.json(
       { error: "This request must come from NCERT Tutor." },
       { status: 403 },
     );
   }
+  const account = await currentAccount();
+  const expectedIdentity = request.headers.get("x-ncert-identity");
+  if (expectedIdentity && expectedIdentity !== (account?.id || "guest"))
+    return NextResponse.json(
+      { error: "Your account changed. Reload this page before continuing." },
+      { status: 409 },
+    );
+  if (!account && authenticationRequired() && path !== "/api/health")
+    return NextResponse.json(
+      { error: "Please sign in to use your study workspace." },
+      { status: 401 },
+    );
   const jar = await cookies();
   const existing = jar.get(COOKIE)?.value;
   const id =
-    existing &&
+    account?.id ||
+    (existing &&
     /^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(
       existing,
     )
       ? existing
-      : randomUUID();
-  const headers: Record<string, string> = { "X-Workspace-ID": id };
+      : randomUUID());
+  const headers: Record<string, string> = {
+    "X-Workspace-ID": id,
+    "X-Workspace-Kind": account ? "account" : "guest",
+  };
   const auth = request.headers.get("authorization");
   if (auth) headers.Authorization = auth;
   if (request.headers.get("content-type"))
@@ -98,11 +118,11 @@ export async function proxy(
       status: upstream.status,
       headers: { "Cache-Control": "no-store" },
     });
-    if (!existing || existing !== id)
+    if (!account && (!existing || existing !== id))
       response.cookies.set(COOKIE, id, {
         httpOnly: true,
         sameSite: "strict",
-        secure: new URL(request.url).protocol === "https:",
+        secure: new URL(expectedOrigin).protocol === "https:",
         path: "/",
         maxAge: 60 * 60 * 24 * 30,
       });

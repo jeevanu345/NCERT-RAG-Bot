@@ -1,16 +1,16 @@
 # NCERT Tutor design context
 
-A light, focused study workspace for Class 10 students. The user requested a simple, aesthetic, intuitive redesign and NVIDIA NIM BYOK.
+A quiet, polished study workspace and editorial landing page. The user supplied a green open-book/person logo and requested dark mode, selectable palettes/fonts, detailed animation, and Google/Microsoft/Apple account flows.
 
-- White study canvas, sage sidebar, forest-green actions, muted pastel study-mode icons.
-- Avenir Next/Segoe UI system text with Iowan Old Style/Georgia display headings. No runtime font downloads.
-- Clear navigation: Study space, Textbook library, Saved answers.
-- Button and Input reuse the installed shadcn primitives; dialogs use Radix for focus management.
-- A single composer contains textbook selection, four study modes, attachment, and send/stop.
-- Starter prompts fill the composer for review before sending.
-- Source passages are expandable; PDF page numbers are explicit.
-- Mobile navigation uses a modal drawer. Reduced motion, focus outlines, and error recovery are required.
+- Native vector brand mark: dark teal outer book, green/sage pages, head and three rays; bold NCERT and light tutor wordmark.
+- Light, dark, and system modes; Forest, Ocean, Iris, Rose, Amber, and Slate accents. Semantic surfaces and states adapt throughout the interface.
+- Self-hosted Manrope, Inter, Nunito Sans, or system body fonts; Lora, matching body font, or Georgia display headings. No third-party font service.
+- Settings uses keyboard-accessible Radix tabs, a palette grid, font selects, and a live appearance preview. Choices persist on the device.
+- The landing page explains the real product with interactive study examples, three setup steps, feature illustrations, data-handling information, FAQs, and calls to action. Examples are labelled and never make API calls.
+- Short entrance and scroll transitions respect reduced motion. A decorative source-chip movement ends after four seconds. Content remains visible without JavaScript.
+- Sign-in, sign-out, provider-error, and privacy pages share the same appearance. Account controls appear in the landing header and workspace.
+- Study navigation, source disclosures, textbook library, saved answers, and focused composer remain familiar. Mobile navigation uses a modal drawer.
 
-The 21st reference search included [Sidebar Light](https://21st.dev/@inference-sh/components/sidebar-light) and [Conversation List](https://21st.dev/@arihantcodes_1f7b8c4d/components/conversation-list). No external component source was installed. The hosted source review was rejected by automatic approval review, so validation uses local checks and browser tests.
+21st searches grounded the layout in light sidebars, conversation lists, editorial heroes, and feature grids. No external component source was installed. A previous hosted source review was rejected by automatic approval review; local browser, responsive, and accessibility checks are used instead.
 
-Actual tokens and durable implementation choices are recorded in `design.json`; `src/app/globals.css` remains the source of truth.
+`src/app/appearance.css` is the source of truth for appearance tokens; `src/app/globals.css` and `src/app/landing.css` define the component layouts. Durable choices are recorded in `design.json`.

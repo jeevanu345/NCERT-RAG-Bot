@@ -19,9 +19,12 @@ app = FastAPI(title="NCERT Tutor", version="2.0.0")
 MAX_UPLOAD = 20 * 1024 * 1024
 
 
-def workspace(x_workspace_id: str = Header()) -> str:
+def workspace(x_workspace_id: str = Header(), x_workspace_kind: Literal['guest', 'account'] = Header(default='guest')) -> str:
     try:
-        return str(uuid.UUID(x_workspace_id))
+        identifier = str(uuid.UUID(x_workspace_id))
+        # The private proxy supplies kind from a verified session. A guest UUID
+        # can never address an account library, even if the UUID is identical.
+        return f'account:{identifier}' if x_workspace_kind == 'account' else identifier
     except ValueError:
         raise HTTPException(400, "Invalid workspace session") from None
 

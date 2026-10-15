@@ -4,6 +4,8 @@
   "private": true,
   "description": "A focused NCERT study workspace powered by your NVIDIA NIM API key.",
   "scripts": {
+    "auth:secret": "node scripts/auth-secret.mjs",
+    "auth:apple-secret": "npm --prefix \"Full stack Project\" run auth:apple-secret --",
     "setup": "node scripts/setup.mjs",
     "dev": "node scripts/dev.mjs",
     "build": "npm --prefix \"Full stack Project\" run build",

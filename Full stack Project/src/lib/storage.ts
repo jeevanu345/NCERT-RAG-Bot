@@ -2,10 +2,12 @@ import type { Conversation, Message } from "./types";
 
 const STORAGE_KEY = "ncert-sessions-v1";
 // Read only this app's versioned schema; malformed browser data never becomes chat input.
-export function loadConversations(): Conversation[] {
+export function loadConversations(scope = "guest"): Conversation[] {
   try {
     const parsed: unknown = JSON.parse(
-      localStorage.getItem(STORAGE_KEY) ?? "[]",
+      localStorage.getItem(
+        scope === "guest" ? STORAGE_KEY : `${STORAGE_KEY}:${scope}`,
+      ) ?? "[]",
     );
     if (!Array.isArray(parsed)) return [];
     return parsed
@@ -50,9 +52,12 @@ export function loadConversations(): Conversation[] {
     return [];
   }
 }
-export function saveConversations(conversations: Conversation[]) {
+export function saveConversations(
+  conversations: Conversation[],
+  scope = "guest",
+) {
   localStorage.setItem(
-    STORAGE_KEY,
+    scope === "guest" ? STORAGE_KEY : `${STORAGE_KEY}:${scope}`,
     JSON.stringify(conversations.filter((c) => c.messages.length).slice(0, 20)),
   );
 }

@@ -63,3 +63,6 @@ node_modules/
 .playwright-mcp/
 playwright-report/
 test-results/
+# Apple signing keys and generated OAuth credentials are private.
+*.p8
+.secrets/

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Logo from "./brand/Logo";
 import {
   BookMarked,
   BookOpen,
@@ -44,13 +45,7 @@ export default function Sidebar(props: SidebarProps) {
   return (
     <div className="sidebar-content">
       <Link href="/" className="brand" aria-label="NCERT Tutor home">
-        <span className="brand-symbol">
-          <BookOpen size={21} strokeWidth={1.7} />
-        </span>
-        <span>
-          NCERT<span className="brand-light">tutor</span>
-          <small>A little help. A lot of learning.</small>
-        </span>
+        <Logo />
       </Link>
       <Button
         className="new-chat"

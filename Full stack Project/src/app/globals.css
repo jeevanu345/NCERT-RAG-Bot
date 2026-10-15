@@ -16,26 +16,10 @@
   --color-border: var(--border);
   --color-input: var(--border);
   --color-ring: var(--ring);
-  --font-sans: "Avenir Next", "Segoe UI", ui-sans-serif, sans-serif;
+  --font-sans: var(--font-body);
   --radius-md: 8px;
 }
-:root {
-  color-scheme: light;
-  --background: #fcfdfd;
-  --foreground: #263835;
-  --primary: #2c6657;
-  --primary-foreground: #ffffff;
-  --secondary: #edf3f0;
-  --accent: #e8eeeb;
-  --muted: #f2f5f4;
-  --muted-foreground: #607069;
-  --destructive: #b3423c;
-  --border: #e1e7e4;
-  --ring: #5c927f;
-  --sidebar-bg: #f3f6f4;
-  --soft-green: #e8f0eb;
-  --text-soft: #53665f;
-}
+
 * {
   box-sizing: border-box;
   border-color: var(--border);
@@ -44,7 +28,7 @@ body {
   margin: 0;
   background: var(--background);
   color: var(--foreground);
-  font-family: "Avenir Next", "Segoe UI", ui-sans-serif, sans-serif;
+  font-family: var(--font-body);
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
 }
@@ -96,7 +80,7 @@ button:disabled {
   opacity: 0.48;
 }
 ::selection {
-  background: #d3e5dc;
+  background: var(--accent);
 }
 svg {
   flex-shrink: 0;
@@ -107,7 +91,7 @@ svg {
   left: 15px;
   z-index: 100;
   background: var(--primary);
-  color: white;
+  color: var(--primary-foreground);
   padding: 10px 16px;
   border-radius: 6px;
 }
@@ -143,7 +127,7 @@ svg {
   letter-spacing: -0.8px;
 }
 .brand-symbol {
-  color: white;
+  color: var(--primary-foreground);
   background: var(--primary);
   width: 37px;
   height: 41px;
@@ -182,7 +166,7 @@ svg {
 }
 .shortcut {
   margin-left: auto;
-  color: #e1eee8;
+  color: var(--primary-foreground);
   font-size: 10px;
   font-weight: 400;
 }
@@ -204,10 +188,10 @@ svg {
   font-size: 12px;
 }
 .main-nav button:hover {
-  background: #e9eeeb;
+  background: var(--accent);
 }
 .main-nav button[aria-current] {
-  background: #e4ece6;
+  background: var(--accent);
   color: var(--primary);
   font-weight: 600;
 }
@@ -288,7 +272,7 @@ svg {
 }
 .small-book {
   padding: 7px;
-  background: #e2ebe4;
+  background: var(--soft-green);
   color: var(--primary);
   border-radius: 5px;
 }
@@ -327,7 +311,7 @@ svg {
 }
 .history-row.active,
 .history-row:hover {
-  background: #e7ede8;
+  background: var(--accent);
 }
 .history-row > button:first-child {
   display: flex;
@@ -371,7 +355,7 @@ svg {
   width: 100%;
   text-align: left;
   padding: 12px 10px;
-  background: #fcfdfc;
+  background: var(--card);
   border: 1px solid var(--border) !important;
   border-radius: 8px;
 }
@@ -443,7 +427,7 @@ svg {
   justify-content: space-between;
   gap: 10px;
   padding: 0 36px;
-  border-bottom: 1px solid #eaf0ec;
+  border-bottom: 1px solid var(--border);
 }
 .topbar-title {
   display: flex;
@@ -472,7 +456,7 @@ svg {
   gap: 7px;
   font-size: 10px;
   color: var(--text-soft);
-  background: #f2f6f3;
+  background: var(--muted);
   border-radius: 20px;
   padding: 7px 11px;
 }
@@ -483,8 +467,8 @@ svg {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #edf1e9;
-  color: #697d62;
+  background: var(--soft-green);
+  color: var(--primary);
   display: grid;
   place-items: center;
 }
@@ -505,7 +489,7 @@ svg {
   overflow-y: auto;
   padding: 0 36px;
   scrollbar-width: thin;
-  scrollbar-color: #cfdbd4 transparent;
+  scrollbar-color: var(--border) transparent;
 }
 .welcome {
   max-width: 710px;
@@ -516,7 +500,7 @@ svg {
 .welcome-mark {
   width: 72px;
   height: 72px;
-  background: #eaf2ed;
+  background: var(--soft-green);
   border-radius: 24px;
   display: grid;
   place-items: center;
@@ -553,7 +537,7 @@ svg {
   letter-spacing: -1.4px;
   line-height: 1.16;
   margin: 0;
-  color: #293d32;
+  color: var(--foreground);
 }
 .welcome-description {
   color: var(--muted-foreground);
@@ -568,7 +552,7 @@ svg {
   text-align: left;
 }
 .starter {
-  background: white;
+  background: var(--card);
   border: 1px solid var(--border) !important;
   padding: 17px 14px;
   border-radius: 10px;
@@ -579,8 +563,8 @@ svg {
   text-align: left;
 }
 .starter:hover {
-  border-color: #a5bdad !important;
-  background: #f6f9f7;
+  border-color: var(--ring) !important;
+  background: var(--muted);
 }
 .starter > span:nth-child(2) {
   flex: 1;
@@ -597,7 +581,7 @@ svg {
   margin-top: 4px;
 }
 .starter > svg {
-  color: #8c9b92;
+  color: var(--muted-foreground);
 }
 .starter-icon {
   display: grid;
@@ -605,20 +589,20 @@ svg {
   width: 34px;
   height: 34px;
   border-radius: 8px;
-  background: #edf3e9;
-  color: #6a875c;
+  background: var(--mode-explain-bg);
+  color: var(--mode-explain);
 }
 .starter-revise .starter-icon {
-  background: #eef0f8;
-  color: #7a80a0;
+  background: var(--mode-revise-bg);
+  color: var(--mode-revise);
 }
 .starter-practice .starter-icon {
-  background: #f8f0e2;
-  color: #a58447;
+  background: var(--mode-practice-bg);
+  color: var(--mode-practice);
 }
 .starter-flashcards .starter-icon {
-  background: #e8f3f2;
-  color: #5d8c87;
+  background: var(--mode-flashcards-bg);
+  color: var(--mode-flashcards);
 }
 .setup-strip {
   display: flex;
@@ -645,7 +629,7 @@ svg {
   color: var(--primary);
 }
 .step-number {
-  border: 1px solid #d4dfd6;
+  border: 1px solid var(--border);
   color: var(--primary);
   height: 19px;
   width: 19px;
@@ -662,8 +646,8 @@ svg {
   flex-shrink: 0;
 }
 .composer {
-  background: white;
-  border: 1px solid #dbe3de;
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: 14px;
   padding: 11px 15px 10px;
   box-shadow:
@@ -671,14 +655,14 @@ svg {
     0 1px 3px #273b2d04;
 }
 .composer:focus-within {
-  border-color: #8caf9a;
+  border-color: var(--ring);
   box-shadow: 0 0 0 3px #2c665709;
 }
 .composer-scope {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #678373;
+  color: var(--text-soft);
 }
 .composer-scope select {
   border: none;
@@ -739,17 +723,17 @@ svg {
   border-radius: 5px;
 }
 .mode-switch button[aria-pressed="true"] {
-  background: #edf3ee;
+  background: var(--primary-soft);
   color: var(--primary);
 }
 .mode-switch button:hover {
-  background: #f0f4f1;
+  background: var(--muted);
 }
 .send-actions {
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #7a897f;
+  color: var(--muted-foreground);
 }
 .send-button {
   border-radius: 9px;
@@ -775,7 +759,7 @@ svg {
   margin: 0 0 30px auto;
   border-radius: 14px 14px 4px 14px;
   padding: 13px 19px;
-  background: #edf2ee;
+  background: var(--primary-soft);
   line-height: 1.7;
   font-size: 13px;
   white-space: pre-wrap;
@@ -805,7 +789,7 @@ svg {
 .markdown {
   font-size: 13px;
   line-height: 1.9;
-  color: #37473e;
+  color: var(--foreground);
   overflow-wrap: anywhere;
 }
 .markdown > :first-child {
@@ -848,7 +832,7 @@ svg {
   text-underline-offset: 3px;
 }
 .markdown blockquote {
-  border-left: 3px solid #b3c9b9;
+  border-left: 3px solid var(--border);
   padding: 1px 16px;
   margin: 17px 0;
   color: var(--muted-foreground);
@@ -894,7 +878,7 @@ svg {
   border: 1px solid var(--border);
   border-radius: 8px;
   margin: 20px 0 6px;
-  background: #fbfcfb;
+  background: var(--card);
 }
 .source-list summary {
   display: flex;
@@ -994,7 +978,7 @@ svg {
   bottom: 205px;
   left: 50%;
   transform: translateX(-50%);
-  background: white;
+  background: var(--card);
   z-index: 1;
   box-shadow: 0 2px 5px #0000000a;
   font-size: 10px;
@@ -1030,16 +1014,16 @@ svg {
   max-width: 510px;
 }
 .upload-zone {
-  border: 1px dashed #bfcec2;
+  border: 1px dashed var(--border);
   border-radius: 12px;
   padding: 30px 20px;
   text-align: center;
-  background: #f7faf7;
+  background: var(--muted);
   color: var(--primary);
 }
 .upload-zone.dragging {
   border: 2px dashed var(--primary);
-  background: #e8f2e9;
+  background: var(--accent);
 }
 .upload-zone > svg {
   margin: 0 auto 12px;
@@ -1057,7 +1041,7 @@ svg {
 }
 .upload-zone button {
   font-size: 11px;
-  background: white;
+  background: var(--card);
 }
 .library-toolbar {
   margin: 32px 0 16px;
@@ -1104,11 +1088,11 @@ svg {
 .document-icon {
   display: grid;
   place-items: center;
-  background: #edf2eb;
+  background: var(--soft-green);
   height: 46px;
   width: 39px;
   border-radius: 5px;
-  color: #6c8868;
+  color: var(--primary);
 }
 .document-info {
   flex: 1;
@@ -1133,7 +1117,7 @@ svg {
   display: flex;
   align-items: center;
   gap: 4px;
-  color: #4d7155;
+  color: var(--primary);
   font-size: 9px;
 }
 .document-row > button {
@@ -1219,9 +1203,9 @@ svg {
 }
 .error-banner {
   margin: 15px 26px 0;
-  background: #fdf0ed;
-  color: #993e36;
-  border: 1px solid #f0dcd5;
+  background: var(--error-bg);
+  color: var(--error-text);
+  border: 1px solid var(--border);
   border-radius: 8px;
   font-size: 11px;
   padding: 12px 14px;
@@ -1244,8 +1228,8 @@ svg {
   display: flex;
   align-items: center;
   gap: 7px;
-  background: #edf5ee;
-  color: #406c4d;
+  background: var(--success-bg);
+  color: var(--success-text);
   padding: 10px 15px;
   border-radius: 6px;
   font-size: 11px;
@@ -1312,8 +1296,8 @@ svg {
   margin-bottom: 23px;
 }
 .provider-logo {
-  background: #e0eacc;
-  color: #507224;
+  background: var(--soft-green);
+  color: var(--primary);
   border-radius: 7px;
   display: grid;
   place-items: center;
@@ -1364,7 +1348,7 @@ svg {
   border: 1px solid var(--border);
   border-radius: 7px;
   padding-left: 11px;
-  color: #7a897e;
+  color: var(--muted-foreground);
 }
 .password-field input {
   border: 0;
@@ -1400,7 +1384,7 @@ svg {
   border: 1px solid var(--border);
   border-radius: 7px;
   margin-bottom: 8px;
-  background: white;
+  background: var(--card);
   color: var(--foreground);
 }
 .settings-form > input {
@@ -1424,8 +1408,8 @@ svg {
   display: flex;
   align-items: flex-start;
   gap: 9px;
-  color: #536b54;
-  background: #f0f4ed;
+  color: var(--text-soft);
+  background: var(--muted);
   border-radius: 7px;
   padding: 12px;
 }
@@ -1500,9 +1484,9 @@ svg {
 }
 .flashcard-review {
   max-width: 540px;
-  border: 1px solid #dce5dc;
+  border: 1px solid var(--border);
   border-radius: 13px;
-  background: #f7faf6;
+  background: var(--muted);
   padding: 19px;
 }
 .flashcard-top {
@@ -1532,7 +1516,7 @@ svg {
 }
 .flashcard button {
   font-size: 10px;
-  background: white;
+  background: var(--card);
 }
 .flashcard-controls {
   display: flex;
@@ -1544,7 +1528,7 @@ svg {
   font-size: 10px;
 }
 .flashcard-controls > button[aria-pressed="true"] {
-  background: #e4efdf;
+  background: var(--accent);
 }
 .flashcard-progress {
   display: flex;

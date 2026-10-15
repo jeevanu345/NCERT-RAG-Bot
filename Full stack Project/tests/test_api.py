@@ -83,6 +83,13 @@ class TutorTests(unittest.TestCase):
         self.assertEqual(rag.list_documents(self.workspace), [])
         self.assertEqual(self.client.delete(f"/api/documents/{doc['id']}", headers=self.headers).status_code, 404)
 
+    def test_guest_cannot_address_account_library_with_the_same_uuid(self):
+        account = {**self.headers, 'X-Workspace-Kind': 'account'}
+        doc = self.upload(headers=account).json()['document']
+        self.assertEqual(self.client.get('/api/documents', headers=self.headers).json()['documents'], [])
+        self.assertEqual(self.client.delete(f"/api/documents/{doc['id']}", headers=self.headers).status_code, 404)
+        self.assertEqual(len(self.client.get('/api/documents', headers=account).json()['documents']), 1)
+
     def test_invalid_pdf_and_name_and_empty(self):
         self.assertEqual(self.upload(b'not a PDF').status_code, 415)
         self.assertEqual(self.upload(b'').status_code, 400)

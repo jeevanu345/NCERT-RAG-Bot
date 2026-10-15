@@ -3,11 +3,11 @@
 The canonical app lives in `Full stack Project/`. Root npm scripts orchestrate setup, development, validation, and a local production run.
 
 ```text
-Browser: study workspace, library, saved answers
+Browser: landing page, study workspace, library, saved answers
   | same-origin /api/* requests; optional NVIDIA key in Authorization
   v
 Next.js route handlers (Node.js)
-  | HTTP-only workspace cookie -> trusted X-Workspace-ID header
+  | Verified OAuth session or guest cookie -> trusted workspace ID + kind
   | body-size limits, origin checks, no-store responses, request timeout
   v
 FastAPI (127.0.0.1:8000)
@@ -23,7 +23,11 @@ Answer + retrieved passages + citation markers + optional validated flashcards
 
 ## Ownership
 
-- `src/app/page.tsx`: active session, library scope, composer, upload/error state, browser persistence.
+- `src/app/page.tsx` and `components/LandingExperience.tsx`: public landing page and interactive sample previews.
+- `src/app/app/page.tsx` and `components/StudyWorkspace.tsx`: active session, library scope, composer, upload/error state, account-scoped browser persistence.
+- `src/auth.ts` and `src/app/api/auth/[...nextauth]`: Google, Microsoft Entra ID, and Apple OAuth; encrypted JWT sessions; provider-based account identity.
+- `src/lib/auth-config.ts`: safe return destinations, provider readiness, and optional required-auth policy.
+- `src/components/AppearanceProvider.tsx`, `src/lib/appearance.ts`, and `src/app/appearance.css`: validated persisted appearance, system/light/dark modes, six accent palettes, local variable fonts.
 - `src/components/`: navigation, library, connection settings, source-backed answers, flashcard review, and accessible dialogs.
 - `src/lib/backend.ts`: browser-to-Python proxy. Never accepts a browser-supplied workspace header.
 - `src/lib/storage.ts`: versioned browser history and Markdown export; no key storage.
@@ -33,14 +37,14 @@ Answer + retrieved passages + citation markers + optional validated flashcards
 
 ## API surface
 
-| Method | Endpoint | Purpose |
-| --- | --- | --- |
-| GET | `/api/health` | Provider name, default model, whether a server key exists; never returns the key |
-| POST | `/api/connection` | Tiny real completion to verify the supplied key/model |
-| GET | `/api/documents` | Documents in the current browser workspace |
-| POST | `/api/upload?filename=…` | Raw PDF bytes, extraction, and atomic index insertion |
-| DELETE | `/api/documents/{id}` | Scoped deletion, cascading passage/FTS cleanup |
-| POST | `/api/chat` | Messages, mode, model ID, optional document IDs; returns answer/sources/cards |
+| Method | Endpoint                 | Purpose                                                                          |
+| ------ | ------------------------ | -------------------------------------------------------------------------------- |
+| GET    | `/api/health`            | Provider name, default model, whether a server key exists; never returns the key |
+| POST   | `/api/connection`        | Tiny real completion to verify the supplied key/model                            |
+| GET    | `/api/documents`         | Documents in the verified account or guest workspace                             |
+| POST   | `/api/upload?filename=…` | Raw PDF bytes, extraction, and atomic index insertion                            |
+| DELETE | `/api/documents/{id}`    | Scoped deletion, cascading passage/FTS cleanup                                   |
+| POST   | `/api/chat`              | Messages, mode, model ID, optional document IDs; returns answer/sources/cards    |
 
 ## Data lifecycle
 
@@ -52,6 +56,10 @@ The browser owns chat history and sends the last 12 messages. The server has no 
 
 ## Hosting boundary
 
-The default is a single-user local application, not a public service. Next.js creates a random, HTTP-only, same-site workspace cookie. FastAPI trusts Next.js and must remain private. To host publicly, replace this boundary with authenticated identities and add usage limits and persistent storage. Do not deploy SQLite to an ephemeral function filesystem and expect durable documents.
+The default runs locally with optional guest study. Next.js maps a verified OAuth provider/subject to a stable account UUID and forwards it to a separate `account:` library namespace. A random, HTTP-only, same-site cookie identifies guest libraries; guest cookies and browser-supplied headers cannot select account data. The proxy checks optional client identity markers to reject requests from stale account screens.
+
+Auth.js handles provider validation and encrypted HTTP-only sessions lasting up to seven days. Provider access/refresh tokens are not retained in browser session data. Account chat histories use separate browser-storage keys. Cookie changes re-render the account UI, so sign-out performs the selected local cleanup before the server redirects. Cross-tab identity signals clear remembered keys and refresh stale screens.
+
+Set `AUTH_REQUIRED=true` for authenticated-only study routes; missing credentials fail closed. Canonical `AUTH_URL` origin checks support a trusted HTTPS reverse proxy. FastAPI trusts Next.js and must remain private. Public hosting also needs usage limits, backups, and persistent storage. See [OAuth setup](docs/OAUTH_SETUP.md). Do not deploy SQLite to an ephemeral function filesystem and expect durable documents.
 
 No deployment has been performed as part of this source-code upgrade.

@@ -13,7 +13,7 @@ npm run setup
 npm run dev
 ```
 
-Open **http://127.0.0.1:3000**. The development command starts both the UI and Python service, and stops both with Ctrl+C.
+Open **http://127.0.0.1:3000** for the landing page; the study workspace is at **/app**. The development command starts both the UI and Python service, and stops both with Ctrl+C.
 
 1. Open **Settings** or **Connect NVIDIA**.
 2. Get a developer key from the [NVIDIA API Catalog](https://build.nvidia.com/meta/llama-3_3-70b-instruct), paste it, and select **Test & save connection**.
@@ -33,6 +33,9 @@ NVIDIA describes free developer API access for prototyping in its [FAQ](https://
 - Questions scoped to one textbook or the whole library.
 - Browser-saved study sessions, session search, saved answers, copy, and Markdown export.
 - Retry failed questions and stop waiting for an answer.
+- Light, dark, and system modes; six palettes, four body fonts, and three display fonts in **Settings → Appearance**.
+- A responsive animated landing page with interactive study examples.
+- Google, Microsoft, and Apple sign-in, account menus, and sign-out with optional chat-cache removal.
 - Keyboard shortcuts, accessible dialogs, mobile navigation, and reduced-motion support.
 
 Press **⌘/Ctrl K** for a new session; **Enter** sends, and **Shift + Enter** adds a line. Chat requests include up to the last 12 messages. The browser retains up to 20 sessions and the latest 40 messages per session. Export longer sessions to keep a copy. Saved answers belong to their sessions.
@@ -51,17 +54,23 @@ Set `NVIDIA_API_KEY` there and restart the Python API. This is optional; browser
 
 The default model is `meta/llama-3.3-70b-instruct`. Settings also provides `meta/llama-3.1-8b-instruct` and accepts a custom NVIDIA catalog model ID. All requests use `https://integrate.api.nvidia.com/v1/chat/completions`.
 
-Text is extracted and indexed locally in `Full stack Project/.data/library.sqlite3`. The original uploaded PDF bytes are discarded after extraction. Questions, recent conversation context, and selected relevant excerpts are sent to NVIDIA. Document and chat deletion are available in the UI. Browser sessions identify libraries through an HTTP-only cookie lasting 30 days; clearing or expiring that cookie creates a new library. Chat history stays in that browser’s local storage.
+Text is extracted and indexed locally in `Full stack Project/.data/library.sqlite3`. The original uploaded PDF bytes are discarded after extraction. Questions, recent conversation context, and selected relevant excerpts are sent to NVIDIA. Document and chat deletion are available in the UI. Guest sessions identify libraries through an HTTP-only cookie lasting 30 days; clearing or expiring it creates a new guest library. Signed-in accounts have a separate library based on their verified provider identity. Chat history stays in that browser’s local storage, scoped to the account. See **/privacy** for the data lifecycle.
+
+## Optional Google, Microsoft, and Apple accounts
+
+Follow [the OAuth setup guide](docs/OAUTH_SETUP.md) for provider registrations, environment variables, exact callback URLs, and Apple client-secret generation. Run `npm run auth:secret` to generate the private session secret without printing it. Provider buttons become available after their server credentials are configured; Apple requires a registered HTTPS origin. Live OAuth credentials are not bundled with the project.
+
+Guest mode is available by default. Set `AUTH_REQUIRED=true` to require sign-in for the study workspace and API. Guest books and chats remain separate from signed-in data; chat history is stored on the device rather than synced. Open the same origin specified by `AUTH_URL` when OAuth is configured.
 
 ## Commands
 
 ```bash
-npm test                  # 22 backend tests; provider calls are mocked
+npm test                  # 23 backend tests; provider calls are mocked
 npm run lint
 npm run typecheck
 npm run build
 npm run start             # UI + API with the production build, bound to localhost
-npm run test:e2e           # 11 browser flows, including accessibility checks
+npm run test:e2e           # 23 browser/configuration checks; run build first
 ```
 
 Install the test browser once with `cd "Full stack Project" && npx playwright install chromium`.
@@ -96,7 +105,7 @@ Retrieval is lexical and uses English stemming; it does not download or run a mo
 
 Use text-based PDFs up to **20 MB**, **700 pages**, and **20 documents per library**. Scans, handwriting, diagrams, and image-only formulas need OCR before upload. The included sample is original demonstration material, not an NCERT textbook.
 
-This setup is for local development and personal study. It intentionally binds both services to localhost. The Python service trusts the Next.js proxy’s workspace header: do not expose it directly. Public deployment needs real authentication, usage controls, and persistent storage. SQLite data will not survive an ephemeral serverless deployment without a persistent backend.
+This setup is for local development and personal study. It intentionally binds both services to localhost. The Python service trusts the Next.js proxy’s workspace header: do not expose it directly. For public deployment, configure OAuth, require authentication, and add hosting-level usage controls, backups, and persistent storage. SQLite data will not survive an ephemeral serverless deployment without a persistent backend.
 
 Generated answers and citations can be wrong; check them against the original textbook. Automated tests verify software behavior using original fixtures and mocked provider responses, not educational accuracy. A live model check needs your key in Settings.
 

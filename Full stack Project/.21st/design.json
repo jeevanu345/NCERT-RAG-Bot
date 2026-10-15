@@ -6,79 +6,139 @@
     "stack": ["nextjs", "react", "shadcn", "tailwind-v4"]
   },
   "sources": {
-    "tokens": ["src/app/globals.css"],
+    "tokens": ["src/app/appearance.css", "src/app/globals.css"],
     "components": ["src/components/ui"],
-    "assets": ["public/sample-study-notes.pdf"],
+    "assets": ["public/brand/icon.svg", "public/sample-study-notes.pdf"],
     "instructions": ["AGENTS.md"]
   },
   "design": {
-    "colorMode": "light",
+    "colorMode": "light-and-dark",
     "colors": {
       "--background": {
-        "value": "#fcfdfd",
-        "source": "src/app/globals.css"
+        "value": "#fbfcfa",
+        "source": "src/app/appearance.css"
+      },
+      "--card": {
+        "value": "#ffffff",
+        "source": "src/app/appearance.css"
       },
       "--foreground": {
-        "value": "#263835",
-        "source": "src/app/globals.css"
+        "value": "#20382e",
+        "source": "src/app/appearance.css"
       },
       "--primary": {
-        "value": "#2c6657",
-        "source": "src/app/globals.css"
+        "value": "#216a55",
+        "source": "src/app/appearance.css"
       },
       "--primary-foreground": {
         "value": "#ffffff",
-        "source": "src/app/globals.css"
-      },
-      "--secondary": {
-        "value": "#edf3f0",
-        "source": "src/app/globals.css"
-      },
-      "--accent": {
-        "value": "#e8eeeb",
-        "source": "src/app/globals.css"
-      },
-      "--muted": {
-        "value": "#f2f5f4",
-        "source": "src/app/globals.css"
+        "source": "src/app/appearance.css"
       },
       "--muted-foreground": {
-        "value": "#607069",
-        "source": "src/app/globals.css"
-      },
-      "--destructive": {
-        "value": "#b3423c",
-        "source": "src/app/globals.css"
-      },
-      "--border": {
-        "value": "#e1e7e4",
-        "source": "src/app/globals.css"
-      },
-      "--ring": {
-        "value": "#5c927f",
-        "source": "src/app/globals.css"
-      },
-      "--sidebar-bg": {
-        "value": "#f3f6f4",
-        "source": "src/app/globals.css"
-      },
-      "--soft-green": {
-        "value": "#e8f0eb",
-        "source": "src/app/globals.css"
+        "value": "#5d7167",
+        "source": "src/app/appearance.css"
       },
       "--text-soft": {
-        "value": "#53665f",
-        "source": "src/app/globals.css"
+        "value": "#4c6558",
+        "source": "src/app/appearance.css"
+      },
+      "--border": {
+        "value": "#dfe7e1",
+        "source": "src/app/appearance.css"
+      },
+      "--ring": {
+        "value": "var(--primary)",
+        "source": "src/app/appearance.css"
+      },
+      "--secondary": {
+        "value": "color-mix(in srgb, var(--primary) 7%, var(--card))",
+        "source": "src/app/appearance.css"
+      },
+      "--accent": {
+        "value": "color-mix(in srgb, var(--primary) 11%, var(--card))",
+        "source": "src/app/appearance.css"
+      },
+      "--muted": {
+        "value": "color-mix(in srgb, var(--primary) 4%, var(--background))",
+        "source": "src/app/appearance.css"
+      },
+      "--sidebar-bg": {
+        "value": "color-mix(in srgb, var(--primary) 4%, var(--background))",
+        "source": "src/app/appearance.css"
+      },
+      "--soft-green": {
+        "value": "color-mix(in srgb, var(--primary) 9%, var(--card))",
+        "source": "src/app/appearance.css"
+      },
+      "--primary-soft": {
+        "value": "color-mix(in srgb, var(--primary) 8%, var(--card))",
+        "source": "src/app/appearance.css"
+      },
+      "--destructive": {
+        "value": "#ad3c42",
+        "source": "src/app/appearance.css"
+      },
+      "--error-bg": {
+        "value": "#fff0ee",
+        "source": "src/app/appearance.css"
+      },
+      "--error-text": {
+        "value": "#9c373e",
+        "source": "src/app/appearance.css"
+      },
+      "--success-bg": {
+        "value": "#edf6ef",
+        "source": "src/app/appearance.css"
+      },
+      "--success-text": {
+        "value": "#2e6940",
+        "source": "src/app/appearance.css"
+      },
+      "--shadow-soft": {
+        "value": "0 12px 45px #173b2710",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-explain": {
+        "value": "#587941",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-explain-bg": {
+        "value": "#edf4e6",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-revise": {
+        "value": "#67538e",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-revise-bg": {
+        "value": "#f1edf8",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-practice": {
+        "value": "#84632e",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-practice-bg": {
+        "value": "#f8f1e4",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-flashcards": {
+        "value": "#356f70",
+        "source": "src/app/appearance.css"
+      },
+      "--mode-flashcards-bg": {
+        "value": "#e9f4f2",
+        "source": "src/app/appearance.css"
       }
     },
     "typography": {
       "body": {
-        "value": "Avenir Next, Segoe UI, ui-sans-serif, sans-serif",
-        "source": "src/app/globals.css"
+        "value": "var(--font-body): Manrope, Inter, Nunito Sans, or system",
+        "source": "src/app/appearance.css"
       },
       "display": {
-        "value": "Iowan Old Style, Palatino Linotype, Georgia, serif",
-        "source": "src/app/globals.css"
+        "value": "var(--font-heading): Lora, match body, or Georgia",
+        "source": "src/app/appearance.css"
       }
     },
     "spacing": {},
@@ -91,19 +151,31 @@
       "composer": "subtle, only to distinguish the active input"
     },
     "motion": {
-      "reducedMotion": true
+      "reducedMotion": true,
+      "entrance": "short opacity/translate transitions",
+      "scroll": "IntersectionObserver reveal; content available without JS",
+      "decorative": "single four-second source-chip animation"
     },
     "density": "comfortable"
   },
   "components": {
     "installed": ["button", "input", "scroll-area"],
-    "preferredPrimitives": ["Radix Dialog", "Button", "Input"],
+    "preferredPrimitives": [
+      "Radix Dialog",
+      "Radix Tabs",
+      "Radix DropdownMenu",
+      "Button",
+      "Input"
+    ],
     "patterns": [
       "responsive sidebar",
       "source disclosures",
       "focused chat composer",
       "textbook list",
-      "flashcard review"
+      "flashcard review",
+      "interactive landing examples",
+      "account forms",
+      "appearance palette and font preview"
     ]
   },
   "constraints": {
@@ -114,10 +186,10 @@
       "No local model dependency"
     ],
     "avoid": [
-      "Decorative gradients",
       "External runtime fonts",
       "Fake upload success",
-      "Persisting keys to the library database"
+      "Persisting keys to the library database",
+      "Decorative gradients outside the supplied brand reference"
     ]
   },
   "decisions": [
@@ -128,12 +200,24 @@
     {
       "decision": "Reuse installed controls and Radix dialogs; custom layout grounded in light sidebar and conversation-list catalog search.",
       "source": "21st search plus existing components"
+    },
+    {
+      "decision": "Reference-inspired native vector book/person logo with bold NCERT and light tutor lettering. Brand stays green across interface palettes.",
+      "source": "User-supplied logo reference"
+    },
+    {
+      "decision": "Six persisted accent palettes, device-aware light/dark modes, self-hosted variable fonts, and display font selection across app and public pages.",
+      "source": "User appearance requirements"
+    },
+    {
+      "decision": "Auth.js providers, server-validated account identity, separate account/guest storage, and clear unavailable-provider states.",
+      "source": "User OAuth requirements and official provider documentation"
     }
   ],
   "evidence": [
     {
-      "fact": "All palette tokens come from the implemented CSS",
-      "source": "src/app/globals.css"
+      "fact": "Light/dark semantic tokens and palette overrides come from the implemented CSS.",
+      "source": "src/app/appearance.css"
     },
     {
       "fact": "No source-upload review was run; local browser and accessibility checks used instead after automatic review rejected the hosted review command.",

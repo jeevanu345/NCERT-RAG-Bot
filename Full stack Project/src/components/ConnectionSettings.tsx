@@ -1,12 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { Tabs } from "radix-ui";
 import {
   ArrowUpRight,
   Check,
   Eye,
   EyeOff,
   KeyRound,
+  Palette,
   LoaderCircle,
   ShieldCheck,
   Unplug,
@@ -15,6 +17,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { DEFAULT_MODEL, readResponse } from "@/lib/types";
 import Modal from "./Modal";
+import AppearanceSettings from "./AppearanceSettings";
 
 export type Connection = {
   key: string;
@@ -28,14 +31,17 @@ export default function ConnectionSettings({
   onOpenChange,
   connection,
   serverKey,
+  identity,
   onSave,
 }: {
   open: boolean;
   onOpenChange: (open: boolean) => void;
   connection: Connection;
   serverKey: boolean;
+  identity: string;
   onSave: (connection: Connection) => void;
 }) {
+  const [tab, setTab] = useState("connection");
   const [key, setKey] = useState(connection.key);
   const [model, setModel] = useState(connection.model);
   const [remember, setRemember] = useState(connection.remember);
@@ -72,6 +78,7 @@ export default function ConnectionSettings({
           method: "POST",
           headers: {
             "Content-Type": "application/json",
+            "X-NCERT-Identity": identity,
             ...(cleanKey ? { Authorization: `Bearer ${cleanKey}` } : {}),
           },
           body: JSON.stringify({ model: model.trim() }),
@@ -95,146 +102,171 @@ export default function ConnectionSettings({
       onOpenChange={(value) => {
         if (!testing) onOpenChange(value);
       }}
-      title="Your AI connection"
-      description="Bring your NVIDIA key. Make this space yours."
+      title="Settings"
+      description="Your AI connection and a space that feels like you."
     >
-      <div className="provider-card">
-        <div className="provider-logo">N</div>
-        <div>
-          <strong>NVIDIA NIM</strong>
-          <p>Hosted models · Your API key</p>
-        </div>
-        <span className="pill">BYOK</span>
-      </div>
-      <form onSubmit={connect} className="settings-form">
-        <div className="field-heading">
-          <label htmlFor="nim-key">API key</label>
-          <a
-            href="https://build.nvidia.com/meta/llama-3_3-70b-instruct"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Get a key <ArrowUpRight size={13} />
-          </a>
-        </div>
-        <div className="password-field">
-          <KeyRound size={16} />
-          <Input
-            id="nim-key"
-            type={visible ? "text" : "password"}
-            autoComplete="off"
-            spellCheck={false}
-            placeholder={
-              serverKey ? "Server key available, or paste your own" : "nvapi-…"
-            }
-            value={key}
-            disabled={testing}
-            maxLength={512}
-            onChange={(e) => {
-              setKey(e.target.value);
-              setSuccess(false);
-            }}
-          />
-          <Button
-            variant="ghost"
-            size="icon"
-            type="button"
-            aria-label={visible ? "Hide API key" : "Show API key"}
-            onClick={() => setVisible(!visible)}
-          >
-            {visible ? <EyeOff /> : <Eye />}
-          </Button>
-        </div>
-        <p className="field-help">
-          Your key is sent only to this app’s backend and NVIDIA. It is never
-          saved to the database.
-        </p>
-        <label htmlFor="nim-model">Model</label>
-        <select
-          id="model-preset"
-          aria-label="Choose a model preset"
-          disabled={testing}
-          value={
-            [DEFAULT_MODEL, "meta/llama-3.1-8b-instruct"].includes(model)
-              ? model
-              : "custom"
-          }
-          onChange={(e) => {
-            setModel(e.target.value === "custom" ? "" : e.target.value);
-            setSuccess(false);
-          }}
-        >
-          <option value={DEFAULT_MODEL}>Llama 3.3 70B · Balanced</option>
-          <option value="meta/llama-3.1-8b-instruct">
-            Llama 3.1 8B · Lightweight
-          </option>
-          <option value="custom">Use another NVIDIA model</option>
-        </select>
-        <Input
-          id="nim-model"
-          aria-label="NVIDIA model ID"
-          value={model}
-          disabled={testing}
-          maxLength={160}
-          onChange={(e) => {
-            setModel(e.target.value);
-            setSuccess(false);
-          }}
-          placeholder="publisher/model-name"
-        />
-        <p className="field-help">
-          NVIDIA offers developer access for prototyping. Availability and
-          request limits depend on your account.
-        </p>
-        <label className="check-label">
-          <input
-            type="checkbox"
-            checked={remember}
-            disabled={testing}
-            onChange={(e) => setRemember(e.target.checked)}
-          />
-          Remember my key for this tab
-        </label>
-        <div className="privacy-note">
-          <ShieldCheck size={17} />
-          <p>
-            Textbooks stay on this computer. Relevant excerpts and your
-            conversation are sent to NVIDIA when you ask a question.
-          </p>
-        </div>
-        {error && (
-          <p className="inline-error" role="alert">
-            {error}
-          </p>
-        )}
-        {success && (
-          <p className="inline-success" role="status">
-            <Check size={16} />
-            Connected. You’re ready to study.
-          </p>
-        )}
-        <div className="modal-actions">
-          {connection.connected && (
-            <Button
-              variant="ghost"
-              type="button"
+      <Tabs.Root value={tab} onValueChange={setTab}>
+        <Tabs.List className="settings-tabs" aria-label="Settings sections">
+          <Tabs.Trigger value="connection">
+            <KeyRound size={14} />
+            AI connection
+          </Tabs.Trigger>
+          <Tabs.Trigger value="appearance">
+            <Palette size={14} />
+            Appearance
+          </Tabs.Trigger>
+        </Tabs.List>
+        <Tabs.Content value="appearance">
+          <AppearanceSettings />
+        </Tabs.Content>
+        <Tabs.Content value="connection">
+          <div className="provider-card">
+            <div className="provider-logo">N</div>
+            <div>
+              <strong>NVIDIA NIM</strong>
+              <p>Hosted models · Your API key</p>
+            </div>
+            <span className="pill">BYOK</span>
+          </div>
+          <form onSubmit={connect} className="settings-form">
+            <div className="field-heading">
+              <label htmlFor="nim-key">API key</label>
+              <a
+                href="https://build.nvidia.com/meta/llama-3_3-70b-instruct"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Get a key <ArrowUpRight size={13} />
+              </a>
+            </div>
+            <div className="password-field">
+              <KeyRound size={16} />
+              <Input
+                id="nim-key"
+                type={visible ? "text" : "password"}
+                autoComplete="off"
+                spellCheck={false}
+                placeholder={
+                  serverKey
+                    ? "Server key available, or paste your own"
+                    : "nvapi-…"
+                }
+                value={key}
+                disabled={testing}
+                maxLength={512}
+                onChange={(e) => {
+                  setKey(e.target.value);
+                  setSuccess(false);
+                }}
+              />
+              <Button
+                variant="ghost"
+                size="icon"
+                type="button"
+                aria-label={visible ? "Hide API key" : "Show API key"}
+                onClick={() => setVisible(!visible)}
+              >
+                {visible ? <EyeOff /> : <Eye />}
+              </Button>
+            </div>
+            <p className="field-help">
+              Your key is sent only to this app’s backend and NVIDIA. It is
+              never saved to the database.
+            </p>
+            <label htmlFor="nim-model">Model</label>
+            <select
+              id="model-preset"
+              aria-label="Choose a model preset"
               disabled={testing}
-              onClick={() => {
-                onSave({ key: "", model, connected: false, remember: false });
-                setKey("");
+              value={
+                [DEFAULT_MODEL, "meta/llama-3.1-8b-instruct"].includes(model)
+                  ? model
+                  : "custom"
+              }
+              onChange={(e) => {
+                setModel(e.target.value === "custom" ? "" : e.target.value);
                 setSuccess(false);
               }}
             >
-              <Unplug size={15} />
-              Disconnect
-            </Button>
-          )}
-          <Button type="submit" disabled={testing}>
-            {testing ? <LoaderCircle className="spin" /> : <Check />}
-            {testing ? "Testing connection…" : "Test & save connection"}
-          </Button>
-        </div>
-      </form>
+              <option value={DEFAULT_MODEL}>Llama 3.3 70B · Balanced</option>
+              <option value="meta/llama-3.1-8b-instruct">
+                Llama 3.1 8B · Lightweight
+              </option>
+              <option value="custom">Use another NVIDIA model</option>
+            </select>
+            <Input
+              id="nim-model"
+              aria-label="NVIDIA model ID"
+              value={model}
+              disabled={testing}
+              maxLength={160}
+              onChange={(e) => {
+                setModel(e.target.value);
+                setSuccess(false);
+              }}
+              placeholder="publisher/model-name"
+            />
+            <p className="field-help">
+              NVIDIA offers developer access for prototyping. Availability and
+              request limits depend on your account.
+            </p>
+            <label className="check-label">
+              <input
+                type="checkbox"
+                checked={remember}
+                disabled={testing}
+                onChange={(e) => setRemember(e.target.checked)}
+              />
+              Remember my key for this tab
+            </label>
+            <div className="privacy-note">
+              <ShieldCheck size={17} />
+              <p>
+                Textbook text is indexed on this app’s server. Relevant excerpts
+                and your conversation are sent to NVIDIA when you ask a
+                question.
+              </p>
+            </div>
+            {error && (
+              <p className="inline-error" role="alert">
+                {error}
+              </p>
+            )}
+            {success && (
+              <p className="inline-success" role="status">
+                <Check size={16} />
+                Connected. You’re ready to study.
+              </p>
+            )}
+            <div className="modal-actions">
+              {connection.connected && (
+                <Button
+                  variant="ghost"
+                  type="button"
+                  disabled={testing}
+                  onClick={() => {
+                    onSave({
+                      key: "",
+                      model,
+                      connected: false,
+                      remember: false,
+                    });
+                    setKey("");
+                    setSuccess(false);
+                  }}
+                >
+                  <Unplug size={15} />
+                  Disconnect
+                </Button>
+              )}
+              <Button type="submit" disabled={testing}>
+                {testing ? <LoaderCircle className="spin" /> : <Check />}
+                {testing ? "Testing connection…" : "Test & save connection"}
+              </Button>
+            </div>
+          </form>
+        </Tabs.Content>
+      </Tabs.Root>
     </Modal>
   );
 }

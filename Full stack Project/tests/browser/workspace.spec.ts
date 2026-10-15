@@ -22,7 +22,7 @@ const answer = {
 };
 
 async function open(page: Page) {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(
     page.getByRole("button", { name: "Find your “aha” moment", exact: false }),
   ).toBeEnabled();
@@ -306,36 +306,41 @@ test("study, library, and settings pass automated accessibility checks", async (
   const { default: AxeBuilder } = await import("@axe-core/playwright");
   await page.emulateMedia({ reducedMotion: "reduce" });
   await open(page);
-  // Check the settled, enabled state rather than the initial loading fade.
-  await expect(
-    page.getByRole("button", { name: /New study session/ }),
-  ).toHaveCSS("opacity", "1");
   const violations = [];
-  for (const screen of ["study", "library", "settings"]) {
-    if (screen === "library")
-      await page.getByRole("button", { name: /Textbook library 0/ }).click();
-    if (screen === "settings") {
-      await page
-        .getByRole("button", { name: "Connect NVIDIA", exact: true })
-        .click();
-      await page
-        .getByLabel("API key", { exact: true })
-        .fill("nvapi-accessibility-placeholder");
-      await page.getByRole("button", { name: "Show API key" }).click();
-    }
-    const results = await new AxeBuilder({ page })
-      .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
-      .analyze();
-    violations.push(
-      ...results.violations.map((v) => ({
-        screen,
-        id: v.id,
-        nodes: v.nodes.map((n) => ({
-          target: n.target,
-          summary: n.failureSummary,
+  for (const mode of ["light", "dark"] as const) {
+    await page.emulateMedia({ colorScheme: mode });
+    await open(page);
+    // Check the settled, enabled state rather than the initial loading fade.
+    await expect(
+      page.getByRole("button", { name: /New study session/ }),
+    ).toHaveCSS("opacity", "1");
+    for (const screen of ["study", "library", "settings"]) {
+      if (screen === "library")
+        await page.getByRole("button", { name: /Textbook library 0/ }).click();
+      if (screen === "settings") {
+        await page
+          .getByRole("button", { name: "Connect NVIDIA", exact: true })
+          .click();
+        await page
+          .getByLabel("API key", { exact: true })
+          .fill("nvapi-accessibility-placeholder");
+        await page.getByRole("button", { name: "Show API key" }).click();
+      }
+      const results = await new AxeBuilder({ page })
+        .withTags(["wcag2a", "wcag2aa", "wcag21aa"])
+        .analyze();
+      violations.push(
+        ...results.violations.map((v) => ({
+          screen,
+          mode,
+          id: v.id,
+          nodes: v.nodes.map((n) => ({
+            target: n.target,
+            summary: n.failureSummary,
+          })),
         })),
-      })),
-    );
+      );
+    }
   }
   expect(violations).toEqual([]);
 });
